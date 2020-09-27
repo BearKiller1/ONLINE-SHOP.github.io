@@ -47,9 +47,9 @@ unda iyos + button damatebis ro daawyve unda gamoitanos yvela produqti
 da checkboxit nisnavs da amatebs karuselshi
 tviton akruselshi aris ukve damatebuli gancxadebebi da sheudzlia muxolod washla
 productebis searchi iyos lamazi
-4.banershi daematos upload image/ da dakecil side menuze gaswordes close texti;
-5.buttonebis galamazeba /modipicirebashi  ro naxav 10 ajimania gaakete
-6.oriduqtebshi buttonebs heigh ro searchis xela iyos
+          *4.banershi daematos upload image/ da dakecil side menuze gaswordes close texti;
+          *5.buttonebis galamazeba /modipicirebashi  ro naxav 10 ajimania gaakete
+          *6.oriduqtebshi buttonebs heigh ro searchis xela iyos
 7.katogiriis da seqcia unda gapltros produqtshi + pasis piltri
 8.produqtshi add ia shesasworebeli;
 9.produqtebs checkbox aq chasaamtebeli shuashi;
