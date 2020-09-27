@@ -5,14 +5,14 @@
     <title></title>
       <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <link rel="stylesheet" href="admin.css">
+      <link rel="stylesheet" href="Admin.css">
       <link rel="stylesheet" href="style/css.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
       <script src='https://kit.fontawesome.com/a076d05399.js'></script>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <meta http-equiv="refresh" content="10; URL=admin.php">
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
       <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -202,10 +202,10 @@
             </label>
 
             <input type="text" name="" value="" placeholder=" ტექსტი" id="banner_text">
-            <button type="submit" name="button">+</button>
+            <button type="submit" name="button" class='w3-button w3-round w3-blue'>ჩვლილება</button>
           </form>
           <div class="Poster" id="poster">
-            <h1 class='w3-center'>𝒸𝓁𝑜𝓉𝒽</h1>
+            <h1 class=''>cloth</h1>
           </div>
         </div>
 
@@ -644,9 +644,9 @@
         var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
         chart.draw(data, options);
       }
-      setTimeout(function(){
-         window.location.reload(1);
-      }, 5000);
+      // setTimeout(function(){
+      //    window.location.reload(1);
+      // }, 5000);
     </script>
   </body>
 </html>
