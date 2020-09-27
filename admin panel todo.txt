@@ -54,9 +54,9 @@ productebis searchi iyos lamazi
 8.produqtshi add ia shesasworebeli;
 9.produqtebs checkbox aq chasaamtebeli shuashi;
 10.KATOGERIABIA SHESACVLELI unda iyos 3 column category name seqcia da raodenoba produqtis  ro naxav 10 ajimania gaakete
-11.chatlistis width shevamcirot
-12. statistikebshi unda iyos didi mrgvali burti
-13.side menushi x aris shesacvleli da mand unda gadavides logout iconi  ro naxav 10 ajimania gaakete
+          *11.chatlistis width shevamcirot
+          *12. statistikebshi unda iyos didi mrgvali burti
+          13.side menushi x aris shesacvleli da mand unda gadavides logout iconi  ro naxav 10 ajimania gaakete
 ================================
           INDEX PAGE
 1. night mode
@@ -83,14 +83,14 @@ css tu shevamoklebt co cool
 -ucha
 ----
 admin
-4
-5 ati ajiamania mexcutedan gadadis 3 shi
-6
+  4
+  5 ati ajiamania mexcutedan gadadis 3 shi
+  6
 7
 10
-11
-12
-13
+  11
+  12
+  13
 ----
 index
 1

@@ -3,17 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <link rel="stylesheet" href="Admin.css">
       <link rel="stylesheet" href="style/css.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <!-- FONTS -->
+      <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
       <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
-      <script src='https://kit.fontawesome.com/a076d05399.js'></script>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-      <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+      <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -23,6 +27,7 @@
     <!-- SIDE MENU -->
     <div class="Cpanel w3-blue " id='panel'>
       <div class="w3-white pannel_X">
+        <button id="logmeout"><i class="fa fa-sign-out"></i></button>
         <div id="panel_header">Joe</div>
         <div class="panel_butt w3-animate-opacity" id="panel_button" onclick="Toggle_panel(this);">
             <div class="bar1"></div>
@@ -63,9 +68,12 @@
         </div>
 
         <!-- add button -->
-        <button class="w3-button add_butt  w3-blue" onclick="toggleshow('create_post');">+</button>
+        <button class="w3-button add_butt  w3-blue" onclick="toggleshow('create_post');">
+          <i class='fas fa-plus'></i>
+        </button>
+
         <button class="w3-button add_butt  w3-blue" onclick="clear()" id='close_upload'>
-          <i style="font-size:1.5vw" class="fa">&#xf014;</i>
+          <i style="" class="fa">&#xf014;</i>
         </button>
 
 
@@ -292,7 +300,7 @@
             <br>
             <br>
             <input type="text" name="" value="" placeholder="შეიყვანეთ მისამართი">
-            <br>
+            <br><br>
             <button type="submit" name="button">შეცვლა</button>
           </form>
 
@@ -354,7 +362,7 @@
         <?php
           for ($i=0; $i < 22; $i++) {
             echo "  <div class='inbox'>
-                      <p>werilia  | davit aqubardia </p>
+                      <p> davit aqubardia </p>
                       <h6 class='time'>9/10/2020</h6>
                     </div> ";
             }
@@ -366,13 +374,13 @@
           for ($i=0; $i < 22; $i++) {
             echo "  <div class='message_arrive'>
                       <div class='message_arrive_text w3-blue'>
-                          <p>werilia  | davit aqubardia </p>
+                          <p>გამარჯობა ტესტ ტესტ</p>
                       </div>
                     </div>
                     <br>
                     <div class='message_sent'>
                       <div class='message_send_text  w3-white'>
-                        <p>werilia yvero | davit aqubardia </p>
+                        <p>გამარჯობა ტესტ ტესტ</p>
                       </div>
                     </div>
                     <br>";
@@ -573,16 +581,18 @@
           $('#panel_button').css("margin","1vh 1vw 0 0");
           $('#panel_icons').css("display","block");
           $('#panel_header').css("display","none");
+          $('#logmeout').css("display","none");
           $('.section').css("width","95vw");
           $('.section').css("margin","0 0 0 5vw");
           panel_index = 1;
         }
         else{
           $('#panel').css("width","19%");
-          $('#panel_words').show(270);
+          $('#panel_words').show(400);
           $('#panel_button').css("margin","2% 10% 0 0");
           $('#panel_icons').css("display","none");
           $('#panel_header').show(350);
+          $('#logmeout').show(500);
           $('.section').css("width","81vw");
           $('.section').css("margin","0 0 0 19vw");
           panel_index = 0;

@@ -3,6 +3,7 @@ body{
     user-select: none;
     position: relative;
   }
+  button{cursor:pointer;transition: 1s;outline:0;}
 /* SIDE MENU */
     .Cpanel{
       position: fixed;
@@ -26,6 +27,16 @@ body{
       width: 100%;
       height: 10vh;
       font-size:3vw;
+    }
+    .pannel_X button{
+      position: absolute;
+      color: #2196f3;
+      border:0;
+      left:1%;
+      height:100%;
+      background-color: white;
+      transform: rotate(180deg);
+      float:left;
     }
     #panel_words{background-color: ;}
     #panel_words a{
@@ -106,6 +117,7 @@ body{
 
     /* PRODUCT HEADER PANEL */
     .add_butt{
+      height:7vh;
       float:left;
       margin:-0.5% 0 0 1%;
       border-radius: 2px;
@@ -119,7 +131,7 @@ body{
     .Search form{
         transition:1s;
         box-sizing: border-box;
-        margin-top: 1%;
+        margin-top: 0.5%;
         border-radius: 3px;
         padding: 5px;
     }
@@ -388,26 +400,34 @@ body{
         width:100%;
         height: 90vh;
       }
-      .banner_class button,input{
-        outline: 0;
-        transition: 1s;
+
+      .banner_class input[type="text"]{
+        outline:0;
+        color:#333;
+        border:0;
+        border-radius: 3px;
+        padding-left: 1%;
       }
       .banner_class button{
-        margin-top:-0.5%;
+        margin-top:-0.4%;
       }
       #banner_photo{
         display: none;
       }
       .banner_class h2{
+        z-index: 15;
+        -webkit-font-smoothing: antialiased;
         font-family: 'Acme';
+        letter-spacing: 1px;
+        word-spacing:4px;
         color:#2196F3;
         margin:1% 0 2% 0;
         text-align: center;
       }
       .banner_class label{
-        width:14%;
+        width:10%;
         height: 13vh;
-        margin:0% 0 3% 43%;
+        margin:0% 0 3% 45%;
 
         display: block;
       }
@@ -428,8 +448,8 @@ body{
       }
       #poster h1{
         font-family: 'Sofia';
-        margin-left: 33%;
-        font-size:8vw;
+        position: relative;
+        left:3%;
         color:white;
         text-shadow: 4px 5px 0px rgba(0,0,0,0.53);
       }
@@ -639,8 +659,8 @@ body{
       position: relative;
       overflow: scroll;
       float:right;
-      background-color: #F7F6F6;
-      width:35%;
+      background-color: #fff;
+      width:25%;
       height: 100vh;
     }
     .close_class{
@@ -660,6 +680,7 @@ body{
       float:right;
     }
     .inbox:hover{
+      border-radius: 4px;
       border-bottom:none;
       transition: 1s;
       background-color: #2196F3;-webkit-box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.75);
@@ -668,10 +689,12 @@ body{
 
     }
     .inbox p{
-      margin-top:0.3%;
+      justify-content: center;
+      margin-top:0.5%;
     }
     .inbox h6{
-      margin-top:1.5vh;
+      margin:-3% 2% 0 0;
+      float:right;
     }
 
     .chat{
@@ -679,9 +702,10 @@ body{
       overflow: scroll;
       float:right;
       height: 80vh;
-      width: 65%;
+      width: 75%;
       background-color:#eee;
     }
+
     .sent_meesage_input{
       -webkit-box-shadow: 0px -2px 4px 12px rgba(0,0,0,0.75);
       -moz-box-shadow: 0px -2px 4px 12px rgba(0,0,0,0.75);
@@ -689,23 +713,23 @@ body{
       border:0;
       background-color: #333;
       outline:0;
-      width: 65%;
+      width: 75%;
       margin-top:80vh;
       height: 20vh;
     }
 
     .inbox_new_message textarea::placeholder{color:#E5E5E5;margin-left:3%;}
     .inbox_new_message textarea{
-    background-color: #333;
-      color:white;
-      border:0;
-      outline:0;
-      word-wrap: break-word;
-      height: 19vh;
-      margin:1vh 0 0 1%;
-      width: 99%;
-      resize: none;
-      outline:0;
+        background-color: #333;
+        color:white;
+        border:0;
+        outline:0;
+        word-wrap: break-word;
+        height: 19vh;
+        margin:1vh 0 0 1%;
+        width: 80%;
+        resize: none;
+        outline:0;
     }
     .message_arrive {
       font-size: 1.5vw;
@@ -747,7 +771,8 @@ body{
       width:15%;
       position: relative;
       float:right;
-      margin:-12% 3% 0 0;
+      margin:5% 3% 0 0;
+      border-radius: 3px;
       outline:0;
     }
   /* accounts */
