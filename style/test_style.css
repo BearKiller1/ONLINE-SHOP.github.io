@@ -1,0 +1,44 @@
+
+.gallery-cell {
+  width: 20%;
+  height: 33vh;
+  margin-right: 10px;
+  background: gray;
+  counter-increment: gallery-cell;
+  margin:5% 0 0 0;
+}
+  /* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+.add_prod_to_catalog{
+  margin-top: 5%;
+  width: 20%;
+  height: 33vh;
+  cursor: pointer;
+  background: green;
+}
+.flickity-prev-next-button {
+  display: inline-block;
+  margin:2.5% 0 0 0;
+}
+
+  .prod_list_to_add{
+    position: absolute;
+    top:0;
+    background: red;
+    width: 80%;
+    height: 60vw;
+    margin-left: 10%;
+    display: none;
+  }
+  .prod_list_to_add img{
+    height: 10vw;
+    width: 10vw;
+
+  }

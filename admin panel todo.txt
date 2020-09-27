@@ -1,0 +1,116 @@
+Admin Page					|
+-------------					|
+Product upload
+
+Carouselshi postis chatvitva
+
+Costumize (index.php)-s
+
+analytics (search history)
+
+Category Controll
+
+Inbox
+
+Account system
+
+================================
+ADMIN PANELI FONT END
+PRODUCT FONT END
+ONE PRODUCT FONT END
+================================
+MOBILE VERSION
+LANGUAGE VERSION
+================================
+
+dachi refactoring piveli
+ati ajiamania mexcutedan gadadis 3 shi
+admin
+1 - done
+2
+3
+8
+9
+----
+index
+2
+3
+----
+product
+3
+
+          ADMIN PAGE
+1. cosutomizeshi agwera
+2.katalogebshi editis nacvlad produqtis chamateba
+3.kataoligshi adminze unda iyos karuseli da ramdeni pruduqtis ari imas+1
+unda iyos + button damatebis ro daawyve unda gamoitanos yvela produqti
+da checkboxit nisnavs da amatebs karuselshi
+tviton akruselshi aris ukve damatebuli gancxadebebi da sheudzlia muxolod washla
+productebis searchi iyos lamazi
+4.banershi daematos upload image/ da dakecil side menuze gaswordes close texti;
+5.buttonebis galamazeba /modipicirebashi  ro naxav 10 ajimania gaakete
+6.oriduqtebshi buttonebs heigh ro searchis xela iyos
+7.katogiriis da seqcia unda gapltros produqtshi + pasis piltri
+8.produqtshi add ia shesasworebeli;
+9.produqtebs checkbox aq chasaamtebeli shuashi;
+10.KATOGERIABIA SHESACVLELI unda iyos 3 column category name seqcia da raodenoba produqtis  ro naxav 10 ajimania gaakete
+11.chatlistis width shevamcirot
+12. statistikebshi unda iyos didi mrgvali burti
+13.side menushi x aris shesacvleli da mand unda gadavides logout iconi  ro naxav 10 ajimania gaakete
+================================
+          INDEX PAGE
+1. night mode
+2.languages drop down unda iyos
+3.carouselshi ptotebi chavamatot ro naxav 10 ajimania gaakete
+
+===============================
+          PRODUCT PAGE
+1. side menushi fontebi da borderebi aris gasaketebeli babuu
+2. searchshi background unda qondes cota eee an rame
+3. menu asamushavebelia
+4. shadow kankalebs produqtshi
+
+==============================
+          ZOGADI SAMUSHAOEBI
+
+autorizaciis page dasamatebelia;
+
+refactorign css html js
+
+css tu shevamoklebt co cool
+
+******************************************************************
+-ucha
+----
+admin
+4
+5 ati ajiamania mexcutedan gadadis 3 shi
+6
+7
+10
+11
+12
+13
+----
+index
+1
+----
+product
+naxevari meore
+--------------------------------------------
+dachi refactoring piveli
+ati ajiamania mexcutedan gadadis 3 shi
+admin
+1
+2
+3
+8
+9
+----
+index
+2
+3
+----
+product
+3
+4
