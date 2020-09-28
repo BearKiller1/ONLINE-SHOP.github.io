@@ -145,6 +145,7 @@
             for ($i=0; $i < 15; $i++) {
                 echo "<div class='gallery_img w3-blue'><form>
                   <button class='w3-button pencil_button'><i class='fa fa-pencil' style='font-size:20px'></i></button>
+                  <input type='checkbox'>
                   <button class='trash_button w3-button' name='button'>
                     <i style='font-size:1.5vw' class='fa'>&#xf014;</i>
                   </button>

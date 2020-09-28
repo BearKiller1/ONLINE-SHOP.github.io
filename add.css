@@ -265,6 +265,9 @@ body{
     .gallery_img button{
       height: 5vh;
     }
+    .gallery_img input{
+      margin-left: 25%;
+    }
     .gallery_img img{
       height: 40vh;
       width: 100%;
