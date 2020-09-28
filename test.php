@@ -44,8 +44,9 @@
       <div class='black_div'>
       </div>
       <div class="prod_list_to_add">
-            <button name="add_new_prod_in_catalog">add</button>
-            <button id="close_products">X</button>
+
+        <button class="w3-button" id="add_prod_butt">add</button>
+        <button class="w3-button" id="close_products">X</button>
               <?php
               for ($i=1; $i < 8; $i++) {
                 echo "<div class='gallery_img' id='open_image'>
