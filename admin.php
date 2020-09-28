@@ -3,12 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-      <link rel="stylesheet" href="Admin.css">
+      <link rel="stylesheet" href="admin.css">
       <link rel="stylesheet" href="style/css.css">
       <!-- FONTS -->
       <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
       <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js'>  </script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
+      <link rel="stylesheet" href="style/admin_Catalog.css">
+
+
 
       <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -200,6 +206,7 @@
         <button class="customize" type="submit" name="button" onclick="toggleshow('3')">აღწერა</button>
 
       </div>
+
         <!-- Banner form -->
         <div class="banner_class" id="0" style="display:block;">
           <form action="index.html" method="post">
@@ -218,78 +225,58 @@
         </div>
 
         <!-- catalog form -->
-        <div class="catalog_class" id="1" style="display:none;">
+        <div class="catalog_class" id="1" style="display:block;">
           <form action="index.html" method="post">
-              <input type="text" name="" value="" placeholder="ძებნა:">
-              <br>
-
-              <div class="gallery_img w3-blue">
-                <form>
-                  <button class="w3-button pencil_button"><i class="fa fa-pencil" style="font-size:20px"></i></button>
-                  <button class="trash_button w3-button" name="button">
-                    <i style="font-size:1.5vw" class="fa">&#xf014;</i>
-                  </button>
-                </form>
-                <img src="source/d1.jpg">
-                <div class="product_cost">
-                  <p>150$</p>
-                </div>
-              </div>
-
-              <div class="gallery_img w3-blue">
-                <form>
-                  <button class="w3-button pencil_button"><i class="fa fa-pencil" style="font-size:20px"></i></button>
-                  <button class="trash_button w3-button" name="button">
-                    <i style="font-size:1.5vw" class="fa">&#xf014;</i>
-                  </button>
-                </form>
-                <img src="source/d1.jpg">
-                <div class="product_cost">
-                  <p>150$</p>
-                </div>
-              </div>
-
-              <div class="gallery_img w3-blue">
-                <form>
-                  <button class="w3-button pencil_button"><i class="fa fa-pencil" style="font-size:20px"></i></button>
-                  <button class="trash_button w3-button" name="button">
-                    <i style="font-size:1.5vw" class="fa">&#xf014;</i>
-                  </button>
-                </form>
-                <img src="source/d1.jpg">
-                <div class="product_cost">
-                  <p>150$</p>
-                </div>
-              </div>
-
-              <div class="gallery_img w3-blue">
-                <form>
-                  <button class="w3-button pencil_button"><i class="fa fa-pencil" style="font-size:20px"></i></button>
-                  <button class="trash_button w3-button" name="button">
-                    <i style="font-size:1.5vw" class="fa">&#xf014;</i>
-                  </button>
-                </form>
-                <img src="source/d1.jpg">
-                <div class="product_cost">
-                  <p>150$</p>
-                </div>
-              </div>
-
-              <div class="gallery_img w3-blue">
-                <form>
-                  <button class="w3-button pencil_button"><i class="fa fa-pencil" style="font-size:20px"></i></button>
-                  <button class="trash_button w3-button" name="button">
-                    <i style="font-size:1.5vw" class="fa">&#xf014;</i>
-                  </button>
-                </form>
-                <img src="source/d1.jpg">
-                <div class="product_cost">
-                  <p>150$</p>
-                </div>
-              </div>
-
-
+            <input type="text" name="" value="" placeholder="ძებნა:"><br>
           </form>
+
+          <div class="admin_Catalog">
+            <div class="admin_gallery js-flickity"
+              data-flickity-options='{ "wrapAround": true ,"pageDots": false,"autoPlay": 1500 }'>
+              <?php
+                $x = 5;
+                for ($i=0; $i < $x; $i++) {
+                  echo "<div class='admin_gallery-cell'>
+                    <img src='source/d.jpg alt='error' '>
+                  </div>";
+                  if($i == $x-1){
+                    echo "<div class='admin_add_prod_to_catalog'>
+                            <button id='open_image'>+</button>
+                          </div>";
+                  }
+                }
+              ?>
+            </div>
+          </div>
+          <div class='admin_black_div'>
+          </div>
+          <div class="admin_prod_list_to_add">
+            <button class="w3-button" id="add_prod_butt">add</button>
+            <button class="w3-button" id="close_products">X</button>
+            <?php
+            for ($i=1; $i < 8; $i++) {
+              echo "
+              <div class='admin_gallery_img' id='open_image'>
+                <input type='checkbox' name=new_prod_int_catalog>
+                <img src='source/d".$i.".jpg'>
+                <h4>Red Dress</h4>
+                <p>$124.99</p>
+              </div>";
+            }
+            ?>
+            </div>
+          <script>
+            $("#open_image").click(function(){
+              $(".admin_prod_list_to_add").show();
+              jQuery('.admin_prod_list_to_add').css('opacity', '1');
+              $(".admin_black_div").show();
+            });
+            $("#close_products").click(function(){
+              $(".admin_prod_list_to_add").hide();
+              $(".admin_black_div").hide();
+            });
+          </script>
+
         </div>
 
         <!-- location form -->
@@ -539,7 +526,6 @@
             <button type="button" class="w3-button w3-blue" name="button">შეცვლა</button>
         </form>
       </div>
-
       <div class="account_list">
         <button type="button" class="w3-button w3-blue" name="button">წაშლა</button>
           <ul class="usernames">
@@ -563,11 +549,6 @@
             </li>
           </ul>
       </div>
-    </div>
-
-    <!-- SETTINGS -->
-    <div class="section">
-
     </div>
 
     <script>
@@ -603,6 +584,7 @@
         for (var i = 0; i < 5; i++) {
           $("#"+i).hide();
         }
+
         $('#'+x).slideToggle("slow");
       }
 
@@ -657,6 +639,19 @@
       // setTimeout(function(){
       //    window.location.reload(1);
       // }, 5000);
+      //
+      // es ari caruselshi damatebis scripti
+      //
+            $("#open_image").click(function(){
+                $(".admin_prod_list_to_add").show();
+                jQuery('.admin_prod_list_to_add').css('opacity', '1');
+                $(".admin_black_div").show();
+              });
+              $("#close_products").click(function(){
+                $(".admin_prod_list_to_add").hide();
+                $(".admin_black_div").hide();
+              });
     </script>
+
   </body>
 </html>

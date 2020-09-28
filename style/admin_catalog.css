@@ -1,28 +1,19 @@
 /* THIS IS CATALOG CSS */
-.gallery-cell {
+.admin_gallery-cell {
   width: 20%;
   height: 33vh;
-  margin-right: 10px;
   background-color: black;
   counter-increment: gallery-cell;
   margin: 5% 0 0 0;
 }
 
-.gallery-cell img {
+.admin_gallery-cell img {
   width: 100%;
   height: 33vh;
 }
 
-/* cell number */
-.gallery-cell:before {
-  display: block;
-  text-align: center;
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
-}
 
-.add_prod_to_catalog {
+.admin_add_prod_to_catalog {
   margin-top: 5%;
   width: 20%;
   height: 33vh;
@@ -31,7 +22,7 @@
   text-align: center;
 }
 
-.add_prod_to_catalog button {
+.admin_add_prod_to_catalog button {
   font-size: 5vw;
   background: #C2C2C2;
   margin: 14% 0 0 0%;
@@ -42,18 +33,18 @@
   transition: 0.5s;
 }
 
-.add_prod_to_catalog button:hover {
+.admin_add_prod_to_catalog button:hover {
   border-radius: 100px;
   background: white;
 }
 
-.flickity-prev-next-button {
+.admin_flickity-prev-next-button {
   display: inline-block;
   margin: 2.5% 0 0 0;
 }
 
 /* THIS IS THE DIV COMES WHEN U CLICK ADD */
-.black_div {
+.admin_black_div {
   background: black;
   top: 0;
   display: none;
@@ -65,7 +56,7 @@
   opacity: 0.6;
 }
 
-.prod_list_to_add {
+.admin_prod_list_to_add {
   position: absolute;
   top: 0;
   height: auto;
@@ -76,7 +67,7 @@
   z-index: 1;
 }
 
-.prod_list_to_add button {
+.admin_prod_list_to_add button {
   position: absolute;
   top:1vh;
   background-color:#cbcbcb;
@@ -90,7 +81,7 @@
   right: 2vw;
 }
 
-.gallery_img {
+.admin_gallery_img {
   height: 55vh;
   width: 20%;
   margin: 8vh 0 0 10%;
@@ -100,7 +91,7 @@
   text-align: center;
 }
 
-.gallery_img img {
+.admin_gallery_img img {
   height: 40vh;
   width: 15vw;
 }
