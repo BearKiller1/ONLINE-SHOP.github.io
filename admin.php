@@ -208,7 +208,7 @@
       </div>
 
         <!-- Banner form -->
-        <div class="banner_class" id="0" style="display:block;">
+        <div class="banner_class" id="0" style="display:none;">
           <form action="index.html" method="post">
             <input type="file" name="f" placeholder=" ფოტო" id="banner_photo">
             <h2>აირჩიე ახალი ბანერი</h2>
