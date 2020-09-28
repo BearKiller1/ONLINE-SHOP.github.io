@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-      <link rel="stylesheet" href="admin.css">
+      <link rel="stylesheet" href="add.css">
       <link rel="stylesheet" href="style/css.css">
       <!-- FONTS -->
       <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
@@ -12,7 +12,6 @@
 
       <script src='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js'>  </script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
-      <link rel="stylesheet" href="style/admin_Catalog.css">
 
 
 
@@ -237,7 +236,7 @@
                 $x = 5;
                 for ($i=0; $i < $x; $i++) {
                   echo "<div class='admin_gallery-cell'>
-                    <img src='source/d.jpg alt='error' '>
+                    <img src='source/d".$i.".jpg'>
                   </div>";
                   if($i == $x-1){
                     echo "<div class='admin_add_prod_to_catalog'>
