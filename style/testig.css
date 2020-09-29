@@ -79,7 +79,15 @@
 #close_products {
   right: 2vw;
 }
-
+.static-banner {
+  position: absolute;
+  background: hsla(0, 0%, 0%, 0.3);
+  z-index: 1;
+  padding: 2px 20px;
+  font-size: 26px;
+  color: white;
+  pointer-events: none;
+}
 .admin_gallery_img {
   height: 55vh;
   width: 20%;

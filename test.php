@@ -10,7 +10,7 @@
       <script src='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js'>  </script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-      <link rel="stylesheet" href="style/admin_Catalog.css">
+      <link rel="stylesheet" href="style/testig.css">
   </head>
   <body>
       <div class="admin_Catalog">
@@ -24,6 +24,7 @@
               </div>";
               if($i == $x-1){
                 echo "<div class='admin_add_prod_to_catalog'>
+                <div class='static-banner '>
                         <button id='open_image'>+</button>
                       </div>";
               }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-      <link rel="stylesheet" href="add.css">
+      <link rel="stylesheet" href="admin.css">
       <link rel="stylesheet" href="style/css.css">
       <!-- FONTS -->
       <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
@@ -232,7 +232,7 @@
 
           <div class="admin_Catalog">
             <div class="admin_gallery js-flickity"
-              data-flickity-options='{ "wrapAround": true ,"pageDots": false,"autoPlay": 1500 }'>
+              data-flickity-options='{ "wrapAround": true ,"pageDots": true,"autoPlay": 1400 }'>
               <?php
                 $x = 5;
                 for ($i=0; $i < $x; $i++) {
@@ -240,9 +240,10 @@
                     <img src='source/d".$i.".jpg'>
                   </div>";
                   if($i == $x-1){
-                    echo "<div class='admin_add_prod_to_catalog'>
+                    echo "
+                            <div class='static-banner static-banner1'>Static banner 1</div>
                             <button id='open_image'>+</button>
-                          </div>";
+                          ";
                   }
                 }
               ?>
