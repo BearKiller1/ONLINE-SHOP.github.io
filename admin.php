@@ -183,10 +183,13 @@
         <table class="w3-table-all w3-white w3-hoverable category_table">
             <thead>
               <tr>
-                <th class="category_header w3-light-grey" id="cat_header_row2">
-                  <input type="text" name="" placeholder="დაამატეთ ახალი კატეგორია" class="category_input">
+                <th class="category_header w3-white">
+                  <input type="text" class="category_input w3-blue" name="" placeholder="დაამატეთ ახალი კატეგორია">
                   <button type="submit" name="button" id="category_add">+</button>
-                  <select class="category_select" name="">
+                </th>
+                <th class="category_header  w3-white">
+                  <select class="category_select w3-blue" name="">
+                    <option disabled selected >სექცია</option>
                     <option value="ქალი">ქალი</option>
                     <option value="კაცი">კაცი</option>
                     <option value="ბავშვი">ბავშვი</option>
@@ -194,14 +197,20 @@
                   <button  id="trash" name="button">
                     <i style="font-size:1.5vw" class="fa">&#xf014;</i>
                   </button>
-                  <input type="text" name="search_category" value="" class="search_category" placeholder="ძიება...">
                 </th>
-              </tr>
-            </thead>
+                <th class="category_header w3-white">
+                  <input type="text" class="search_category w3-blue" name="search_category " value=""  placeholder="ძიება...">
+                  <button type="submit" id='category-search-button' name="button">
+                    <i style="font-size:1.4vw" class="fa fa-search "></i>
+                  </button>
+                </th>
+              </thead>
               <?php
                 for ($i=0; $i < 45; $i++) {
                     echo "<tr>
                             <td class='w3-center'><input type='checkbox' name='category_selection[]' value=''> შარვალი</td>
+                            <td class='w3-center'>სექცია</td>
+                            <td class='w3-center'> <i>80/124</i> </td>
                           </tr>";
                 }
               ?>
@@ -568,7 +577,7 @@
     </div>
 
     <script>
-      slide(0);
+      slide(1);
       var panel_index = 0;
       function Toggle_panel(button){
         button.classList.toggle("change");

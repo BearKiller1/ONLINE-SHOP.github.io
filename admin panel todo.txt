@@ -53,7 +53,7 @@ productebis searchi iyos lamazi
           *7.katogiriis da seqcia unda gapltros produqtshi + pasis piltri
 8.produqtshi add ia shesasworebeli;
 9.produqtebs checkbox aq chasaamtebeli shuashi;
-10.KATOGERIABIA SHESACVLELI unda iyos 3 column category name seqcia da raodenoba produqtis  ro naxav 10 ajimania gaakete
+          *10.KATOGERIABIA SHESACVLELI unda iyos 3 column category name seqcia da raodenoba produqtis  ro naxav 10 ajimania gaakete
           *11.chatlistis width shevamcirot
           *12. statistikebshi unda iyos didi mrgvali burti
           13.side menushi x aris shesacvleli da mand unda gadavides logout iconi  ro naxav 10 ajimania gaakete
