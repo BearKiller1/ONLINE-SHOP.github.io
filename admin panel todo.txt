@@ -50,7 +50,7 @@ productebis searchi iyos lamazi
           *4.banershi daematos upload image/ da dakecil side menuze gaswordes close texti;
           *5.buttonebis galamazeba /modipicirebashi  ro naxav 10 ajimania gaakete
           *6.oriduqtebshi buttonebs heigh ro searchis xela iyos
-7.katogiriis da seqcia unda gapltros produqtshi + pasis piltri
+          *7.katogiriis da seqcia unda gapltros produqtshi + pasis piltri
 8.produqtshi add ia shesasworebeli;
 9.produqtebs checkbox aq chasaamtebeli shuashi;
 10.KATOGERIABIA SHESACVLELI unda iyos 3 column category name seqcia da raodenoba produqtis  ro naxav 10 ajimania gaakete
@@ -86,7 +86,7 @@ admin
   4
   5 ati ajiamania mexcutedan gadadis 3 shi
   6
-7
+  7
 10
   11
   12

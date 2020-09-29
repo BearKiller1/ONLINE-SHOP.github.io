@@ -82,7 +82,7 @@
         </button>
 
 
-      </div><br>
+      </div>
         <!-- add posts -->
       <div class="product_space " id='create_post'>
             <form  class="w3-container add_post" id="upload" action="/action_page.php">
@@ -135,12 +135,28 @@
 
       <!-- gallery -->
       <div class="product_space" id='gallery'>
-        <br>
-        <p class="selectall">ყველას არჩევა
-          <input type="checkbox"  name="select-all" id="select-all" />
-        </p>
-
-
+        <form class="prod-filter" action="index.html" method="post">
+          <p class="selectall">ყველას არჩევა
+            <input type="checkbox"  name="select-all" id="select-all" />
+          </p>
+          <select class="sect-filter w3-blue" name="">
+            <option value="" selected disabled>სექცია</option>
+            <option value="">ბავშვი</option>
+            <option value="">ქალი</option>
+            <option value="">კაცი</option>
+          </select>
+          <select class="category-filter w3-blue" name="">
+            <option value="" selected disabled>კატეგორია</option>
+            <?php
+              for ($i=0; $i < 4; $i++) {
+                echo "<option value=''>ქუდი</option>";
+              }
+            ?>
+          </select>
+          <input type="number"  class="w3-blue" name="" min="0" placeholder="დან">
+          <input type="number"  class="w3-blue" name="" min="0" placeholder="მდე">
+        </form>
+        <div class="prod-list">
           <?php
             for ($i=0; $i < 15; $i++) {
                 echo "<div class='gallery_img w3-blue'><form>
@@ -157,8 +173,7 @@
                         </div>";
             }
           ?>
-
-
+        </div>
       </div>
 
     </div>
@@ -553,7 +568,7 @@
     </div>
 
     <script>
-      slide(2);
+      slide(0);
       var panel_index = 0;
       function Toggle_panel(button){
         button.classList.toggle("change");
