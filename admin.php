@@ -5,28 +5,33 @@
     <title></title>
       <link rel="stylesheet" href="admin.css">
       <link rel="stylesheet" href="style/css.css">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
       <!-- FONTS -->
       <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
       <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+      <!-- FLICKITY FOR CAROUSEL -->
       <script src='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js'>  </script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
 
-
-
+      <!--  -->
       <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
       <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-      <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
+
+      <!-- ICONS -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   </head>
   <body class='w3-animate-opacity'>
     <!-- SIDE MENU -->
@@ -250,56 +255,46 @@
 
         <!-- catalog form -->
         <div class="catalog_class" id="1" style="display:block;">
-          <form action="index.html" method="post">
-            <input type="text" name="" value="" placeholder="ძებნა:"><br>
-          </form>
-
-          <div class="admin_Catalog">
-            <div class="admin_gallery js-flickity"
-              data-flickity-options='{ "wrapAround": true ,"pageDots": true,"autoPlay": 1400 }'>
+          <div class="Admin-Catalog">
+            <div class="Admin-gallery js-flickity"
+            data-flickity-options='{ "wrapAround": true ,"pageDots": false,"autoPlay": 1500 }'>
               <?php
-                $x = 5;
-                for ($i=0; $i < $x; $i++) {
-                  echo "<div class='admin_gallery-cell'>
-                    <img src='source/d".$i.".jpg'>
-                  </div>";
-                  if($i == $x-1){
-                    echo "
-                            <div class='static-banner static-banner1'>Static banner 1</div>
-                            <button id='open_image'>+</button>
-                          ";
-                  }
+                for ($i=0; $i < 12; $i++) {
+                echo "<div class='Admin-gallery-cell'>".$i."
+                         <img src='source/d4.jpg'>
+                      </div>";
                 }
               ?>
             </div>
           </div>
-          <div class='admin_black_div'>
+          <div class="w3-blue New-catalog">
+            <button type="submit" name="button" onclick="addToCatalog()">+</button>
           </div>
-          <div class="admin_prod_list_to_add">
-            <button class="w3-button" id="add_prod_butt">add</button>
-            <button class="w3-button" id="close_products">X</button>
-            <?php
-            for ($i=1; $i < 8; $i++) {
-              echo "
-              <div class='admin_gallery_img' id='open_image'>
-                <input type='checkbox' name=new_prod_int_catalog>
-                <img src='source/d".$i.".jpg'>
-                <h4>Red Dress</h4>
-                <p>$124.99</p>
-              </div>";
-            }
-            ?>
+
+          <div class='dark-bg'></div>
+          <div class="prodGallery">
+            <div class="prodGallery-sticky">
+              <button class="w3-button" id="add_prod_butt">+</button>
+              <input type="text" name='' placeholder="ძიება">
+              <button class="w3-button" id='close_products' onclick="addToCatalog()">X</button>
             </div>
+            <?php
+              for ($i=1; $i < 18; $i++) {
+              echo "
+                <div class='prodGallery-cell' >
+                  <input type='checkbox' name=''>
+                  <img src='source/d4.jpg'>
+                  <h4>Red Dress</h4>
+                  <p>$124.99</p>
+                </div>";
+              }
+            ?>
+          </div>
           <script>
-            $("#open_image").click(function(){
-              $(".admin_prod_list_to_add").show();
-              jQuery('.admin_prod_list_to_add').css('opacity', '1');
-              $(".admin_black_div").show();
-            });
-            $("#close_products").click(function(){
-              $(".admin_prod_list_to_add").hide();
-              $(".admin_black_div").hide();
-            });
+            function addToCatalog(){
+              $(".dark-bg").toggle();
+              $(".prodGallery").toggle();
+            }
           </script>
 
         </div>
@@ -577,7 +572,7 @@
     </div>
 
     <script>
-      slide(1);
+      slide(2);
       var panel_index = 0;
       function Toggle_panel(button){
         button.classList.toggle("change");
@@ -667,15 +662,15 @@
       //
       // es ari caruselshi damatebis scripti
       //
-            $("#open_image").click(function(){
-                $(".admin_prod_list_to_add").show();
-                jQuery('.admin_prod_list_to_add').css('opacity', '1');
-                $(".admin_black_div").show();
-              });
-              $("#close_products").click(function(){
-                $(".admin_prod_list_to_add").hide();
-                $(".admin_black_div").hide();
-              });
+            // $("#open_image").click(function(){
+            //     $(".admin_prod_list_to_add").show();
+            //     jQuery('.admin_prod_list_to_add').css('opacity', '1');
+            //     $(".admin_black_div").show();
+            //   });
+            //   $("#close_products").click(function(){
+            //     $(".admin_prod_list_to_add").hide();
+            //     $(".admin_black_div").hide();
+            //   });
     </script>
 
   </body>
