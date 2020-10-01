@@ -28,10 +28,10 @@
     <div class="Header w3-light-gray">
       <img src="https://rb.gy/mkquhl" alt="Logo">
       <a href="index.php"> მთავარი </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-      <a href="#product"> პროდუქტი </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-      <a href="#lokacia"> ლოკაცია </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-      <a href="#kontaqti"> კონტაქტი </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-      <a href="#shesaxeb"> შესახებ </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <a href="index.php#product"> პროდუქტი </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <a href="index.php#lokacia"> ლოკაცია </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <a href="index.php#kontaqti"> კონტაქტი </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <a href="index.php#shesaxeb"> შესახებ </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
       <div class="dark-button" id="mode">
         <i class='fas fa-moon night-mode ' id="moon"></i>
       </div>
