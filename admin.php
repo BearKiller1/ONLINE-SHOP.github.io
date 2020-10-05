@@ -83,7 +83,7 @@
         </button>
 
         <button class="w3-button add_butt  w3-blue" onclick="clear()" id='close_upload'>
-          <i style="" class="fa">&#xf014;</i>
+          <i style="" class="fa fa-trash"></i>
         </button>
 
 
@@ -275,16 +275,21 @@
           <div class='dark-bg'></div>
           <div class="prodGallery">
             <div class="prodGallery-sticky">
-              <button class="w3-button" id="add_prod_butt">+</button>
+              <button class="w3-button w3-blue" onclick="toggleshow('create_post');" id='add_prod_butt'>
+                <i class='fas fa-plus'></i>
+              </button>
               <input type="text" name='' placeholder="ძიება">
-              <button class="w3-button" id='close_products' onclick="addToCatalog()">X</button>
+              <button class="w3-button w3-blue" id='close_products' onclick="addToCatalog()">
+                <i class='fas fa-times'></i>
+              </button>
+              <!-- <button class="w3-button" id='close_products' >X</button> -->
             </div>
             <?php
               for ($i=1; $i < 18; $i++) {
               echo "
                 <div class='prodGallery-cell' >
                   <input type='checkbox' name=''>
-                  <img src='source/d4.jpg'>
+                  <img src='https://micoedward.com/wp-content/uploads/2018/04/Love-your-product.png'>
                   <h4>Red Dress</h4>
                   <p>$124.99</p>
                 </div>";
@@ -297,7 +302,6 @@
               $(".prodGallery").toggle();
             }
           </script>
-
         </div>
 
         <!-- location form -->

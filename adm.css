@@ -551,7 +551,6 @@ body{
         height:6vh;
         margin-left:30%;
       }
-<<<<<<< HEAD:admin.css
 /* catalog css */
     .New-catalog{
       text-align: center;
@@ -569,200 +568,212 @@ body{
       color:white;
       font-size:8vw;
     }
-=======
     /* catalog css */
     .catalog_class {
       }
-      .catalog_class input[type="text"]::placeholder{
-        color:#eee;
-      }
-      .catalog_class input[type="text"]{
-        padding-left: 10px;
-        margin:5% 0 0 25%;
-        border-radius:3px;
-        border:0;
-        background-color: #2196F3;
-        color:white;
-        width:50%;
-        height:6vh;
-        font-size:1.4vw;
-      }
-      /* THIS IS CATALOG CSS */
-      .admin_gallery-cell {
-        width: 20%;
-        height: 33vh;
-        background-color: black;
-        counter-increment: gallery-cell;
-        margin: 5% 0 0 0;
-      }
+        .New-catalog{
+          text-align: center;
+          font-size:5vw;
+          width:15%;
+          height: 33vh;
+          float:left;
+          margin:1% 0 0 0;
+        }
+        .New-catalog button{
+          background-color:#2196F3;
+          border:0;
+          outline:0;
+          cursor:pointer;
+          color:white;
+          font-size:8vw;
+        }
 
-      .js-flickity{
-        width: 98%;
-        margin-left: 1%;
-      }
+          /* THIS IS CATALOG CSS */
+          .admin_gallery-cell {
+            width: 20%;
+            height: 33vh;
+            background-color: black;
+            counter-increment: gallery-cell;
+            margin: 5% 0 0 0;
+          }
 
-      .static-banner {
-        position: absolute;
-        background: hsla(0, 0%, 0%, 0.3);
-        z-index: 1;
-        padding: 2px 20px;
-        font-size: 26px;
-        color: white;
-        pointer-events: none;
-      }
+          .js-flickity{
+            width: 98%;
+            margin-left: 1%;
+          }
 
-      .static-banner1 {
-        left: 10px;
-        top: 10px;
-      }
+          .static-banner {
+            position: absolute;
+            background: hsla(0, 0%, 0%, 0.3);
+            z-index: 1;
+            padding: 2px 20px;
+            font-size: 26px;
+            color: white;
+            pointer-events: none;
+          }
 
-      .admin_gallery-cell img {
-        width: 100%;
-        height: 33vh;
-      }
+          .static-banner1 {
+            left: 10px;
+            top: 10px;
+          }
 
-      .admin_add_prod_to_catalog {
-        margin-top: 5%;
-        width: 20%;
-        height: 33vh;
-        cursor: pointer;
-        background: #C2C2C2;
-        text-align: center;
-      }
+          .admin_gallery-cell img {
+            width: 100%;
+            height: 33vh;
+          }
 
-      .admin_add_prod_to_catalog button {
-        font-size: 5vw;
-        background: #C2C2C2;
-        margin: 14% 0 0 0%;
-        border: none;
-        height: 60%;
-        width: 50%;
-        border-radius: 100px;
-        transition: 0.5s;
-      }
+          .admin_add_prod_to_catalog {
+            margin-top: 5%;
+            width: 20%;
+            height: 33vh;
+            cursor: pointer;
+            background: #C2C2C2;
+            text-align: center;
+          }
 
-      .admin_add_prod_to_catalog button:hover {
-        border-radius: 100px;
-        background: white;
-      }
+          .admin_add_prod_to_catalog button {
+            font-size: 5vw;
+            background: #C2C2C2;
+            margin: 14% 0 0 0%;
+            border: none;
+            height: 60%;
+            width: 50%;
+            border-radius: 100px;
+            transition: 0.5s;
+          }
 
-      .admin_flickity-prev-next-button {
-        display: inline-block;
-        margin: 2.5% 0 0 0;
-      }
->>>>>>> d2538d77011ae7a8ee7e7576c95282e95b229729:adm.css
+          .admin_add_prod_to_catalog button:hover {
+            border-radius: 100px;
+            background: white;
+          }
 
-    .Admin-Catalog{
-      margin:1% 0 0 1%;
-      width:83%;
-      background-color: black;
-      float:left;
-    }
-    .Admin-gallery{
-    }
-    .tes{
-      float:left;
-      width:20%;
-      height:33vh;
-      background-color:blue;
-    }
-    .Admin-gallery-cell {
-      width: 20%;
-      height: 33vh;
-      right:0;
-      opacity:0.3;
-      background-color: red;
-      counter-increment: gallery-cell;
-    }
-    .Admin-gallery-cell img {
-      display: none;
-      width: 100%;
-      height: 33vh;
-    }
-    .Admin-flickity-prev-next-button {
-      display: inline-block;
-      margin: 1.5% 0 0 0;
-    }
+          .admin_flickity-prev-next-button {
+            display: inline-block;
+            margin: 2.5% 0 0 0;
+          }
 
-    .dark-bg {
-      background-color: black;
-      top: 0;
-      display: none;
-      width: 100%;
-      height:100vh;
-      opacity: 1;
-      position: absolute;
-      opacity: 0.6;
-    }
 
-    .prodGallery {
-      position: absolute;
-      overflow: scroll;
-      top: 2.5vh;
-      height: 90vh;
-      display: none;
-      width: 71%;
-      border-radius: 9px;
-      background: red;
-      margin-left: 5%;
-      z-index: 1;
-    }
+        .Admin-Catalog{
+          margin:1% 0 0 1%;
+          width:83%;
+          background-color: black;
+          float:left;
+        }
+        .Admin-gallery{
+        }
+        .tes{
+          float:left;
+          width:20%;
+          height:33vh;
+          background-color:blue;
+        }
+        .Admin-gallery-cell {
+          width: 20%;
+          height: 33vh;
+          right:0;
+          opacity:0.3;
+          background-color: red;
+          counter-increment: gallery-cell;
+        }
+        .Admin-gallery-cell img {
+          display: none;
+          width: 100%;
+          height: 33vh;
+        }
+        .Admin-flickity-prev-next-button {
+          display: inline-block;
+          margin: 1.5% 0 0 0;
+        }
 
-    .prodGallery-sticky input{
-      width:40%;
-      height:6vh;
-      margin:0.5% 0 0 30%;
-    }
-    .prodGallery-sticky{
-      width:100%;
-      height:8vh;
-      background-color: #eee;
-      position: sticky;
-      top:0;
-    }
-    .prodGallery::-webkit-scrollbar{
-      display: none;
-    }
-    .prodGallery button {
-      position: absolute;
-      top:1vh;
-      background-color:#cbcbcb;
-      border-radius: 10px;
-    }
-    #add_prod_butt {
-      left: 2vw;
-    }
-    #close_products {
-      right: 2vw;
-    }
+        .dark-bg {
+          background-color: black;
+          top: 0;
+          display: none;
+          width: 100%;
+          height:100vh;
+          opacity: 1;
+          position: absolute;
+          opacity: 0.6;
+        }
 
-    .prodGallery-cell {
-      float:left;
-      margin: 5% 2.5% 0 2.5%;
-      width: 20%;
-      height: 33vh;
-      cursor: pointer;
-      background: #eee;
-      text-align: center;
-    }
-    .prodGallery-cell img{
-      width:100%;
-      height:33vh;
-    }
-    .prodGallery-cell button {
-      font-size: 5vw;
-      background: #C2C2C2;
-      margin: 14% 0 0 0%;
-      border: none;
-      height: 5vh%;
-      width: 5vw;
-      border-radius: 100px;
-      transition: 0.5s;
-    }
-    .prodGallery-cell button:hover {
-      border-radius: 100px;
-      background: white;
-    }
+        .prodGallery {
+          position: absolute;
+          overflow: scroll;
+          top: 2.5vh;
+          height: 90vh;
+          display: none;
+          width: 71%;
+          border-radius: 9px;
+          background-color: #2196F3;
+          margin-left: 5%;
+          z-index: 1;
+        }
+        .prodGallery-sticky input[type="text"]::placeholder{
+          color:#eee;
+        }
+        .prodGallery-sticky input{
+          padding-left: 10px;
+          margin:1vh 0 0 25%;
+          border-radius:3px;
+          border:0;
+          background-color: #2196F3;
+          outline:0;
+          color:white;
+          width:50%;
+          height:6vh;
+          font-size:1.4vw;
+        }
+        .prodGallery-sticky{
+          width:100%;
+          height:8vh;
+          background-color: #eee;
+          position: sticky;
+          top:0;
+        }
+        .prodGallery::-webkit-scrollbar{
+          display: none;
+        }
+        .prodGallery button {
+          position: absolute;
+          top:1vh;
+          background-color:#cbcbcb;
+          border-radius: 10px;
+        }
+        #add_prod_butt {
+            left:2vw;
+        }
+        #close_products {
+            right:2vw;
+        }
+
+        .prodGallery-cell {
+          border-radius:7px;
+          float:left;
+          margin: 3% 2.5% 0 2.5%;
+          width: 20%;
+          height: 43vh;
+          cursor: pointer;
+          background: #eee;
+          text-align: center;
+        }
+        .prodGallery-cell img{
+          width:100%;
+          height:25vh;
+        }
+        /* .prodGallery-cell button {
+          font-size: 5vw;
+          background: red;
+          margin: 14% 0 0 0%;
+          border: none;
+          height: 5vh%;
+          width: 5vw;
+          border-radius: 100px;
+          transition: 0.5s;
+        }
+        .prodGallery-cell button:hover {
+          border-radius: 100px;
+          background: white;
+        } */
 
     /* location css */
     .location_class{
