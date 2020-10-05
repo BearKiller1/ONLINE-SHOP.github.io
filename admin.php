@@ -120,7 +120,8 @@
 
                      </table>
                  </div>
-              <div class='upload'>
+
+              <div class='upload_product'>
                 <input style='display:none;'id="upload-but" type="file">
                   <label for="upload-but">
                     <img src="source/upload.png">

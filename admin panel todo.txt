@@ -29,7 +29,7 @@ admin
 1 - done
 2 - kinda done
 3 - ragaceebi darcha
-8 - done
+8 - 
 9 - done
 ----
 index
