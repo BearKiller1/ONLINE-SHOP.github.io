@@ -82,7 +82,7 @@
         <input type="text" name="name" placeholder="სახელი" value=""><br>
         <input type="text" name="mail" placeholder="ელ. ფოსტა" value=""><br>
         <textarea type="text" name="description" placeholder="აღწერა" value=""></textarea>
-        <br><br>
+        <br>
         <p><button class="w3-button w3-round-large ">შემდეგი</button>
       </form>
     </div>
