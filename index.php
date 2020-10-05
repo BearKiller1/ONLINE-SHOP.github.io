@@ -5,7 +5,7 @@
     <title>Web 01</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -17,11 +17,11 @@
   <body id="body">
     <div class="Header w3-light-gray">
       <img src="https://rb.gy/mkquhl" alt="Logo">
-      <a href="index.php"> მთავარი </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-      <a href="product.php"> პროდუქტი </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-      <a href="index.php#lokacia"> ლოკაცია </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-      <a href="index.php#kontaqti"> კონტაქტი </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-      <a href="index.php#shesaxeb"> შესახებ </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <a href="index.php"> მთავარი </a>
+      <a href="product.php"> პროდუქტი </a>
+      <a href="index.php#lokacia"> ლოკაცია </a>
+      <a href="index.php#kontaqti"> კონტაქტი </a>
+      <a href="index.php#shesaxeb"> შესახებ </a>
 
       <div class="dark-button" id="mode">
         <i class='fas fa-moon night-mode ' id="moon"  onclick="nightMode()"></i>
@@ -106,20 +106,23 @@
            აირჩიე C
         </div>
         <img src="source/desc1.jpg" alt="retail store">
-    </div>
+    </div><br><br>
 
     <div class="Footer">
-      <h5>
-        <a class='fa fa-address-card-o'>სულხან კვერნაძის 33ა</a></i><br>
+      <div class="fleft">
+        <a class='fa fa-address-card-o'>სულხან კვერნაძის 33ა</a><br>
         <a class='fa fa-address-card-o'>GroupC@mail.com</a><br>
         <a class='fa fa-address-card-o'>555 555 555</a><br>
-      </h5>
-      <br><br>
-      <i class='fab fa-facebook fb'></i>
-      <i class='fab fa-instagram inst'></i>
-      <i class='fab fa-twitter twitter'></i><br>
-      <h2>𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 𝗨𝗗</h2><br>
-      <p>©GROUP C &nbsp All rights reserved</p>
+      </div>
+      <div class="fcenter">
+        <i class='fab fa-facebook fb'></i>
+        <i class='fab fa-instagram inst'></i>
+        <i class='fab fa-twitter twitter'></i><br>
+        <h2>𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 𝗨𝗗</h2>
+      </div>
+      <div class="fright">
+        <p >©GROUP C &nbsp All rights reserved</p>
+      </div>
     </div>
 
     <script>
