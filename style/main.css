@@ -102,10 +102,12 @@ body{
       color:black;
       right:0;
       top:7vh;
-      width: 7.5%;
+      width: 7.8%;
       background: #F1F1F1;
       text-align: center;
       display: none;
+      border-bottom:0.5px solid black;
+      border-left:0.5px solid black;
   }
 
   .all_lang a{

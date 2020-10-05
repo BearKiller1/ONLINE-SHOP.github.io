@@ -115,7 +115,7 @@
 #opacity_back{
   display: none;
 }
-html .big_black_div{
+.big_black_div{
   display: none;
   position: absolute;
   left:0;
