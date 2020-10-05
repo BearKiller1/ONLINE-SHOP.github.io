@@ -582,20 +582,20 @@ body{
         margin-left: 1%;
       }
 
-.static-banner {
-  position: absolute;
-  background: hsla(0, 0%, 0%, 0.3);
-  z-index: 1;
-  padding: 2px 20px;
-  font-size: 26px;
-  color: white;
-  pointer-events: none;
-}
+      .static-banner {
+        position: absolute;
+        background: hsla(0, 0%, 0%, 0.3);
+        z-index: 1;
+        padding: 2px 20px;
+        font-size: 26px;
+        color: white;
+        pointer-events: none;
+      }
 
-.static-banner1 {
-  left: 10px;
-  top: 10px;
-}
+      .static-banner1 {
+        left: 10px;
+        top: 10px;
+      }
 
       .admin_gallery-cell img {
         width: 100%;
@@ -693,32 +693,50 @@ body{
         width: 100%;
       }
       .Description_admin{
-        margin:0 0 0 0;
         width:100%;
         height:40vh;
         font-size: 1.7vw;
+        text-align: center;
+        margin: 7vh 0 0 0;
       }
-      .desc-text{
-        float:right;
-        width:50%;
+      .descr_left h3{
+        margin-top: 10vh;
+        width: 68%;
+        height: 20vh;
+        float: left;
       }
-      .Description_admin img{
+      .descr_left img{
           width:30%;
           height: 40vh;
           float: left;
+          margin-left: 2%;
+      }
+      .descr_right{
+          display: none;
+      }
+      .descr_right h3{
+        margin-top: 10vh;
+        width: 68%;
+        height: 20vh;
+        float: right;
+      }
+      .descr_right img{
+        height: 40vh;
+        width: 30%;
+        float: right;
+        margin-right: 2%;
       }
       .decription_form{
         text-align: center;
       }
-      .decription_form img{
-        margin-left:0;
-
+      .upload{
+        margin:7vh 0 0 34vw;
       }
       .description_input{
-        position: relative;
+        position: absolute;
         width:30%;
         text-align: center;
-        margin-left: 25%;
+        left:45%;
       }
       .decription_form button{
         width:10%;
@@ -771,16 +789,6 @@ body{
       .slider.round:before {
         border-radius: 50%;
       }
-
-      .description1{
-        display: block;
-      }
-      .description2{
-        display: inline;
-        float: left;
-        display: none;
-      }
-
     #banner_form,#location_form,#description_form,#catalog_form{display: none;margin:3% 0 0 5%;}
 
 /* ANALYTICS */
