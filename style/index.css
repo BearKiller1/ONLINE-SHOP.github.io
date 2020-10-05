@@ -97,6 +97,26 @@ body{
     margin:0 1vw 0 3vw;
   }
 
+  .all_lang{
+      position: absolute;
+      color:black;
+      right:0vw;
+      top:7vh;
+      width: 8%;
+      background: #eee;
+      text-align: center;
+      display: none;
+  }
+
+  .all_lang a{
+    font-size:1.8vw;
+    float: left;
+    margin-left: 30%;
+  }
+
+  .all_lang:last-child{
+
+  }
   .dark-button {
     right:13vw;
     top:2vh;

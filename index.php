@@ -5,7 +5,7 @@
     <title>Web 01</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style/css.css">
+    <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -27,7 +27,11 @@
         <i class='fas fa-moon night-mode ' id="moon"  onclick="nightMode()"></i>
       </div>
 
-      <div class="lang"><a href='#'> KA </a></div>
+      <div class="lang" id="show_lang"><a href='#'> KA </a></div>
+      <div class="all_lang">
+        <a href="#"> ENG </a>
+        <a href="#"> RUS </a>
+      </div>
     </div>
 
     <!-- MAIN -->
@@ -140,6 +144,13 @@
       }).mouseout(function(event) {
         $('.Poster').css("opacity","0.9");
       });;
+
+      // language toggle down
+      $(document).ready(function(){
+        $(".lang").click(function(){
+          $(".all_lang").slideToggle();
+        });
+      });
     </script>
   </body>
 </html>
