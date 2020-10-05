@@ -59,7 +59,7 @@ productebis searchi iyos lamazi
           13.side menushi x aris shesacvleli da mand unda gadavides logout iconi  ro naxav 10 ajimania gaakete
 ================================
           INDEX PAGE
-1. night mode
+          *1. night mode
 2.languages drop down unda iyos
 3.carouselshi ptotebi chavamatot ro naxav 10 ajimania gaakete
 

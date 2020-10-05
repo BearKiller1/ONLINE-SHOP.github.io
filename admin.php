@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-      <link rel="stylesheet" href="admin.css">
+      <link rel="stylesheet" href="adm.css">
       <link rel="stylesheet" href="style/css.css">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -322,7 +322,6 @@
 
         <!-- description form -->
         <div class="description_class" id='3' style="display:none;">
-
           <form action="index.php" class="decription_form" method="post">
             <label class="switch">
               <input type="checkbox" id="description_check" style="display:none;">
@@ -335,28 +334,24 @@
                 </label>
             </div>
             <br>
-            <input class="description1 description_input" style="margin-left:35%;"type="text" name="" value="" placeholder=" მარჯვენა-ტექსტი">
-            <input class="description2 description_input" style="margin-left:35%;" type="text" name="" value="" placeholder=" მარცხენა-ტექსტი">
+            <input class="description1 description_input" type="text" name="" value="" placeholder=" მარჯვენა-ტექსტი">
+            <input class="description2 description_input" type="text" name="" value="" placeholder=" მარცხენა-ტექსტი">
             <br><br>
             <button type="submit" name="button">შეცვლა</button>
           </form>
 
-            <div class="Description_admin description1">
+            <div class="Description_admin description1 descr_left">
               <img src="source/desc2.jpg" alt="retail store">
-                <div class="desc-text">
-                  • სულხან კვერნაძის 33ა<br>
+                  <h3>• სულხან კვერნაძის 33ა<br>
                   • საუკეთესო ხარისხის ტანისამოსი,<br>
-                    ფეხსაცმელი  და აქსესუარები
-                </div>
+                    ფეხსაცმელი  და აქსესუარები</h3>
             </div>
 
-            <div class="Description_admin description2">
-              <div class="desc-text">
-                 • ჩვენ ვართ საქართველოში <br>ოფიციალური
-                 წარმომადგენლები<br> უცხოური ბრენდების
-                 აირჩიე C
-              </div>
+            <div class="Description_admin description2 descr_right">
               <img src="source/desc1.jpg" alt="retail store">
+                <h3>• ჩვენ ვართ საქართველოში <br>ოფიციალური
+                 წარმომადგენლები<br> უცხოური ბრენდების
+                 აირჩიე C</h3>
             </div>
 
         </div>

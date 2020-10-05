@@ -178,12 +178,12 @@ body{
       height:70vh;
       display: inline;
     }
-    .upload{
+    .upload_product{
       width:15%;
       height: 15vh;
       margin:25vh 0 0 25%;
     }
-    .upload img{
+    .upload_product img{
       cursor: pointer;
       width:100%;
       height: 15vh;
@@ -551,6 +551,7 @@ body{
         height:6vh;
         margin-left:30%;
       }
+<<<<<<< HEAD:admin.css
 /* catalog css */
     .New-catalog{
       text-align: center;
@@ -568,6 +569,88 @@ body{
       color:white;
       font-size:8vw;
     }
+=======
+    /* catalog css */
+    .catalog_class {
+      }
+      .catalog_class input[type="text"]::placeholder{
+        color:#eee;
+      }
+      .catalog_class input[type="text"]{
+        padding-left: 10px;
+        margin:5% 0 0 25%;
+        border-radius:3px;
+        border:0;
+        background-color: #2196F3;
+        color:white;
+        width:50%;
+        height:6vh;
+        font-size:1.4vw;
+      }
+      /* THIS IS CATALOG CSS */
+      .admin_gallery-cell {
+        width: 20%;
+        height: 33vh;
+        background-color: black;
+        counter-increment: gallery-cell;
+        margin: 5% 0 0 0;
+      }
+
+      .js-flickity{
+        width: 98%;
+        margin-left: 1%;
+      }
+
+      .static-banner {
+        position: absolute;
+        background: hsla(0, 0%, 0%, 0.3);
+        z-index: 1;
+        padding: 2px 20px;
+        font-size: 26px;
+        color: white;
+        pointer-events: none;
+      }
+
+      .static-banner1 {
+        left: 10px;
+        top: 10px;
+      }
+
+      .admin_gallery-cell img {
+        width: 100%;
+        height: 33vh;
+      }
+
+      .admin_add_prod_to_catalog {
+        margin-top: 5%;
+        width: 20%;
+        height: 33vh;
+        cursor: pointer;
+        background: #C2C2C2;
+        text-align: center;
+      }
+
+      .admin_add_prod_to_catalog button {
+        font-size: 5vw;
+        background: #C2C2C2;
+        margin: 14% 0 0 0%;
+        border: none;
+        height: 60%;
+        width: 50%;
+        border-radius: 100px;
+        transition: 0.5s;
+      }
+
+      .admin_add_prod_to_catalog button:hover {
+        border-radius: 100px;
+        background: white;
+      }
+
+      .admin_flickity-prev-next-button {
+        display: inline-block;
+        margin: 2.5% 0 0 0;
+      }
+>>>>>>> d2538d77011ae7a8ee7e7576c95282e95b229729:adm.css
 
     .Admin-Catalog{
       margin:1% 0 0 1%;
@@ -697,32 +780,56 @@ body{
         width: 100%;
       }
       .Description_admin{
-        margin:0 0 0 0;
         width:100%;
         height:40vh;
         font-size: 1.7vw;
+        text-align: center;
+        margin: 7vh 0 0 0;
       }
-      .desc-text{
-        float:right;
-        width:50%;
+      .descr_left h3{
+        margin-top: 10vh;
+        width: 68%;
+        height: 20vh;
+        float: left;
       }
-      .Description_admin img{
+      .descr_left img{
           width:30%;
           height: 40vh;
           float: left;
+          margin-left: 2%;
+      }
+      .descr_right{
+          display: none;
+      }
+      .descr_right h3{
+        margin-top: 10vh;
+        width: 68%;
+        height: 20vh;
+        float: right;
+      }
+      .descr_right img{
+        height: 40vh;
+        width: 30%;
+        float: right;
+        margin-right: 2%;
       }
       .decription_form{
         text-align: center;
       }
-      .decription_form img{
-        margin-left:0;
-
+      .upload{
+        margin:7vh 0 0 40%;
+        height: 15vh;
+        width: 20%;
+      }
+      .upload img{
+        height: 15vh;
+        width: 100%;
       }
       .description_input{
-        position: relative;
+        position: absolute;
         width:30%;
         text-align: center;
-        margin-left: 25%;
+        left:45%;
       }
       .decription_form button{
         width:10%;
@@ -775,16 +882,6 @@ body{
       .slider.round:before {
         border-radius: 50%;
       }
-
-      .description1{
-        display: block;
-      }
-      .description2{
-        display: inline;
-        float: left;
-        display: none;
-      }
-
     #banner_form,#location_form,#description_form,#catalog_form{display: none;margin:3% 0 0 5%;}
 
 /* ANALYTICS */
