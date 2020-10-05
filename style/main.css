@@ -100,10 +100,10 @@ body{
   .all_lang{
       position: absolute;
       color:black;
-      right:0vw;
+      right:0;
       top:7vh;
-      width: 8%;
-      background: #eee;
+      width: 7.5%;
+      background: #F1F1F1;
       text-align: center;
       display: none;
   }

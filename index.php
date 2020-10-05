@@ -5,7 +5,7 @@
     <title>Web 01</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -17,17 +17,17 @@
   <body id="body">
     <div class="Header w3-light-gray">
       <img src="https://rb.gy/mkquhl" alt="Logo">
-      <a href="#mtavari"> მთავარი </a>
-      <a href="product.php"> პროდუქტი </a>
-      <a href="#lokacia"> ლოკაცია </a>
-      <a href="#kontaqti"> კონტაქტი </a>
-      <a href="#shesaxeb"> შესახებ </a>
+      <a href="index.php"> მთავარი </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <a href="product.php"> პროდუქტი </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <a href="index.php#lokacia"> ლოკაცია </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <a href="index.php#kontaqti"> კონტაქტი </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <a href="index.php#shesaxeb"> შესახებ </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 
-      <div class="dark-button">
+      <div class="dark-button" id="mode">
         <i class='fas fa-moon night-mode ' id="moon"  onclick="nightMode()"></i>
       </div>
 
-      <div class="lang" id="show_lang"><a href='#'> KA </a></div>
+      <div class="lang"><a href='#'> KA </a></div>
       <div class="all_lang">
         <a href="#"> ENG </a>
         <a href="#"> RUS </a>
