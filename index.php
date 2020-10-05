@@ -148,7 +148,7 @@
       // language toggle down
       $(document).ready(function(){
         $(".lang").click(function(){
-          $(".all_lang").slideToggle();
+          $(".all_lang").slideToggle("slow");
         });
       });
     </script>
