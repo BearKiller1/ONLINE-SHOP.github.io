@@ -36,6 +36,10 @@
         <i class='fas fa-moon night-mode ' id="moon"></i>
       </div>
       <div class="lang"><a href='#'> KA </a></div>
+      <div class="all_lang">
+        <a href="#"> ENG </a>
+        <a href="#"> RUS </a>
+      </div>
     </div>
 
     <div id="side_menu">
@@ -126,6 +130,12 @@
         $("#opacity_back").hide();
       });
 
+      // language toggle down
+      $(document).ready(function(){
+        $(".lang").click(function(){
+          $(".all_lang").slideToggle();
+        });
+      });
     </script>
   </body>
 </html>
