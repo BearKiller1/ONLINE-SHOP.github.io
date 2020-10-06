@@ -27,17 +27,20 @@
         <i class='fas fa-moon night-mode ' id="moon"  onclick="nightMode()"></i>
       </div>
 
-      <div class="lang"><a href='#'> KA </a></div>
-      <div class="all_lang">
-        <a href="#"> ENG </a>
-        <a href="#"> RUS </a>
+      <div class="line"></div>
+      <div class="lang">
+        <a href='#'> KA </a>
+        <div class="more-lang">
+          <a href="#"> EN </a>
+          <a href="#"> RU </a>
+        </div>
       </div>
     </div>
 
     <!-- MAIN -->
     <i id ="mtavari"></i>
     <div class="Poster" id="poster">
-      <h1 class='w3-center'>𝒸𝓁𝑜𝓉𝒽</h1>
+      <h1 class='poster-text'>𝒸𝓁𝑜𝓉𝒽</h1>
       <button type="submit" name="button" id="poster_but" >შეძენა</button>
       <form class="Search" action="index.html" method="post">
         <input type="text" name="search" class='search' autocomplete="off" placeholder="ძიება"value="">
@@ -54,7 +57,6 @@
         ?>
       </div>
     </div>
-
     <div class="Catalog">
       <div class="gallery js-flickity"
         data-flickity-options='{ "wrapAround": true ,"pageDots": false,"autoPlay": 1500 }'>
@@ -129,20 +131,23 @@
       // NIGHT MODE
       function nightMode(){
         $('#body').toggleClass('night');
-        $('#logo').attr('src', function(index,attr) {  return attr=='https://rb.gy/mkquhl' ?
+        $('#logo').attr('src', function(index,attr) {return attr=='https://rb.gy/mkquhl' ?
           'https://www.wallpaperflare.com/static/948/854/435/mr-robot-e-corp-evil-corp-evil-wallpaper.jpg':'https://rb.gy/mkquhl';
         });
 
         $('.Header').toggleClass('night');
+        $('.line').toggleClass('white');
+        $('.lang').toggleClass('night');
+        $('.more-lang').toggleClass('night-lang');
         $('#moon').toggleClass('white-moon');
-        $('.lang').toggleClass('night-lang');
 
+        $('.poster-text').toggleClass('glow');
         $('.Poster').toggleClass("white");
         $('.Catalog').toggleClass("night");
         $('.Location').toggleClass("night");
 
-        $('.Contact').toggleClass("white");
         $('.Contact').toggleClass('white-contact');
+        $('.Contact').toggleClass("white");
 
         $('.About').toggleClass("night");
         $('.Footer').toggleClass("white");
@@ -150,17 +155,18 @@
 
       // HOVER POSTER BANNER
       $('#poster_but').mouseover(function(event) {
-        $('.Poster').css("opacity","0.7");
-      }).mouseout(function(event) {
-        $('.Poster').css("opacity","0.9");
-      });;
+          $('.Poster').css("opacity","0.7");
+        }).mouseout(function(event) {
+          $('.Poster').css("opacity","0.9");
+      });
 
       // language toggle down
       $(document).ready(function(){
         $(".lang").click(function(){
-          $(".all_lang").slideToggle("slow");
-        });
-      });
+          $('.lang').hasClass('night') ? $('.lang').toggleClass('night-lang') :   $(this).toggleClass('night');
+          $('.more-lang').toggle("fast");
+        }); });
+
     </script>
   </body>
 </html>
