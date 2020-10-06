@@ -15,9 +15,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   </head>
   <body id="body">
-    <div class="Header w3-light-gray">
-      <img src="https://rb.gy/mkquhl" alt="Logo">
-      <a href="index.php"> მთავარი </a>
+    <div class="Header night-text">
+      <img src="https://rb.gy/mkquhl" alt="Logo" id='logo'>
+      <a href="index.php#mtavari"> მთავარი </a>
       <a href="product.php"> პროდუქტი </a>
       <a href="index.php#lokacia"> ლოკაცია </a>
       <a href="index.php#kontaqti"> კონტაქტი </a>
@@ -127,18 +127,25 @@
 
     <script>
       // NIGHT MODE
-      var night = 0;
       function nightMode(){
         $('#body').toggleClass('night');
-        $('.Header').toggleClass("w3-blue");
+        $('#logo').attr('src', function(index,attr) {  return attr=='https://rb.gy/mkquhl' ?
+          'https://www.wallpaperflare.com/static/948/854/435/mr-robot-e-corp-evil-corp-evil-wallpaper.jpg':'https://rb.gy/mkquhl';
+        });
+
+        $('.Header').toggleClass('night');
+        $('#moon').toggleClass('white-moon');
+        $('.lang').toggleClass('night-lang');
+
         $('.Poster').toggleClass("white");
         $('.Catalog').toggleClass("night");
         $('.Location').toggleClass("night");
+
         $('.Contact').toggleClass("white");
         $('.Contact').toggleClass('white-contact');
+
         $('.About').toggleClass("night");
         $('.Footer').toggleClass("white");
-        $('#moon').toggleClass('my-white');
       }
 
       // HOVER POSTER BANNER

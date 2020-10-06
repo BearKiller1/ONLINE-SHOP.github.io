@@ -1,5 +1,5 @@
 html{scroll-behavior: smooth;}
-body{
+  body{
     margin:0;
     transition: 2s;
     position: absolute;
@@ -13,7 +13,7 @@ body{
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none; /* Non-prefixed version, currently
                         supported by Chrome, Edge, Opera and Firefox */
-  }
+    }
   body a{
     text-decoration: none;
     user-drag: none;
@@ -51,6 +51,8 @@ body{
   }
 
 .Header{
+  background: #eee;
+  color:#5B5B5B;
   z-index: 1;
   user-select: none;
   height: 10vh;
@@ -74,10 +76,8 @@ body{
     box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
     transition: 2s;
   }
-
   .Header a{
     text-decoration: none;
-    color:#5B5B5B;
     font-size: 1.3vw;
     letter-spacing: 2px;
     margin:1% 2.5% 0 3.5%;
@@ -96,7 +96,6 @@ body{
     font-size:1.8vw;
     margin:0 1vw 0 3vw;
   }
-
   .all_lang{
       position: absolute;
       color:black;
@@ -109,15 +108,10 @@ body{
       border-bottom:0.5px solid black;
       border-left:0.5px solid black;
   }
-
   .all_lang a{
     font-size:1.8vw;
     float: left;
     margin-left: 30%;
-  }
-
-  .all_lang:last-child{
-
   }
   .dark-button {
     right:13vw;
@@ -130,10 +124,6 @@ body{
     font-size:2.5vw;
     position: absolute;
     color:#353B48;
-  }
-  .my-white{
-    color:#FFFFFF;
-    transition: 1s;
   }
 
 .Poster{
@@ -162,7 +152,6 @@ body{
     box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
     letter-spacing: 1.5px;
   }
-
   .Poster h4 {
     display: inline-block;
     margin-top:1%;
@@ -170,7 +159,6 @@ body{
   .Poster button:hover{
     background-color: #DBD8D6;
   }
-
   .Poster button:focus{
     outline:0;
   }
@@ -194,13 +182,11 @@ body{
     background-color: white;
     opacity:0.9;
     border:0;
+    outline:0;
     position: absolute;
     text-align: center;
     border-radius: 20px;
     z-index: -1;
-  }
-  .search:focus{
-    outline:0;
   }
   .search-butt{
     color:black;
@@ -209,10 +195,6 @@ body{
     cursor: pointer;
     margin:4.9% 0 0 62%;
     transition: 1s;
-  }
-  .search-butt:hover{
-    transition: 1s;
-    text-decoration: none;
   }
   .search:hover{
     transition: 2s;
@@ -226,9 +208,17 @@ body{
     width: 20%;
     height: 33vh;
     margin-right: 10px;
-    background: gray;
     counter-increment: gallery-cell;
     margin:5% 0 0 0;
+    background-image: url('https://cdn.pixabay.com/photo/2015/09/26/09/08/hipster-958805_960_720.jpg');
+    background-size:100% 33vh;
+    opacity: 0.8;
+    transition: 1s;
+  }
+  .gallery-cell:hover{
+    opacity: 1;
+    transition: 1s;
+    cursor: pointer;
   }
   /* cell number */
   .gallery-cell:before {
@@ -271,10 +261,6 @@ body{
     height:100vh;
     margin:4% 0 0 0;
     transition: 0.5s;
-  }
-  .white-contact{
-    transition: 0.5s;
-    background-image:url('https://cdn.pixabay.com/photo/2017/05/19/06/22/desktop-2325627_960_720.jpg');
   }
   .Contact form{
     -webkit-box-shadow: 9px 6px 9px 2px rgba(0,0,0,0.75);
@@ -351,7 +337,7 @@ body{
     text-align: center;
   }
 
-  .Footer{
+.Footer{
     width:100vw;
     height:32vh;
     background-color: #1C1C1E;
@@ -399,18 +385,16 @@ body{
   }
 
 .nightmode{}
-  .night{
+  .night,   .white input, .white button, .white textarea{
+    transition: 1s;
     background-color:#333;
     color:white;
   }
   .white{
     background-color:#eee;
     color:#333;
+    transition: 1s;
   }
-  .white input,.white button,.white textarea{
-    background-color:#333;
-    color:white;
-  }
-  .white input::placeholder,.white textarea::placeholder,.white .Search a{
-    color:white;
-  }
+  .white input::placeholder, .white textarea::placeholder, .white .Search a, .white-moon, .night-lang{color:white;}
+  .white-contact{background-image:url('https://cdn.pixabay.com/photo/2017/05/19/06/22/desktop-2325627_960_720.jpg');}
+  .night-lang{ border-left: 1px solid white;}
