@@ -66,7 +66,7 @@ html{scroll-behavior: smooth;}
     opacity: 0.8;
     width: 5vw;
     height: 8vh;
-    left:4vw;
+    left:6vw;
     top:1vh;
     position: absolute;
     cursor: pointer;
@@ -410,6 +410,6 @@ html{scroll-behavior: smooth;}
   .white-contact{background-image:url('https://cdn.pixabay.com/photo/2017/05/19/06/22/desktop-2325627_960_720.jpg');}
   .night-lang{
     border-radius: 8px;
-    background: #eee;
+    background-color: #eee;
     color:#333;
   }
