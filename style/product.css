@@ -1,21 +1,48 @@
+body{
+
+}
+/* FILTER  */
 #side_menu{
-  width:17%;
+  background: #FAFAFA;
+  width:18%;
   height:100vh;
-  background-color: aqua;
   position: fixed;
   left:0;
   top:10vh;
+  text-align: center;
+  font-size: 1.6vw;
 }
-.search_prod{
+#side_menu select,#side_menu input, #side_menu button{
+    background: #333;
+    padding-left: 3%;
+    outline: 0;
+    border:0;
+    border-radius: 10px;
+    color:#fff;
+    transition: 1s;
+    margin: 15% 0 0 0;
+    height:6vh;
+  }
+#side_menu select{width:70%;cursor: pointer;}
+#side_menu input[type="number"]::placeholder{color:#fff;}
+#side_menu input[type="number"]{width:30%;font-size:1.4vw;}
+#side_menu button:hover{background-color:#333;color:#fff;transition: 1s;}
+#side_menu button{cursor: pointer;transition: 1s;height: 7vh;}
+
+/* SEARCH */
+.search-product{
+  background: #eee;
+  color:#333;
+  border-radius:7px;
   width: 40%;
-  margin:1% 0 0 30%;
+  margin:1% 0 0 40%;
   height: 7vh;
   text-align: center;
-  border-radius:3px;
 }
-.search_prod input::placeholder{color:white;}
-.search_prod input{
+.search-product input::placeholder{color:#333;}
+.search-product input{
   width: 85%;
+    background: #eee;
   height: 5vh;
   margin:1vh 0 0 0.3vw;
   font-size:1.4vw;
@@ -23,92 +50,46 @@
   outline:0;
   z-index: -1;
 }
-.search_prod i{
+.search-product i{
   margin:1.5% 0 0 0;
   font-size:2vw;
   cursor: pointer;
 }
 
-.select_section{
-  height: 12vh;
-  width: 15vw;
-  margin:5vh 0 0 0;
-  transition: 1s;
-}
-.select_section select{
-  font-size: 1.6vw;
-  width: 100%;
-  height: 6vh;
-  outline:0;
-  border-radius: 10px;
-}
-
-.select_sorting{
-  height: 6vh;
-  width: 15vw;
-  margin:6vh 0 0 0;
-  transition: 1s;
-}
-.select_sorting select{
-  font-size: 1.6vw;
-  width: 100%;
-  height: 6vh;
-  outline:0;
-  border-radius: 10px;
-}
-.price{
-  height: 6vh;
-  width: 100%;
-  margin-top: 10vh;
-}
-.price input{
-  text-align: center;
-  border-radius: 10px;
-  margin-left: 1.5vw;
-  outline:0;
-  height: 5vh;
-  width: 35%;
-}
-.category{
-  margin:5vh 0 0 0 ;
-  width: 100%;
-  font-size: 1.7vw;
-}
-.category select{
-  font-size: 1.6vw;
-  width: 100%;
-  height: 6vh;
-  outline:0;
-  border-radius: 10px;
-}
+/* GALLERY OF PRODUCTS */
 .product_gallery::-webkit-scrollbar{display: none;}
 .product_gallery{
   /* position: relative;
   overflow: scroll; */
   height:88vh;
-  width: 70vw;
-  margin-left: 20%;
+  width: 82%;
+  margin-left: 18%;
 }
 .gallery_img{
-  height: 50vh;
-  width: 15vw;
-  margin: 5vh 0 0 6vw;
+  background: #F9F9F9;
+  cursor: pointer;
+  border-radius: 10px;
+  height: 45vh;
+  width: 20%;
+  margin: 3% 0 0 4%;
   float: left;
-  overflow:hidden;
   text-align: center;
   transition: 0.5s;
   -webkit-box-shadow: 0px -1px 20px -12px rgba(0,0,0,0.75);
 }
 .gallery_img img{
+  border-radius: 8px;
   border:0.5px solid lightgray;
-  height: 40vh;
+  height: 30vh;
   width: 15vw;
+  margin-top:5%;
 }
 .gallery_img:hover{
   -webkit-box-shadow: 5px 5px 16px -4px rgba(0,0,0,0.75);
   -moz-box-shadow: 5px 5px 16px -4px rgba(0,0,0,0.75);
   box-shadow: 5px 5px 16px -5px rgba(0,0,0,0.75);
 }
+
 #image_id{
  display: none;
 }
@@ -125,23 +106,50 @@
   background-color: #333;
   opacity:0.9;
 }
+
 .product_solo{
+  z-index: 10;
+  border-radius:10px;
   text-align: center;
   left:37.5vw;
-  top:15vh;
-  height: 80vh;
+  top:13vh;
+  height: 82vh;
   width: 25vw;
   position: fixed;
   background: #DFDFDF;
 }
 .product_solo img{
-  height: 70vh;
+  border-top-left-radius:10px;
+  border-top-right-radius:10px;
+  height: 65vh;
   width: 25vw;
 }
 .product_solo button{
+  cursor: pointer;
   background:#DFDFDF;
   border:none;
   position: absolute;
   right: 1vw;
   top: 2vh;
 }
+
+.pagination{
+  z-index: -1;
+  position: relative;
+  bottom:0vh;
+  width:50%;
+  left:33%;
+}
+.pagination a {
+  margin: 7% 0 5% 0;
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+.pagination a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+.pagination a:hover:not(.active) {background-color: #ddd;}

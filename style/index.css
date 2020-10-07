@@ -221,7 +221,7 @@ html{scroll-behavior: smooth;}
     margin-right: 10px;
     counter-increment: gallery-cell;
     margin:5% 0 0 0;
-    background-image: url('https://cdn.pixabay.com/photo/2015/09/26/09/08/hipster-958805_960_720.jpg');
+    background-image: url('https://acquatee.s3.us-east-2.amazonaws.com/Empty-Aesthetic-Abstract-Space-Soft-Grunge-Clothing-Shirt-long-sleeved');
     background-size:100% 33vh;
     opacity: 0.8;
     transition: 1s;
