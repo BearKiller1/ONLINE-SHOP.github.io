@@ -13,7 +13,7 @@ body{
   font-size: 1.6vw;
 }
 #side_menu select,#side_menu input, #side_menu button{
-    background: #333;
+    background: #1C1C1E;
     padding-left: 3%;
     outline: 0;
     border:0;
