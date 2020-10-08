@@ -38,7 +38,7 @@
     <div class="Cpanel w3-blue " id='panel'>
       <div class="w3-white pannel_X">
         <button id="logmeout"><i class="fa fa-sign-out"></i></button>
-        <div id="panel_header">Joe</div>
+        <div id="panel_header">ადმინი</div>
         <div class="panel_butt w3-animate-opacity" id="panel_button" onclick="Toggle_panel(this);">
             <div class="bar1"></div>
             <div class="bar2"></div>
@@ -201,7 +201,7 @@
                     <option value="ბავშვი">ბავშვი</option>
                   </select>
                   <button  id="trash" name="button">
-                    <i style="font-size:1.5vw" class="fa">&#xf014;</i>
+                    <i class="fa fa-trash" ></i>
                   </button>
                 </th>
                 <th class="category_header w3-white">
@@ -238,7 +238,7 @@
       </div>
 
         <!-- Banner form -->
-        <div class="banner_class" id="0" style="display:none;">
+        <div class="banner_class" id="0" style="display:block;">
           <form action="index.html" method="post">
             <input type="file" name="f" placeholder=" ფოტო" id="banner_photo">
             <h2>აირჩიე ახალი ბანერი</h2>
@@ -255,14 +255,14 @@
         </div>
 
         <!-- catalog form -->
-        <div class="catalog_class" id="1" style="display:block;">
+        <div class="catalog_class" id="1" style="display:none;">
           <div class="Admin-Catalog">
             <div class="Admin-gallery js-flickity"
             data-flickity-options='{ "wrapAround": true ,"pageDots": false,"autoPlay": 1500 }'>
               <?php
                 for ($i=0; $i < 12; $i++) {
-                echo "<div class='Admin-gallery-cell'>".$i."
-                         <img src='source/d4.jpg'>
+                echo "<div class='Admin-gallery-cell'>
+                         <img src='https://picture-cdn.wheretoget.it/hvdipz-l-610x610-shoes-white+bordeaux-white-nikies-nikes-nike+s-nike+bordeaux-nike+white-trainers-bordeaux-bordeau-nike.jpg'>
                       </div>";
                 }
               ?>
@@ -369,7 +369,7 @@
         <?php
           for ($i=0; $i < 22; $i++) {
             echo "  <div class='inbox'>
-                      <p> davit aqubardia </p>
+                      <p> elon musk </p>
                       <h6 class='time'>9/10/2020</h6>
                     </div> ";
             }
@@ -530,7 +530,6 @@
     <div class="section">
       <div class="account_but_input">
         <form class="" action="index.php" method="post">
-          <button type="button" class="w3-button w3-blue" name="button">გამოსვლა</button>
           <br>
           <h4>შეცვალე მომხმარებლის სახელი</h1>
           <br>
@@ -550,19 +549,19 @@
         <button type="button" class="w3-button w3-blue" name="button">წაშლა</button>
           <ul class="usernames">
             <li class="list">
-              <label>admin01
+              <label>მომხმარებელი 01
                 <input type="checkbox" name="">
                 <span class='check'></span>
               </label>
             </li>
             <li class="list">
-              <label>admin02
+              <label>მომხმარებელი 02
                 <input type="checkbox" name="">
                 <span class='check'></span>
               </label>
             </li>
             <li class="list">
-              <label>admin03
+              <label>მომხმარებელი 03
                 <input type="checkbox" name="">
                 <span class='check'></span>
               </label>
@@ -572,13 +571,13 @@
     </div>
 
     <script>
-      slide(2);
+      slide(0);
       var panel_index = 0;
       function Toggle_panel(button){
         button.classList.toggle("change");
         if(panel_index == 0){
           $('#panel').css("width","5%");
-          $('#panel_words').css("display","none");
+          $('#panel_words').hide();
           $('#panel_button').css("margin","1vh 1vw 0 0");
           $('#panel_icons').css("display","block");
           $('#panel_header').css("display","none");
@@ -589,10 +588,10 @@
         }
         else{
           $('#panel').css("width","19%");
-          $('#panel_words').show(400);
-          $('#panel_button').css("margin","2% 10% 0 0");
+          $('#panel_words').fadeIn(1300);
+          $('#panel_button').css("margin","2% 5% 0 0");
           $('#panel_icons').css("display","none");
-          $('#panel_header').show(350);
+          $('#panel_header').fadeIn(1300);
           $('#logmeout').show(500);
           $('.section').css("width","81vw");
           $('.section').css("margin","0 0 0 19vw");
@@ -604,8 +603,9 @@
         for (var i = 0; i < 5; i++) {
           $("#"+i).hide();
         }
-
+        window.dispatchEvent(new Event('resize')); //fixes flickity resize error
         $('#'+x).slideToggle("slow");
+
       }
 
       function slide(n){

@@ -73,7 +73,7 @@ body{
         height:6vh;
         cursor: pointer;
         z-index: 1;
-        margin:2% 10% 0 0;
+        margin:2% 5% 0 0;
       }
       .bar1, .bar2, .bar3 {
         width: 3vw;
@@ -179,7 +179,7 @@ body{
       display: inline;
     }
     .upload_product{
-      width:15%;
+      width:13%;
       height: 15vh;
       margin:25vh 0 0 25%;
     }
@@ -192,6 +192,7 @@ body{
       width:25%;
       height:7vh;
       margin-top:2vh;
+      outline:0;
     }
     .add_post input[type="number"]{
       width:6vw;
@@ -258,7 +259,6 @@ body{
       text-align: center;
     }
     .selectall{
-      background-color: aqua;
       text-decoration: none;
       font-size:1.6vw;
       text-align: center;
@@ -295,7 +295,7 @@ body{
       margin:2% 0 0 1%;
       width:99%;
       height:69vh;
-      background-color: #eee;
+      background-color: #EFEFEF;
       position: relative;
       overflow: scroll;
     }
@@ -551,23 +551,6 @@ body{
         height:6vh;
         margin-left:30%;
       }
-/* catalog css */
-    .New-catalog{
-      text-align: center;
-      font-size:5vw;
-      width:15%;
-      height: 33vh;
-      float:left;
-      margin:1% 0 0 0;
-    }
-    .New-catalog button{
-      background-color:#2196F3;
-      border:0;
-      outline:0;
-      cursor:pointer;
-      color:white;
-      font-size:8vw;
-    }
     /* catalog css */
     .catalog_class {
       }
@@ -587,102 +570,26 @@ body{
           color:white;
           font-size:8vw;
         }
-
-          /* THIS IS CATALOG CSS */
-          .admin_gallery-cell {
-            width: 20%;
-            height: 33vh;
-            background-color: black;
-            counter-increment: gallery-cell;
-            margin: 5% 0 0 0;
-          }
-
-          .js-flickity{
-            width: 98%;
-            margin-left: 1%;
-          }
-
-          .static-banner {
-            position: absolute;
-            background: hsla(0, 0%, 0%, 0.3);
-            z-index: 1;
-            padding: 2px 20px;
-            font-size: 26px;
-            color: white;
-            pointer-events: none;
-          }
-
-          .static-banner1 {
-            left: 10px;
-            top: 10px;
-          }
-
-          .admin_gallery-cell img {
-            width: 100%;
-            height: 33vh;
-          }
-
-          .admin_add_prod_to_catalog {
-            margin-top: 5%;
-            width: 20%;
-            height: 33vh;
-            cursor: pointer;
-            background: #C2C2C2;
-            text-align: center;
-          }
-
-          .admin_add_prod_to_catalog button {
-            font-size: 5vw;
-            background: #C2C2C2;
-            margin: 14% 0 0 0%;
-            border: none;
-            height: 60%;
-            width: 50%;
-            border-radius: 100px;
-            transition: 0.5s;
-          }
-
-          .admin_add_prod_to_catalog button:hover {
-            border-radius: 100px;
-            background: white;
-          }
-
-          .admin_flickity-prev-next-button {
-            display: inline-block;
-            margin: 2.5% 0 0 0;
-          }
-
-
         .Admin-Catalog{
           margin:1% 0 0 1%;
           width:83%;
           background-color: black;
           float:left;
         }
-        .Admin-gallery{
-        }
-        .tes{
-          float:left;
-          width:20%;
-          height:33vh;
-          background-color:blue;
-        }
         .Admin-gallery-cell {
           width: 20%;
           height: 33vh;
           right:0;
-          opacity:0.3;
           background-color: red;
           counter-increment: gallery-cell;
         }
         .Admin-gallery-cell img {
-          display: none;
           width: 100%;
           height: 33vh;
         }
         .Admin-flickity-prev-next-button {
           display: inline-block;
-          margin: 1.5% 0 0 0;
+          margin: 1% 0 0 0;
         }
 
         .dark-bg {
@@ -760,21 +667,6 @@ body{
           width:100%;
           height:25vh;
         }
-        /* .prodGallery-cell button {
-          font-size: 5vw;
-          background: red;
-          margin: 14% 0 0 0%;
-          border: none;
-          height: 5vh%;
-          width: 5vw;
-          border-radius: 100px;
-          transition: 0.5s;
-        }
-        .prodGallery-cell button:hover {
-          border-radius: 100px;
-          background: white;
-        } */
-
     /* location css */
     .location_class{
         margin:2% 0 0 0;
@@ -784,7 +676,6 @@ body{
       .location_iframe{
         margin:5vh 0 0 0vw;
       }
-
     /* description css */
     .description_class{
         height: 95vh;
@@ -828,9 +719,9 @@ body{
         text-align: center;
       }
       .upload{
-        margin:7vh 0 0 40%;
+        margin:7vh 0 0 44%;
         height: 15vh;
-        width: 20%;
+        width: 13%;
       }
       .upload img{
         height: 15vh;
@@ -969,12 +860,14 @@ body{
 
 /* INBOX */
     .chat_list{
+      font-family: "Sofia";
       position: relative;
       overflow: scroll;
       float:right;
       background-color: #fff;
       width:25%;
       height: 100vh;
+      border-left:7px solid #2196F3;
     }
     .close_class{
       display: none;
@@ -989,7 +882,7 @@ body{
       font-size: 1.2vw;
       cursor: pointer;
       transition: 0.5s;
-      border-bottom: 1px solid #CECECE;
+      border-bottom: 3px solid #2196F3;
       float:right;
     }
     .inbox:hover{
