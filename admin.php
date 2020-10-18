@@ -377,6 +377,7 @@
       </div>
 
       <div class="chat">
+        <div class="w3-container inbox-header">ilon task</div>
         <?php
           for ($i=0; $i < 22; $i++) {
             echo "  <div class='message_arrive'>
@@ -528,46 +529,25 @@
 
     <!-- ACCOUNTS -->
     <div class="section">
-      <div class="account_but_input">
-        <form class="" action="index.php" method="post">
-          <br>
-          <h4>შეცვალე მომხმარებლის სახელი</h1>
-          <br>
-          <input type="text" name="chnage_username" placeholder="&nbsp მომხმარებელი" requered>
-          <h4>შეცვალე მომხმარებლის პაროლი</h1>
-          <br>
-          <input type="text" name="chnage_password" placeholder="&nbsp ახალი აროლი" requered>
-          <br>
-          <h4>გაიმეორე ახალი პაროლი</h1>
-          <br>
-          <input type="text" name="chnage_password" placeholder="&nbsp ახალი პაროლი" requered>
-          <br>
-            <button type="button" class="w3-button w3-blue" name="button">შეცვლა</button>
-        </form>
+      <div class="modify-account">
+        <h3>შექმენი ახალი მომხმარებელი</h3>
+        <input type="text" placeholder="ახალი მომხმარებლის სახელი" name="" >
+        <input type="text" placeholder="ახალი მომხმარებლის პაროლი" name="" >
+        <input type="text" placeholder="გაიმეორე ახალი პაროლი" name="" >
+        <input type="text" placeholder="ახალი მომხმარებლის ელ ფოსტა" name="" >
+        <input type="text" placeholder="დაადასტურე ახლანდელი პაროლით" name="" >
+        <button  class="w3-button w3-blue w3-round" type="button" name="button">შექმნა</button>
       </div>
-      <div class="account_list">
-        <button type="button" class="w3-button w3-blue" name="button">წაშლა</button>
-          <ul class="usernames">
-            <li class="list">
-              <label>მომხმარებელი 01
-                <input type="checkbox" name="">
-                <span class='check'></span>
-              </label>
-            </li>
-            <li class="list">
-              <label>მომხმარებელი 02
-                <input type="checkbox" name="">
-                <span class='check'></span>
-              </label>
-            </li>
-            <li class="list">
-              <label>მომხმარებელი 03
-                <input type="checkbox" name="">
-                <span class='check'></span>
-              </label>
-            </li>
-          </ul>
+      <div class="account-list">
+        <div class="w3-blue account-list-header"></p>მომხმარებლები</p></div>
+          <?php
+            for ($i=0; $i < 41; $i++) {
+              echo "  <p>მომხმარებელი 0".$i."
+                      <input type='checkbox' name=''></p><hr>";
+            }
+          ?>
       </div>
+      <button type="button" class="w3-button w3-blue account-list-button">წაშლა</button>
     </div>
 
     <script>

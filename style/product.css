@@ -13,7 +13,7 @@ body{
   font-size: 1.6vw;
 }
 #side_menu select,#side_menu input, #side_menu button{
-    background-color: #333;
+    background-color: #434343;
     padding-left: 3%;
     outline: 0;
     border:0;
@@ -23,13 +23,16 @@ body{
     height:6vh;
   }
 #side_menu select{width:70%;cursor: pointer;}
-#side_menu input[type="number"]::placeholder{color:#fff;}
+#side_menu input[type="number"]::placeholder{color:#fff;-moz-appearance: textfield;}
+#side_menu input::-webkit-outer-spin-button,
+#side_menu input::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;}
 #side_menu input[type="number"]{width:30%;font-size:1.4vw;}
 #side_menu button:hover{background-color:#333;color:#fff;transition: 1s;}
 #side_menu button{cursor: pointer;transition: 1s;height: 7vh;}
 
 /* SEARCH */
 .search-product{
+  float:left;
   background-color: #eee;
   color:#333;
   border-radius:7px;
@@ -55,6 +58,35 @@ body{
   cursor: pointer;
 }
 
+/* basket */
+#basket:hover{transform:rotate(360deg);transition: 1.3s;}
+#basket{
+  transition: 1.3s;
+  position: fixed;
+    bottom:5vh;
+    right:3vw;
+  cursor: pointer;
+  border-radius: 100px;
+  border:1px solid #333;
+  background-color: #333;
+  color:#fff;
+  width:5%;
+  height:10vh;
+  font-size:2.2vw;
+}
+#basket i{display: inline-block;margin:23% 0 0 20%;}
+.cart{
+  position: fixed;
+  overflow:scroll;
+  border-radius:10px;
+  bottom: 20vh;
+  right:3vh;
+  height:50vh;
+  width:20%;
+  background: #333;
+  display: none;
+}
+
 /* GALLERY OF PRODUCTS */
 .product_gallery::-webkit-scrollbar{display: none;}
 .product_gallery{
@@ -62,19 +94,25 @@ body{
   overflow: scroll; */
   height:88vh;
   width: 82%;
-  margin-left: 18%;
+  margin:5% 0 0 18%;
 }
 .gallery_img{
   background: #F9F9F9;
   cursor: pointer;
   border-radius: 10px;
-  height: 45vh;
+  height: 55vh;
   width: 20%;
   margin: 3% 0 0 4%;
   float: left;
   text-align: center;
   transition: 0.5s;
   -webkit-box-shadow: 0px -1px 20px -12px rgba(0,0,0,0.75);
+}
+.gallery_img button,.gallery_img button{
+  transition: 1s;
+  border-radius: 10px;
+  background:green;
+  color:white;
 }
 .gallery_img img{
   border-radius: 8px;
