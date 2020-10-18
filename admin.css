@@ -1,3 +1,23 @@
+
+@font-face { font-family: menu_font; src: url('Fonts/bold_politika.ttf'); }
+@font-face { font-family: customize; src: url('Fonts/daxrili_wvrili.ttf'); }
+@font-face { font-family: banner_font; src: url('Fonts/daxrili_wvrili.ttf'); }
+@font-face { font-family: banner_change_font; src: url('Fonts/daxrili_wvrili.ttf'); }
+@font-face { font-family: pro_gallery_font; src: url('Fonts/mkrtali_daxveuli.ttf'); }
+@font-face { font-family: location_button; src: url('Fonts/bold_politika.ttf'); }
+@font-face { font-family: location_input; src: url('Fonts/daxrili_wvrili.ttf'); }
+@font-face { font-family: Desc_font; src: url('../Fonts/superman.ttf'); }
+@font-face { font-family: category_font; src: url('../Fonts/erti_zomis_gashlili_wierdo.ttf'); }
+/*
+  erti_zomis_gashlili_wierdo
+  daxrili_wvrili
+  bold
+  dzalian_bold
+  bold_politika
+  mkrtali_grdzeli
+  mkrtali_daxveuli
+  daxveuli
+ */
 body{
     margin:0;
     user-select: none;
@@ -15,7 +35,10 @@ body{
       -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
       box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
     }
-    #panel_header{text-align: center;}
+    #panel_header{
+      text-align: center;
+      font-family: 'Desc_font';
+    }
     .Cpanel:hover{
       transition: 1s;
       -webkit-box-shadow: 5px 0px 14px 0px rgba(0,0,0,0.75);
@@ -58,7 +81,6 @@ body{
     }
     .Cpanel a{
       transition: 1s;
-      font-family: 'Acme';
       letter-spacing: 4px;
       text-decoration: none;
       line-height: 2.6;
@@ -107,7 +129,6 @@ body{
       float:left;
       margin-left:19vw;
       background-color: #eee;
-      /* background-color: #F1F1F1; */
       width:81vw;
       height: 100vh;
       display: none;
@@ -115,7 +136,7 @@ body{
 
 /* PRODUCT */
 
-    /* PRODUCT HEADER PANEL */
+/* PRODUCT HEADER PANEL */
     .add_butt{
       height:7vh;
       float:left;
@@ -127,14 +148,17 @@ body{
       outline:none;
     }
     #close_upload{display: inline;}
-    /* PRODUCT SEARCH */
+/* PRODUCT SEARCH */
     .Search form{
+      font-family: 'Desc_font';
         transition:1s;
         box-sizing: border-box;
         margin-top: 0.5%;
         border-radius: 3px;
         padding: 5px;
     }
+
+    .Search input::placeholder{color:white;}
     .Search input{
       float:left;
       margin-left:13.7%;
@@ -162,8 +186,8 @@ body{
         cursor: pointer;
     }
 
-    /* PRODUCT ADD FORM */
-    #create_post{display: none;}
+/* PRODUCT ADD FORM */
+  #create_post{display: none;}
     .add_post_container{
       border:0;
       outline:0;
@@ -249,8 +273,8 @@ body{
       left: 0;
     }
 
-    /* FILTER FOR PRODUCT GALLERY */
-    .prod-filter option{
+/* FILTER FOR PRODUCT GALLERY */
+  .prod-filter option{
       background-color: white;
       color:#2196f3;
     }
@@ -259,6 +283,7 @@ body{
       text-align: center;
     }
     .selectall{
+      font-family: 'Desc_font';
       text-decoration: none;
       font-size:1.6vw;
       text-align: center;
@@ -290,8 +315,8 @@ body{
       border-radius: 4px;
     }
 
-    /* GALLERY IMG AT PRODUCT */
-    .prod-list{
+/* GALLERY IMG AT PRODUCT */
+  .prod-list{
       margin:2% 0 0 1%;
       width:99%;
       height:69vh;
@@ -338,6 +363,7 @@ body{
       background-color: #2196F3;
     }
     .product_cost p{
+      font-family: 'Desc_font';
       font-size:1.5vw;
       display: inline-block;
       margin-top:1%;
@@ -372,11 +398,10 @@ body{
     #gallery{background-color: #eee;}
 
 /* CATEGORY */
-    .category_table td i{
+  .category_table td i{
       font-size:1.5vw;
     }
     .category_table td{
-      font-family: 'Sofia';
       width:10%;
       z-index: -1;
       font-size:2vw;
@@ -461,8 +486,9 @@ body{
     .category_table input::placeholder{
       color:#eee;
     }
+
 /* CUSTOMIZE */
-    .customize_header{
+  .customize_header{
       height: 10vh;
       width: 100%;
       background-color:white;
@@ -476,6 +502,7 @@ body{
         color:#333;
     }
     .customize{
+      letter-spacing: 2px;
       transition: 1s;
       width:20%;
       height:70%;
@@ -495,6 +522,7 @@ body{
       }
 
       .banner_class input[type="text"]{
+        font-family:'banner_change_font';
         outline:0;
         color:#333;
         border:0;
@@ -508,9 +536,9 @@ body{
         display: none;
       }
       .banner_class h2{
+        font-family: 'banner_font';
         z-index: 15;
         -webkit-font-smoothing: antialiased;
-        font-family: 'Acme';
         letter-spacing: 1px;
         word-spacing:4px;
         color:#2196F3;
@@ -630,6 +658,9 @@ body{
           height:6vh;
           font-size:1.4vw;
         }
+        .prodGallery-cell h4{
+          font-family: 'sofia';
+        }
         .prodGallery-sticky{
           width:100%;
           height:8vh;
@@ -654,6 +685,7 @@ body{
         }
 
         .prodGallery-cell {
+          font-family: 'prod_name_font';
           border-radius:7px;
           float:left;
           margin: 3% 2.5% 0 2.5%;
@@ -673,6 +705,13 @@ body{
         text-align: center;
         width: 100%;
       }
+      .location_class input{
+        font-family:'location_input';
+      }
+      .location_class button{
+        border-radius:20px;
+        font-family:'location_button';
+      }
       .location_iframe{
         margin:5vh 0 0 0vw;
       }
@@ -682,13 +721,14 @@ body{
         width: 100%;
       }
       .Description_admin{
+        font-family: 'Desc_font';
         width:100%;
         height:40vh;
         font-size: 1.7vw;
         text-align: center;
         margin: 7vh 0 0 0;
       }
-      .descr_left h3{
+      .descr_left p{
         margin-top: 10vh;
         width: 68%;
         height: 20vh;
@@ -703,7 +743,7 @@ body{
       .descr_right{
           display: none;
       }
-      .descr_right h3{
+      .descr_right p{
         margin-top: 10vh;
         width: 68%;
         height: 20vh;
@@ -728,16 +768,18 @@ body{
         width: 100%;
       }
       .description_input{
+        font-family: 'customize';
         position: absolute;
         width:30%;
         text-align: center;
         left:45%;
       }
       .decription_form button{
+        font-family:'location_button';
         width:10%;
         background-color: #2196F3;
         color:white;
-        font-size:1.7vw;
+        font-size:1.5vw;
         border:0;
         outline:0;
         border-radius: 3px;
@@ -787,7 +829,7 @@ body{
     #banner_form,#location_form,#description_form,#catalog_form{display: none;margin:3% 0 0 5%;}
 
 /* ANALYTICS */
-    .analytic_table{
+  .analytic_table{
       width:45%;
       float:left;
       margin:3vh 0 0 5%;
@@ -859,7 +901,7 @@ body{
     }
 
 /* INBOX */
-    .inbox-header{
+  .inbox-header{
       font-family: "Sofia";
       font-size:2.3vw;
       position: sticky;
@@ -986,6 +1028,7 @@ body{
       margin-left: 1vw;
     }
     .send_button{
+      font-family: "Desc_font";
       transition: 1s;
       height: 6vh;
       width:15%;
@@ -996,10 +1039,10 @@ body{
       outline:0;
     }
 
-
   /* accounts */
   .account-list::-webkit-scrollbar{display: none;}
     .account-list{
+      font-family:'Desc_font';
         position: relative;
         float:left;
         overflow: scroll;
@@ -1009,6 +1052,7 @@ body{
         background-color: white;
       }
     .account-list-header{
+      font-family:'location_button';
       display: table;
       font-size:1.5vw;
       width:100%;
@@ -1018,13 +1062,17 @@ body{
       top:0;
 
     }
-    .account-list p{font-size:1.3vw;color:#333;}
+    .account-list p{
+      font-size:1.3vw;
+      color:#333;
+    }
     .account_list input[type="checkbox"]{
       outline:0;
       border:0;
     }
     .account-list span{}
     .account-list-button{
+      font-family:'banner_change_font';
       float:right;
       width: 25%;
       height: 8vh;
@@ -1033,16 +1081,19 @@ body{
     /* modify */
     .modify-account{
       color:#2196F3;
-      font-family: "Sofia";
       text-align: center;
       float:left;
       width:75%;
       height:100vh;
     }
-    .modify-account input::placeholder{color:#eee; }
+    .modify-account h3{
+      font-family: "menu_font";
+    }
+    .modify-account input::placeholder{color:#333; }
     .modify-account input{
-      color:white;
-      background-color:#2196F3;
+      font-family: "Desc_font";
+      color:#333333;
+      background-color:white;
       display: block;
       border-radius: 5px;
       border:0;
@@ -1052,7 +1103,6 @@ body{
       height:7vh;
       margin:3% 0 5% 32.5%;
     }
-    .modify-account{}
     .modify-account button{font-size:1.5vw;letter-spacing: 3px;}
 
 /*  */

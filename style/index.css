@@ -6,6 +6,7 @@
 @font-face { font-family: postert_button; src: url('../Fonts/dzalian_bold.ttf'); }
 @font-face { font-family: location_font; src: url('../Fonts/superman.ttf'); }
 @font-face { font-family: header_font; src: url('../Fonts/dzalian_bold.ttf'); }
+@font-face { font-family: footer_font; src: url('../Fonts/superman.ttf'); }
 /*
   erti_zomis_gashlili_wierdo
   daxrili_wvrili
@@ -69,7 +70,6 @@ html{scroll-behavior: smooth;}
   }
 
 .Header{
-  font-family: 'header_font';
   background: #eee;
   color:#5B5B5B;
   z-index: 1;

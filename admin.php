@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-      <link rel="stylesheet" href="admin.css">
+      <link rel="stylesheet" href="admin_style.css">
       <link rel="stylesheet" href="style/index.css">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -37,7 +37,7 @@
     <!-- SIDE MENU -->
     <div class="Cpanel w3-blue " id='panel'>
       <div class="w3-white pannel_X">
-        <button id="logmeout"><i class="fa fa-sign-out"></i></button>
+        <button id="logout"><i class="fa fa-sign-out"></i></button>
         <div id="panel_header">ადმინი</div>
         <div class="panel_butt w3-animate-opacity" id="panel_button" onclick="Toggle_panel(this);">
             <div class="bar1"></div>
@@ -72,7 +72,7 @@
         <!-- search -->
         <div class='Search'>
           <form action="index" method="post">
-          <input type="text" class='w3-blue'>
+          <input type="text" class='w3-blue' placeholder="ძიება">
           <i class="fa fa-search"></i>
           </form>
         </div>
@@ -112,7 +112,7 @@
                    <table class="w3-table-all w3-hoverable category_table w3-centered">
                        <thead>
                          <tr class="w3-light-grey">
-                           <th>Category </th>
+                           <th>კატალოგი</th>
                          </tr>
                        </thead>
                          <?php
@@ -174,7 +174,7 @@
                   </form>
                 <img src='source/d1.jpg'>
                 <div class='product_cost'>
-                  <p>150$</p>
+                  <p>120$</p>
                 </div>
                         </div>";
             }
@@ -213,14 +213,14 @@
               </thead>
               <?php
                 for ($i=0; $i < 45; $i++) {
-                    echo "<tr>
-                            <td class='w3-center'><input type='checkbox' name='category_selection[]' value=''> შარვალი</td>
-                            <td class='w3-center'>სექცია</td>
-                            <td class='w3-center'> <i>80/124</i> </td>
-                          </tr>";
+                  echo "
+                    <tr class='sheni_deda_sheveci'>
+                      <td class='w3-center '><input type='checkbox' name='category_selection[]' value=''> შარვალი</td>
+                      <td class='w3-center'>სექცია</td>
+                      <td class='w3-center'> <i>80/124</i> </td>
+                    </tr>";
                 }
               ?>
-
           </table>
     </div>
 
@@ -247,7 +247,7 @@
             </label>
 
             <input type="text" name="" value="" placeholder=" ტექსტი" id="banner_text">
-            <button type="submit" name="button" class='w3-button w3-round w3-blue'>ჩვლილება</button>
+            <button type="submit" name="button" class='w3-button w3-round w3-blue'>ცვლილება</button>
           </form>
           <div class="Poster" id="poster">
             <h1 class=''>cloth</h1>
@@ -308,12 +308,12 @@
         <div class="location_class" id='2' style="display:none;">
 
           <form action="index.html" method="post">
-            <input type="text" name="" value="" placeholder="შეიყვანეთ HTML მისამართი">
+            <input type="text" name="" value="" placeholder="HTML მისამართი">
             <br>
             <br>
-            <input type="text" name="" value="" placeholder="შეიყვანეთ მისამართი">
+            <input type="text" name="" value="" placeholder="მისამართი">
             <br><br>
-            <button type="submit" name="button">შეცვლა</button>
+            <button type="submit" class="w3-button w3-blue" name="button">შეცვლა</button>
           </form>
 
           <div class="location_iframe">
@@ -347,16 +347,16 @@
 
             <div class="Description_admin description1 descr_left">
               <img src="source/desc2.jpg" alt="retail store">
-                  <h3>• სულხან კვერნაძის 33ა<br>
+                  <p>• სულხან კვერნაძის 33ა<br>
                   • საუკეთესო ხარისხის ტანისამოსი,<br>
-                    ფეხსაცმელი  და აქსესუარები</h3>
+                    ფეხსაცმელი  და აქსესუარები</p>
             </div>
 
             <div class="Description_admin description2 descr_right">
               <img src="source/desc1.jpg" alt="retail store">
-                <h3>• ჩვენ ვართ საქართველოში <br>ოფიციალური
+                <p>• ჩვენ ვართ საქართველოში <br>ოფიციალური
                  წარმომადგენლები<br> უცხოური ბრენდების
-                 აირჩიე C</h3>
+                 აირჩიე C</p>
             </div>
 
         </div>
@@ -531,11 +531,11 @@
     <div class="section">
       <div class="modify-account">
         <h3>შექმენი ახალი მომხმარებელი</h3>
-        <input type="text" placeholder="ახალი მომხმარებლის სახელი" name="" >
-        <input type="text" placeholder="ახალი მომხმარებლის პაროლი" name="" >
-        <input type="text" placeholder="გაიმეორე ახალი პაროლი" name="" >
-        <input type="text" placeholder="ახალი მომხმარებლის ელ ფოსტა" name="" >
-        <input type="text" placeholder="დაადასტურე ახლანდელი პაროლით" name="" >
+        <input type="text" placeholder="სახელი" name="" >
+        <input type="text" placeholder="პაროლი" name="" >
+        <input type="text" placeholder="გაიმეორე პაროლი" name="" >
+        <input type="text" placeholder="ელ ფოსტა" name="" >
+        <input type="text" placeholder="ახლანდელი პაროლით" name="" >
         <button  class="w3-button w3-blue w3-round" type="button" name="button">შექმნა</button>
       </div>
       <div class="account-list">
@@ -600,12 +600,12 @@
       $(document).ready(function(){
           $('input[type="checkbox"]').click(function(){
                 if($(this).prop("checked") == true){
-                    $(".description2").show();
-                    $(".description1").hide();
+                    $(".description1").show();
+                    $(".description2").hide();
                 }
                 else if($(this).prop("checked") == false){
-                    $(".description2").hide();
-                    $(".description1").show();
+                    $(".description1").hide();
+                    $(".description2").show();
                 }
                 });
             });
