@@ -7,6 +7,7 @@
     <link rel="icon" href="https://seeklogo.com/images/E/e-corp-logo-DFE35F4CE4-seeklogo.com.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="style/product.css">
     <link rel="stylesheet" href="style/index.css">
@@ -79,24 +80,31 @@
       <i class="fa fa-search"></i>
     </form>
     <div id="basket">
-      <i class='fas fa-shopping-cart'></i><p></p>
+      <i class='fas fa-shopping-cart'></i>
     </div>
     <div class="cart">
+      <div class="cart-title">ჯამური ფასი 120$</div><hr>
       <?php
-        for ($i=0; $i < 111; $i++) {
-          echo "a<br>";
+        for ($i=0; $i < 10; $i++) {
+          echo "<div class='cart-items'>
+                <a href='#'>X hoodie 12$</a>
+                <img src='https://ae01.alicdn.com/kf/HTB1PDJ3XyzxK1Rjy1zkq6yHrVXaa/Xxxtentacion-Hoodie-Sad-Men-Sweatshirts-Rapper-Hip-Hop-Hooded-Pullover-Sweatershirts-Swag-Hoody-Cotton-Revenge-Kill.jpg_640x640.jpg'>
+                <i class='material-icons'>close</i>
+               </div>";
         }
       ?>
     </div>
+    <div class="more"><a href='#'>კალათა</a></div>
 
     <div class="product_gallery">
       <?php
         for ($i=1; $i < 17; $i++) {
-          echo "<div class='gallery_img' id='open_image'>
-                  <img src='https://ae01.alicdn.com/kf/HTB1PDJ3XyzxK1Rjy1zkq6yHrVXaa/Xxxtentacion-Hoodie-Sad-Men-Sweatshirts-Rapper-Hip-Hop-Hooded-Pullover-Sweatershirts-Swag-Hoody-Cotton-Revenge-Kill.jpg_640x640.jpg'>
+          echo "<div class='gallery_img' id='".$i."'>
+                <img src='https://ae01.alicdn.com/kf/HTB1PDJ3XyzxK1Rjy1zkq6yHrVXaa/Xxxtentacion-Hoodie-Sad-Men-Sweatshirts-Rapper-Hip-Hop-Hooded-Pullover-Sweatershirts-Swag-Hoody-Cotton-Revenge-Kill.jpg_640x640.jpg'>
                     <h4>Hoodie</h4>
                     <p>$12</p>
-                    <button class='w3-button'>დამატება</button>
+                    <i class='fas fa-cart-plus' onclick='addToCart(".$i.")'></i>
+                    <button class='w3-button' onclick='buy(".$i.")'>შეძენა</button>
                 </div>";
         }
         echo "<div class='big_black_div' id='opacity_back'>
@@ -168,8 +176,11 @@
         }); });
 
       $(document).ready(function() {
-        $("#basket").click(function(){$(".cart").slideToggle(300);})
+        $("#basket").click(function(){$(".cart").slideToggle(300);$('.more').toggle("slow");});
       });
+
+      function addToCart(id){alert(id);}//add item to cart by id
+      function buy(id){alert(id);}//pass to php id
     </script>
   </body>
 </html>

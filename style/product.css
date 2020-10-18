@@ -3,7 +3,7 @@ body{
 }
 /* FILTER  */
 #side_menu{
-  background-color: #F7F7F7;
+  /* background-color: #F7F7F7; */
   width:18%;
   height:100vh;
   position: fixed;
@@ -13,17 +13,18 @@ body{
   font-size: 1.6vw;
 }
 #side_menu select,#side_menu input, #side_menu button{
-    background-color: #434343;
+    background-color: #eee;
+    /* background-color: #434343; */
     padding-left: 3%;
     outline: 0;
     border:0;
     border-radius: 10px;
-    color:#fff;
+    color:#333;
     margin: 15% 0 0 0;
     height:6vh;
   }
 #side_menu select{width:70%;cursor: pointer;}
-#side_menu input[type="number"]::placeholder{color:#fff;-moz-appearance: textfield;}
+#side_menu input[type="number"]::placeholder{color:#333;-moz-appearance: textfield;}
 #side_menu input::-webkit-outer-spin-button,
 #side_menu input::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;}
 #side_menu input[type="number"]{width:30%;font-size:1.4vw;}
@@ -65,28 +66,92 @@ body{
   position: fixed;
     bottom:5vh;
     right:3vw;
+    z-index: 1;
   cursor: pointer;
   border-radius: 100px;
   border:1px solid #333;
   background-color: #333;
   color:#fff;
-  width:5%;
+  width:4.8%;
   height:10vh;
   font-size:2.2vw;
 }
 #basket i{display: inline-block;margin:23% 0 0 20%;}
 .cart{
+  z-index: 1;
+  text-align: center;
+  color:white;
   position: fixed;
   overflow:scroll;
   border-radius:10px;
   bottom: 20vh;
-  right:3vh;
-  height:50vh;
+  right:3vw;
+  height:60vh;
   width:20%;
   background: #333;
   display: none;
 }
+.cart-items{
+  display: grid;
+  grid-template-columns: 60% 20% 10%;
+  border-radius: 10px;
+  margin:4% 0 0 5%;
+  width:90%;
+  height:10vh;
+  background-color: #eee;
+  color:#333;
+  align-items: center;
+}
+.cart-title{
+  margin:5% 0 5% 0;
+  height:7vh;
+  font-size:1.7vw;
+  font-family: "Sofia";
+  color:#eee;
+}
+.more{
+  border-radius: 100px;
+  display: none;
+  z-index: 0;
+  position: fixed;
+  font-size:1.6vw;
+  bottom:4.5vh;
+  right:3vw;
+  width:20%;
+  height:11vh;
+  text-align: center;
+  background: #333;
+  color:#eee;
+}
+.more a{
+  font-size:2vw;
+  display: inline-block;
+  margin:5% 0 0 0;
+}
+.cart-items a{
+  float:left;
+  font-family: "Sofia";
+  font-size: 1.6vw;
+  text-decoration: none;
+  align-items: center;
+}
+.cart-items img{
 
+  background: blue;
+  grid-column:2/3;
+  border-radius: 100px;
+  object-fit: cover;
+  width:100%;
+  height: 70%;
+}
+.cart-items i:hover{color:#fff;transition: 1s;}
+.cart-items i{
+  transition: 1s;
+  cursor:pointer;
+  grid-column:3/3;
+  font-size:3vw;
+  color:#333;
+}
 /* GALLERY OF PRODUCTS */
 .product_gallery::-webkit-scrollbar{display: none;}
 .product_gallery{
@@ -98,15 +163,16 @@ body{
 }
 .gallery_img{
   background: #F9F9F9;
-  cursor: pointer;
   border-radius: 10px;
   height: 55vh;
   width: 20%;
   margin: 3% 0 0 4%;
   float: left;
   text-align: center;
-  transition: 0.5s;
-  -webkit-box-shadow: 0px -1px 20px -12px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 12px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 12px -4px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 12px -4px rgba(0,0,0,0.75);
+
 }
 .gallery_img button,.gallery_img button{
   transition: 1s;
@@ -114,18 +180,19 @@ body{
   background:green;
   color:white;
 }
+.gallery_img i{font-size:2vw;color:#333;width:100%;margin:0 0 4% 0%;cursor: pointer;transition: 1s;}
+.gallery_img i:hover{transition: 1s;color:green;}
 .gallery_img img{
-  border-radius: 8px;
-  border:0.5px solid lightgray;
-  height: 30vh;
+  cursor: pointer;
+  object-position: center;
+  object-fit: cover;
+  object-fit: contain;
+  border-radius: 100%;
+  height: 25vh;
   width: 15vw;
   margin-top:5%;
 }
-.gallery_img:hover{
-  -webkit-box-shadow: 5px 5px 16px -4px rgba(0,0,0,0.75);
-  -moz-box-shadow: 5px 5px 16px -4px rgba(0,0,0,0.75);
-  box-shadow: 5px 5px 16px -5px rgba(0,0,0,0.75);
-}
+
 
 #image_id{
  display: none;
@@ -186,7 +253,7 @@ body{
   transition: background-color .3s;
 }
 .pagination a.active {
-  background-color: dodgerblue;
+  background-color: green;
   color: white;
 }
 .pagination a:hover:not(.active) {background-color: #ddd;}
