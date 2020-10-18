@@ -81,7 +81,7 @@
     <i id ="kontaqti"></i>
     <div class="Contact"  id ="kontaqti">
       <form action="index.html" method="post"><br>
-        <h2>მოგვწერეთ</h2>
+        <p>მოგვწერეთ</p>
         <input type="text" name="name" placeholder="სახელი" value=""><br>
         <input type="text" name="mail" placeholder="ელ. ფოსტა" value=""><br>
         <textarea type="text" name="description" placeholder="აღწერა" value=""></textarea>
@@ -96,18 +96,20 @@
         <div class="Description">
           <img src="source/desc2.jpg" alt="retail store">
           <div class="desc-text">
-                  • სულხან კვერნაძის 33ა<br>
+                <p>• სულხან კვერნაძის 33ა<br>
                   • საუკეთესო ხარისხის ტანისამოსი,<br>
-                  ფეხსაცმელი  და აქსესუარები<br></div>
+                  ფეხსაცმელი  და აქსესუარები<br>
+                </p>
+          </div>
         </div>
 
 
         <div class="Description">
           <div class="desc-text">
-            • ჩვენ ვართ საქართველოში <br>ოფიციალური
+          <p>  • ჩვენ ვართ საქართველოში <br>ოფიციალური
            წარმომადგენლები<br> უცხოური ბრენდების
-           აირჩიე C
-        </div>
+           აირჩიე </p>
+          </div>
         <img src="source/desc1.jpg" alt="retail store">
     </div><br><br>
 
