@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/prod.css">
+    <link rel="stylesheet" href="style/test_prod.css">
     <link rel="stylesheet" href="style/index.css">
   </head>
   <body>
@@ -43,7 +43,7 @@
         <option value="child">ბავშვის</option>
       </select>
 
-      <select name="">
+      <select name="cateogry_select">
         <option disabled selected>კატეგორია</option>
         <option value="sharvali">შარვალი</option>
         <option value="sharvali">შარვალი</option>
@@ -53,7 +53,7 @@
         <option value="sharvali">შარვალი</option>
       </select>
 
-      <select  name="">
+      <select  name="collection">
         <option disabled selected>კოლექცია</option>
         <option value="sharvali">ზაფხული</option>
         <option value="sharvali">შემოდგომა</option>
@@ -130,6 +130,7 @@
       </div>
 
     </div>
+
     <script>
       // Onclick image opens and closes 1 Product
       $(".gallery_img").click(function(){

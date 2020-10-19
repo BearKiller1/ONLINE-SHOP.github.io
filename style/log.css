@@ -1,3 +1,14 @@
+
+@font-face { font-family: erti_zomis_gashlili_wierdo; src: url('../Fonts/erti_zomis_gashlili_wierdo.ttf'); }
+@font-face { font-family: daxrili_wvrili; src: url('../Fonts/daxrili_wvrili.ttf'); }
+@font-face { font-family: bold_politika; src: url('../Fonts/bold_politika.ttf'); }
+@font-face { font-family: bold_geo; src: url('../Fonts/bold.ttf'); }
+@font-face { font-family: dzalian_bold; src: url('../Fonts/dzalian_bold.ttf'); }
+@font-face { font-family: mkrtali_grdzeli; src: url('../Fonts/mkrtali_grdzeli.ttf'); }
+@font-face { font-family: mkrtali_daxveuli; src: url('../Fonts/mkrtali_daxveuli.ttf'); }
+@font-face { font-family: daxveuli; src: url('../Fonts/daxveuli.ttf'); }
+@font-face { font-family: superman; src: url('../Fonts/superman.ttf'); }
+@font-face { font-family: test; src: url('../Fonts/vazi.ttf'); }
 body{
   margin: 0;
   background: url("../source/login-background.png");
@@ -12,6 +23,7 @@ form{
   margin:15vh 0 0 35vw;
 }
 .login_form input{
+  font-family:'daxrili_wvrili';
   padding-left: 20%;
   height: 5.9vh;
   width: 70%;
@@ -40,6 +52,7 @@ form{
   width: 4%;
 }
 .login_button{
+  font-family: "bold_geo";
   height: 8vh;
   width: 40%;
   margin:8vh 0 5vh 30%;

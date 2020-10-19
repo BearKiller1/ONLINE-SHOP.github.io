@@ -1,6 +1,15 @@
-body{
 
-}
+@font-face { font-family: erti_zomis_gashlili_wierdo; src: url('../Fonts/erti_zomis_gashlili_wierdo.ttf'); }
+@font-face { font-family: daxrili_wvrili; src: url('../Fonts/daxrili_wvrili.ttf'); }
+@font-face { font-family: bold_politika; src: url('../Fonts/bold_politika.ttf'); }
+@font-face { font-family: bold_geo; src: url('../Fonts/bold.ttf'); }
+@font-face { font-family: dzalian_bold; src: url('../Fonts/dzalian_bold.ttf'); }
+@font-face { font-family: mkrtali_grdzeli; src: url('../Fonts/mkrtali_grdzeli.ttf'); }
+@font-face { font-family: mkrtali_daxveuli; src: url('../Fonts/mkrtali_daxveuli.ttf'); }
+@font-face { font-family: daxveuli; src: url('../Fonts/daxveuli.ttf'); }
+@font-face { font-family: superman; src: url('../Fonts/superman.ttf'); }
+@font-face { font-family: test; src: url('../Fonts/vazi.ttf'); }
+
 /* FILTER  */
 #side_menu{
   /* background-color: #F7F7F7; */
@@ -13,6 +22,7 @@ body{
   font-size: 1.6vw;
 }
 #side_menu select,#side_menu input, #side_menu button{
+    font-family: 'daxrili_wvrili';
     background-color: #eee;
     /* background-color: #434343; */
     padding-left: 3%;
@@ -29,10 +39,18 @@ body{
 #side_menu input::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;}
 #side_menu input[type="number"]{width:30%;font-size:1.4vw;}
 #side_menu button:hover{background-color:#333;color:#fff;transition: 1s;}
-#side_menu button{cursor: pointer;transition: 1s;height: 7vh;}
+#side_menu button{
+  background-color: green;
+  color:white;
+  cursor: pointer;
+  transition: 0.5s;
+  height: 7vh;
+  font-family: 'dzalian_bold';
+}
 
 /* SEARCH */
 .search-product{
+  font-family: 'dzalian_bold';
   float:left;
   background-color: #eee;
   color:#333;
@@ -42,7 +60,7 @@ body{
   height: 7vh;
   text-align: center;
 }
-.search-product input::placeholder{color:inherit;}
+.search-product input::placeholder{color:inherit;opacity: 0.7;}
 .search-product input{
   width: 85%;
   background-color:transparent  ;
@@ -106,10 +124,11 @@ body{
   margin:5% 0 5% 0;
   height:7vh;
   font-size:1.7vw;
-  font-family: "Sofia";
+  font-family: "bold_geo";
   color:#eee;
 }
 .more{
+  font-family: "bold_politika";
   border-radius: 100px;
   display: none;
   z-index: 0;
