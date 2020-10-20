@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-      <link rel="stylesheet" href="admin.css">
+      <link rel="stylesheet" href="adami.css">
       <link rel="stylesheet" href="style/index.css">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -72,8 +72,8 @@
         <!-- search -->
         <div class='Search'>
           <form action="index" method="post">
-          <input type="text" class='w3-blue' placeholder="ძიება">
-          <i class="fa fa-search"></i>
+            <input type="text" class='w3-blue' placeholder="ძიება">
+            <i class="fa fa-search"></i>
           </form>
         </div>
 
@@ -85,14 +85,11 @@
         <button class="w3-button add_butt  w3-blue" onclick="clear()" id='close_upload'>
           <i style="" class="fa fa-trash"></i>
         </button>
-
-
       </div>
         <!-- add posts -->
       <div class="product_space " id='create_post'>
             <form  class="w3-container add_post" id="upload" action="/action_page.php">
               <input class=" w3-border" placeholder="სათაური" name="title" type="text">
-
               <input class="w3-border price" placeholder="ფასი" name="price" type="number" min="1" max="1000">
               <br><br>
               <select class="section_select" name="სექცია">
@@ -122,10 +119,8 @@
                                      </tr>";
                            }
                          ?>
-
                      </table>
                  </div>
-
               <div class='upload_product'>
                 <input style='display:none;'id="upload-but" type="file">
                   <label for="upload-but">
@@ -133,9 +128,7 @@
                   </label>
               </div>
               <br>
-
               <button class="w3-btn w3-blue" >დამატება</button>
-
             </form>
       </div>
 
@@ -166,9 +159,7 @@
           <?php
             for ($i=0; $i < 15; $i++) {
                 echo "<div class='gallery_img w3-blue'><form>
-                  <button class='w3-button pencil_button'><i class='fa fa-pencil' style='font-size:20px'></i></button>
                   <input type='checkbox'>
-                  <button class='trash_button w3-button' name='button'>
                     <i style='font-size:1.5vw' class='fa'>&#xf014;</i>
                   </button>
                   </form>
@@ -188,12 +179,11 @@
     <div class="section">
         <table class="w3-table-all w3-white w3-hoverable category_table">
             <thead>
-              <tr>
-                <th class="category_header w3-white">
-                  <input type="text" class="category_input w3-blue" name="" placeholder="დაამატეთ ახალი კატეგორია">
+                <th class=" w3-white">
+                  <input type="text" class="category_input w3-blue" name="" placeholder="ახალი კატეგორია">
                   <button type="submit" name="button" id="category_add">+</button>
                 </th>
-                <th class="category_header  w3-white">
+                <th class="  w3-white">
                   <select class="category_select w3-blue" name="">
                     <option disabled selected >სექცია</option>
                     <option value="ქალი">ქალი</option>
@@ -204,7 +194,7 @@
                     <i class="fa fa-trash" ></i>
                   </button>
                 </th>
-                <th class="category_header w3-white">
+                <th class="w3-white">
                   <input type="text" class="search_category w3-blue" name="search_category " value=""  placeholder="ძიება...">
                   <button type="submit" id='category-search-button' name="button">
                     <i style="font-size:1.4vw" class="fa fa-search "></i>
@@ -214,7 +204,7 @@
               <?php
                 for ($i=0; $i < 45; $i++) {
                   echo "
-                    <tr class='sheni_deda_sheveci'>
+                    <tr>
                       <td class='w3-center '><input type='checkbox' name='category_selection[]' value=''> შარვალი</td>
                       <td class='w3-center'>სექცია</td>
                       <td class='w3-center'> <i>80/124</i> </td>

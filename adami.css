@@ -1104,5 +1104,56 @@ body{
       margin:3% 0 5% 32.5%;
     }
     .modify-account button{font-size:1.5vw;letter-spacing: 3px;}
-
-/*  */
+/*  MOBILE  */
+@media only screen and (max-width: 600px) {
+/* PRODUCT */
+  .Search{
+      margin: 0vh 0 0 0;
+  }
+  .Search input{
+    margin: 2vh 0 0 15%;
+    height: 5vh;
+  }
+  .Search i{
+    position: absolute;
+    top: 4vh;
+  }
+  .gallery_img{
+    width: 25%;
+    height: 30vh;
+    margin:5vh 0 0 6.5%;
+  }
+  .gallery_img img{
+    height: 25vh;
+  }
+  .prod-filter{
+    font-size: 2vw;
+  }
+  .sect-filter{
+    width: 15%;
+  }
+  .category-filter{
+    width: 15%;
+  }
+  .selectall{
+    font-size: 2vw;
+  }
+  .add_post{
+    font-size: 2vw;
+  }
+  .add_post textarea{
+    font-size: 2vw;
+  }
+  
+/* CATEOGRY */
+  .category_table input{
+    width: 60%;
+    font-size: 2vw;
+  }
+  .category_select{
+    width: 60%;
+  }
+  #category-search-button,#category_add,#trash{
+    width: 6vw;
+  }
+}
