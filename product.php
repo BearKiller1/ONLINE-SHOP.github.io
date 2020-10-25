@@ -23,7 +23,7 @@
       <a href="index.php#shesaxeb"> შესახებ </a>
 
       <div class="dark-button" id="mode">
-        <i class='fas fa-moon night-mode ' id="moon"  onclick="nightMode()"></i>
+        <i class='fas fa-moon night-mode ' id="moon"  onclick="productNightMode()"></i>
       </div>
 
       <div class="line"></div>
@@ -140,56 +140,23 @@
     </div>
 
     <script>
-      // Onclick image opens and closes 1 Product
-      $(".gallery_img").click(function(){
-        jQuery('#footer_text').css('opacity', '0.3');
-        $("#image_id").show();
-        $("#opacity_back").show();
-      });
-
-      $("#hide_prod").click(function(){
-        jQuery('#footer_text').css('opacity', '1');
-        $("#image_id").hide();
-        $("#opacity_back").hide();
-      });
-      // NIGHT MODE
-      function nightMode(){
-        $('#logo').attr('src', function(index,attr) {return attr=='https://rb.gy/mkquhl' ?
-          'https://www.wallpaperflare.com/static/948/854/435/mr-robot-e-corp-evil-corp-evil-wallpaper.jpg':'https://rb.gy/mkquhl';
-        });
-        $('.Header').toggleClass('night');
-        $('.line').toggleClass('white');
-        $('.lang').toggleClass('night');
-        $('.more-lang').toggleClass('night-lang');
-        $('#moon').toggleClass('white-moon');
-
-        $('.search-product').children('input').toggleClass('night');
-        $('.search-product').toggleClass('night');
-        $('.gallery_img').toggleClass('night');
-        $('body').toggleClass('night-product');
-        $('.pagination').toggleClass('night');
-      }
-
-      // HOVER POSTER BANNER
-      $('#poster_but').mouseover(function(event) {
-          $('.Poster').css("opacity","0.7");
-        }).mouseout(function(event) {
-          $('.Poster').css("opacity","0.9");
-      });
-
-      // language toggle down
-      $(document).ready(function(){
-        $(".lang").click(function(){
-          $('.lang').hasClass('night') ? $('.lang').toggleClass('night-lang') :   $(this).toggleClass('night');
-          $('.more-lang').toggle("fast");
-        }); });
-
       $(document).ready(function() {
-        $("#basket").click(function(){$(".cart").slideToggle(300);$('.more').toggle("slow");});
-      });
+        $(".gallery_img").click(openProduct() ;);
+        $("#hide_prod").click(openProduct(); );
+
+        $("#basket").click(function(){
+          $(".cart").slideToggle(300);
+          $('.more').toggle("slow"); });
+        });
+        function openProduct(){
+          $("#image_id").toggle();
+          $("#opacity_back").toggle();
+        }
 
       function addToCart(id){alert(id);}//add item to cart by id
       function buy(id){alert(id);}//pass to php id
     </script>
+    <script src="js/nightmode.js"></script>
+    <script src="js/langDropDown.js"></script>
   </body>
 </html>

@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 img chaviwerot - dachi - DONE
+=======
+
+  admini gavanawilot - ucha
+
+img chaviwerot - dachi
+>>>>>>> fcbe62fac8fa7775c09d7ab2e546d3d2df014962
 
 src url chavasworot - dachi
   indexshi - DONE

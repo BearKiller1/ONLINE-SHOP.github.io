@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="Fonts/WOFFs/fonts.css">
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js'>  </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
@@ -25,7 +26,7 @@
       <a href="index.php#shesaxeb"> შესახებ </a>
 
       <div class="dark-button" id="mode">
-        <i class='fas fa-moon night-mode ' id="moon"  onclick="nightMode()"></i>
+        <i class='fas fa-moon night-mode ' id="moon"  onclick="indexNightMode()"></i>
       </div>
 
       <div class="line"></div>
@@ -131,45 +132,14 @@
     </div>
 
     <script>
-      // NIGHT MODE
-      function nightMode(){
-        $('#body').toggleClass('night');
-        $('#logo').attr('src', function(index,attr) {return attr=='https://rb.gy/mkquhl' ?
-          'https://www.wallpaperflare.com/static/948/854/435/mr-robot-e-corp-evil-corp-evil-wallpaper.jpg':'https://rb.gy/mkquhl';
-        });
-
-        $('.Header').toggleClass('night');
-        $('.line').toggleClass('white');
-        $('.lang').toggleClass('night');
-        $('.more-lang').toggleClass('night-lang');
-        $('#moon').toggleClass('white-moon');
-
-        $('.poster-text').toggleClass('glow');
-        $('.Poster').toggleClass("white");
-        $('.Catalog').toggleClass("night");
-        $('.Location').toggleClass("night");
-
-        $('.Contact').toggleClass('white-contact');
-        $('.Contact').toggleClass("white");
-
-        $('.About').toggleClass("night");
-        $('.Footer').toggleClass("white");
-      }
-
-      // HOVER POSTER BANNER
-      $('#poster_but').mouseover(function(event) {
-          $('.Poster').css("opacity","0.7");
-        }).mouseout(function(event) {
-          $('.Poster').css("opacity","0.9");
+      $(document).ready(function() {
+        $('#poster_but').mouseover(function(event) {
+            $('.Poster').css("opacity","0.7"); })
+            .mouseout(function(event){$('.Poster')
+            .css("opacity","0.9"); });
       });
-
-      // language toggle down
-      $(document).ready(function(){
-        $(".lang").click(function(){
-          $('.lang').hasClass('night') ? $('.lang').toggleClass('night-lang') :   $(this).toggleClass('night');
-          $('.more-lang').toggle("fast");
-        }); });
-
     </script>
+    <script src="js/nightmode.js"></script>
+    <script src="js/langDropDown.js"></script>
   </body>
 </html>
