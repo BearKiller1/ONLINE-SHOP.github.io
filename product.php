@@ -141,8 +141,8 @@
 
     <script>
       $(document).ready(function() {
-        $(".gallery_img").click(openProduct() ;);
-        $("#hide_prod").click(openProduct(); );
+        $(".gallery_img").click(openProduct());
+        $("#hide_prod").click(openProduct());
 
         $("#basket").click(function(){
           $(".cart").slideToggle(300);
