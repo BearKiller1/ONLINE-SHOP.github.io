@@ -2,16 +2,22 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
-      <link rel="stylesheet" href="admin.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Admin</title>
+      <link rel="stylesheet" href="style/admin.css">
+      <link rel="stylesheet" href="style/admin/product.css">
+      <link rel="stylesheet" href="style/admin/category.css">
+      <link rel="stylesheet" href="style/admin/modify.css">
+      <link rel="stylesheet" href="style/admin/inbox.css">
+      <link rel="stylesheet" href="style/admin/analytics.css">
+      <link rel="stylesheet" href="style/admin/users.css">
+
       <link rel="stylesheet" href="style/index.css">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
+
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
       <!-- FONTS -->
-      <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-      <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="Fonts/TTfs/fonts.css">
 
       <!-- FLICKITY FOR CAROUSEL -->
       <script src='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js'>  </script>
@@ -27,6 +33,7 @@
 
 
       <!-- ICONS -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -601,47 +608,10 @@
             });
 
 
-      google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['ქუდი',     11],
-          ['მაიკა',      2],
-          ['შარვალი',  2],
-          ['ფეხსაცმელი', 2],
-          ['აქსესუარები',    7]
-        ]);
 
-        var options = {
-          title: 'My Daily Activities',
-          is3D: true,
-          backgroundColor:'transparent',
-          chartArea:{left:0,top:0,width:'100%',height:'100%'},
-          legend: {alignment:'center',textStyle: {color: 'white', fontSize: 16}},
-          hAxis: {showTextEvery: '1', textPosition: 'out'},
-          vAxis: {textPosition: 'out'}
-        };
 
-        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
-        chart.draw(data, options);
-      }
-      // setTimeout(function(){
-      //    window.location.reload(1);
-      // }, 5000);
-      //
-      // es ari caruselshi damatebis scripti
-      //
-            // $("#open_image").click(function(){
-            //     $(".admin_prod_list_to_add").show();
-            //     jQuery('.admin_prod_list_to_add').css('opacity', '1');
-            //     $(".admin_black_div").show();
-            //   });
-            //   $("#close_products").click(function(){
-            //     $(".admin_prod_list_to_add").hide();
-            //     $(".admin_black_div").hide();
-            //   });
     </script>
 
   </body>
+  <script src="js/googleCharts.js"></script>
 </html>
