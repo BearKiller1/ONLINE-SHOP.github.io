@@ -1,13 +1,9 @@
-
-admini gavanawilot - ucha
-
-img chaviwerot - dachi
+img chaviwerot - dachi - DONE
 
 src url chavasworot - dachi
-  indexshi
-  productshi
-  login
-  adminshi
-
+  indexshi - DONE
+  productshi - DONE
+  login - DONE
+  adminshi - DONE
+  
 fontebi davamatot - dachi
-js gavanawilot - ucha

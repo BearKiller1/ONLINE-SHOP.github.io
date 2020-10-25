@@ -2,13 +2,14 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title></title>
-      <link rel="stylesheet" href="admin.css">
+      <link rel="stylesheet" href="style/admin.css">
       <link rel="stylesheet" href="style/index.css">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
       <!-- FONTS -->
+      <link rel="stylesheet" href="/Fonts/WOOFFs/fonts.css">
       <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
       <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -124,7 +125,7 @@
               <div class='upload_product'>
                 <input style='display:none;'id="upload-but" type="file">
                   <label for="upload-but">
-                    <img src="source/upload.png">
+                    <img src="resource/admin/upload.png">
                   </label>
               </div>
               <br>
@@ -163,7 +164,7 @@
                     <i style='font-size:1.5vw' class='fa'>&#xf014;</i>
                   </button>
                   </form>
-                <img src='source/d1.jpg'>
+                <img src='resource/product/d1.jpg'>
                 <div class='product_cost'>
                   <p>120$</p>
                 </div>
@@ -233,7 +234,7 @@
             <input type="file" name="f" placeholder=" ფოტო" id="banner_photo">
             <h2>აირჩიე ახალი ბანერი</h2>
             <label for="banner_photo">
-              <img src="source/upload.png" alt="upload">
+              <img src="resource/admin/upload.png" alt="upload">
             </label>
 
             <input type="text" name="" value="" placeholder=" ტექსტი" id="banner_text">
@@ -252,7 +253,7 @@
               <?php
                 for ($i=0; $i < 12; $i++) {
                 echo "<div class='Admin-gallery-cell'>
-                         <img src='https://picture-cdn.wheretoget.it/hvdipz-l-610x610-shoes-white+bordeaux-white-nikies-nikes-nike+s-nike+bordeaux-nike+white-trainers-bordeaux-bordeau-nike.jpg'>
+                         <img src='resource/admin/shouse.jpg'>
                       </div>";
                 }
               ?>
@@ -279,7 +280,7 @@
               echo "
                 <div class='prodGallery-cell' >
                   <input type='checkbox' name=''>
-                  <img src='https://micoedward.com/wp-content/uploads/2018/04/Love-your-product.png'>
+                  <img src='resource/admin/shoppingcart.png'>
                   <h4>Red Dress</h4>
                   <p>$124.99</p>
                 </div>";
@@ -325,7 +326,7 @@
             <div class='upload'>
               <input style='display:none;'id="upload-but" type="file">
                 <label for="upload-but">
-                  <img src="source/upload.png">
+                  <img src="resource/admin/upload.png">
                 </label>
             </div>
             <br>
@@ -336,14 +337,14 @@
           </form>
 
             <div class="Description_admin description1 descr_left">
-              <img src="source/desc2.jpg" alt="retail store">
+              <img src="resource/index/desc2.jpg" alt="retail store">
                   <p>• სულხან კვერნაძის 33ა<br>
                   • საუკეთესო ხარისხის ტანისამოსი,<br>
                     ფეხსაცმელი  და აქსესუარები</p>
             </div>
 
             <div class="Description_admin description2 descr_right">
-              <img src="source/desc1.jpg" alt="retail store">
+              <img src="resource/index/desc1.jpg" alt="retail store">
                 <p>• ჩვენ ვართ საქართველოში <br>ოფიციალური
                  წარმომადგენლები<br> უცხოური ბრენდების
                  აირჩიე C</p>

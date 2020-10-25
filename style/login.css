@@ -11,7 +11,7 @@
 @font-face { font-family: test; src: url('../Fonts/vazi.ttf'); }
 body{
   margin: 0;
-  background: url("../source/login-background.png");
+  background: url("../resource/login/login-background.png");
   background-repeat: no-repeat;
   background-size: 100% 100vh;
 }

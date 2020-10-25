@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <link rel="icon" href="https://seeklogo.com/images/E/e-corp-logo-DFE35F4CE4-seeklogo.com.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -14,7 +15,7 @@
   </head>
   <body>
     <div class="Header night-text">
-      <img src="https://rb.gy/mkquhl" alt="Logo" id='logo'>
+      <img src="resource/index/black-logo.jpg" alt="Logo" id='logo'>
       <a href="index.php#mtavari"> მთავარი </a>
       <a href="product.php"> პროდუქტი </a>
       <a href="index.php#lokacia"> ლოკაცია </a>
@@ -67,6 +68,13 @@
         <option value="high">ფასის კლებადობით</option>
       </select>
 
+      <select  name="sort_by">
+        <option disabled selected>ფერი</option>
+        <option value="low">წითელი</option>
+        <option value="high">ყვითელი</option>
+        <option value="high">მწვანე</option>
+      </select>
+
       <br>
       <input type="number" name="min" min="0" placeholder="დან">
       <input type="number" name="max" min="0" placeholder="მდე">
@@ -88,7 +96,7 @@
         for ($i=0; $i < 10; $i++) {
           echo "<div class='cart-items'>
                 <a href='#'>X hoodie 12$</a>
-                <img src='https://ae01.alicdn.com/kf/HTB1PDJ3XyzxK1Rjy1zkq6yHrVXaa/Xxxtentacion-Hoodie-Sad-Men-Sweatshirts-Rapper-Hip-Hop-Hooded-Pullover-Sweatershirts-Swag-Hoody-Cotton-Revenge-Kill.jpg_640x640.jpg'>
+                <img src='resource/product/hoodie.jpg'>
                 <i class='material-icons'>close</i>
                </div>";
         }
@@ -100,7 +108,7 @@
       <?php
         for ($i=1; $i < 17; $i++) {
           echo "<div class='gallery_img' id='".$i."'>
-                <img src='https://ae01.alicdn.com/kf/HTB1PDJ3XyzxK1Rjy1zkq6yHrVXaa/Xxxtentacion-Hoodie-Sad-Men-Sweatshirts-Rapper-Hip-Hop-Hooded-Pullover-Sweatershirts-Swag-Hoody-Cotton-Revenge-Kill.jpg_640x640.jpg'>
+                <img src='resource/product/hoodie.jpg'>
                     <h4>Hoodie</h4>
                     <p>$12</p>
                     <i class='fas fa-cart-plus' onclick='addToCart(".$i.")'></i>
@@ -111,7 +119,7 @@
               </div>
               <div class='product_solo'id='image_id'>
                 <button id='hide_prod'>X</button>
-                <img src='https://ae01.alicdn.com/kf/HTB1PDJ3XyzxK1Rjy1zkq6yHrVXaa/Xxxtentacion-Hoodie-Sad-Men-Sweatshirts-Rapper-Hip-Hop-Hooded-Pullover-Sweatershirts-Swag-Hoody-Cotton-Revenge-Kill.jpg_640x640.jpg'>
+                <img src='resource/product/hoodie.jpg'>
                 <h4>Red Dress</h4>
                 <p>$12</p>
               </div>";

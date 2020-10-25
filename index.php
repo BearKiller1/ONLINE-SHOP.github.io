@@ -1,4 +1,3 @@
-<?php include_once 'include/auto_class_loader.php';header("Location:admin.php");?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -6,6 +5,7 @@
     <title>Web 01</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -17,7 +17,7 @@
   </head>
   <body id="body">
     <div class="Header night-text">
-      <img src="https://rb.gy/mkquhl" alt="Logo" id='logo'>
+      <img src="resource/index/black-logo.jpg" alt="Logo" id='logo'>
       <a href="index.php#mtavari"> მთავარი </a>
       <a href="product.php"> პროდუქტი </a>
       <a href="index.php#lokacia"> ლოკაცია </a>
@@ -94,7 +94,7 @@
     <i id ="shesaxeb"></i>
     <div class="About"  id ="shesaxeb">
         <div class="Description">
-          <img src="source/desc2.jpg" alt="retail store">
+          <img src="resource/index/desc2.jpg" alt="retail store">
           <div class="desc-text">
                 <p>• სულხან კვერნაძის 33ა<br>
                   • საუკეთესო ხარისხის ტანისამოსი,<br>
@@ -110,14 +110,14 @@
            წარმომადგენლები<br> უცხოური ბრენდების
            აირჩიე </p>
           </div>
-        <img src="source/desc1.jpg" alt="retail store">
+        <img src="resource/index/desc1.jpg" alt="retail store">
     </div><br><br>
 
     <div class="Footer">
       <div class="fleft">
-        <a class='fa fa-address-card-o'>სულხან კვერნაძის 33ა</a><br>
-        <a class='fa fa-address-card-o'>GroupC@mail.com</a><br>
         <a class='fa fa-address-card-o'>555 555 555</a><br>
+        <a class='fa fa-address-card-o'>UniqueDesigns@mail.com</a><br>
+        <a class='fa fa-address-card-o'>სულხან კვერნაძის 33ა</a><br>
       </div>
       <div class="fcenter">
         <i class='fab fa-facebook fb'></i>

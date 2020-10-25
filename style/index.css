@@ -1,3 +1,5 @@
+
+
 html{scroll-behavior: smooth;}
   body{
     margin:0;
@@ -121,7 +123,7 @@ html{scroll-behavior: smooth;}
   }
 
 .Poster{
-    background-image: url('../source/poster.jpg');
+    background-image: url('../resource/index/poster.jpg');
     background-size: 100vw 75vh;
     background-repeat: no-repeat;
     width:100vw;
@@ -130,7 +132,7 @@ html{scroll-behavior: smooth;}
     opacity: 0.9;
   }
   .Poster button{
-    font-family:'postert_button';
+    font-family:'bold_geo';
     width:8%;
     height: 7vh;
     margin:43vh 0 0 46%;
@@ -181,7 +183,6 @@ html{scroll-behavior: smooth;}
         text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6,
                                     0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;}
     }
-
   .search{
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
@@ -199,6 +200,7 @@ html{scroll-behavior: smooth;}
     text-align: center;
     border-radius: 20px;
     z-index: -1;
+    font-family: 'mkrtali_daxrili';
   }
   .search-butt{
     color:black;
@@ -258,7 +260,7 @@ html{scroll-behavior: smooth;}
     text-align: center;
     font-size: 1.7vw;
     color:black;
-    font-family: 'location_font';
+    font-family: 'bold_politika';
   }
   .Location iframe{
     width:80vw;
@@ -290,7 +292,8 @@ html{scroll-behavior: smooth;}
     font-size: 1.7vw;
     text-shadow: 3px 2px 0px rgba(0,0,0,0.2);
     transition: 1s;
-      font-family:'contact_head';
+    font-family:'bold_geo';
+    letter-spacing: 3px;
   }
   .Contact form:hover{
     -webkit-box-shadow: 6px 4px 10px 11px rgba(0,0,0,0.75);
@@ -298,7 +301,7 @@ html{scroll-behavior: smooth;}
     box-shadow: 6px 4px 10px 11px rgba(0,0,0,0.75);
   }
   .Contact button{
-    font-family:'contact_font';
+    font-family:'mkrtali_daxveuli';
     background-color: #343334;
     color:white;
     font-size: 1.6vw;
@@ -310,7 +313,7 @@ html{scroll-behavior: smooth;}
     transition: 4s;
   }
   .Contact input{
-    font-family: 'contact_placeholder';
+    font-family: 'mkrtali_grdzeli';
     padding-left: 2%;
     border:0.5px solid #C6C0C0;
     margin:5% 0 5% 0 ;
@@ -320,7 +323,7 @@ html{scroll-behavior: smooth;}
     outline:0;
   }
   .Contact textarea{
-    font-family: 'contact_placeholder';
+    font-family: 'mkrtali_grdzeli';
     padding-left: 2%;
     margin:5% 0 0 0 ;
     font-size: 1vw;
@@ -351,7 +354,7 @@ html{scroll-behavior: smooth;}
     text-align: center;
   }
   .desc-text p{
-      font-family:'Desc_font';
+      font-family:'daxrili_wvrili';
   }
 
 .Footer{
@@ -394,12 +397,6 @@ html{scroll-behavior: smooth;}
   .twitter:hover{
     color:#1C9BEA;
   }
-  .Footer h5{
-    text-align: left;
-    position: absolute;
-    line-height: 3;
-    padding-left:3%;
-  }
 
 .nightmode{}
   .night,   .white input, .white button, .white textarea{
@@ -413,7 +410,7 @@ html{scroll-behavior: smooth;}
     transition: 1s;
   }
   .white input::placeholder, .white textarea::placeholder, .white .Search a, .white-moon, .night-lang, .white .line{color:white;}
-  .white-contact{background-image:url('https://cdn.pixabay.com/photo/2017/05/19/06/22/desktop-2325627_960_720.jpg');}
+  .white-contact{background-image:url('../resource/index/white-contact.jpg');}
   .night-lang{
     border-radius: 8px;
     background-color: #eee;
