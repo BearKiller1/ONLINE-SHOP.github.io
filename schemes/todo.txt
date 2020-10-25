@@ -1,9 +1,13 @@
-admini gavanawilot
-img chaviwerot
-src url chavasworot
+
+admini gavanawilot - ucha
+
+img chaviwerot - dachi
+
+src url chavasworot - dachi
   indexshi
   productshi
   login
   adminshi
-fontebi davamatot
-js gavanawilot
+
+fontebi davamatot - dachi
+js gavanawilot - ucha
