@@ -1,4 +1,4 @@
-<?php include_once 'include/auto_class_loader.php' ?>
+<?php include_once 'include/auto_class_loader.php';header("Location:admin.php");?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>

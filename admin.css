@@ -1104,12 +1104,10 @@ body{
       margin:3% 0 5% 32.5%;
     }
     .modify-account button{font-size:1.5vw;letter-spacing: 3px;}
+    
 /*  MOBILE  */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 /* PRODUCT */
-  .Search{
-      margin: 0vh 0 0 0;
-  }
   .Search input{
     margin: 2vh 0 0 15%;
     height: 5vh;
@@ -1120,11 +1118,11 @@ body{
   }
   .gallery_img{
     width: 25%;
-    height: 30vh;
+    height: 25vh;
     margin:5vh 0 0 6.5%;
   }
   .gallery_img img{
-    height: 25vh;
+    height: 20vh;
   }
   .prod-filter{
     font-size: 2vw;
@@ -1144,16 +1142,35 @@ body{
   .add_post textarea{
     font-size: 2vw;
   }
-  
+  .add_butt{
+    height: 5vh;
+    width: 5%;
+    margin:1.2vh 0 0 2%;
+  }
+  .add_butt i{
+    font-size: 3vw;
+    margin:0 0 0 -1vw;
+  }
 /* CATEOGRY */
   .category_table input{
     width: 60%;
     font-size: 2vw;
   }
   .category_select{
+    font-size: 3vw;
     width: 60%;
   }
   #category-search-button,#category_add,#trash{
     width: 6vw;
+  }
+
+/* CUSTOMIZE */
+  .customize_header button{
+    font-size: 2vw;
+  }
+  .banner_class h2{
+    font-size: 5vw;
+  }
+  .banner_class input{
   }
 }

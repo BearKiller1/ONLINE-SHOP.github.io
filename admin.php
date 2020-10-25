@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-      <link rel="stylesheet" href="adami.css">
+      <link rel="stylesheet" href="admin.css">
       <link rel="stylesheet" href="style/index.css">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -17,7 +17,7 @@
       <script src='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js'>  </script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
 
-      <!--  -->
+      <!-- CHARTS FOR ANALYTICS -->
       <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 
@@ -32,8 +32,12 @@
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+      <header>
+        <p class='glow' style='position:absolute;font-size:150px;text-align:center;z-index:1;'>
+          AXAXAXAAXAXAAXAXA <br>SANTANA MANA ES PUTO KARLOS</p>
+      </header>
   </head>
-  <body class='w3-animate-opacity'>
+  <body class='w3-spin'>
     <!-- SIDE MENU -->
     <div class="Cpanel w3-blue " id='panel'>
       <div class="w3-white pannel_X">
@@ -541,7 +545,7 @@
     </div>
 
     <script>
-      slide(0);
+      slide(2);
       var panel_index = 0;
       function Toggle_panel(button){
         button.classList.toggle("change");
