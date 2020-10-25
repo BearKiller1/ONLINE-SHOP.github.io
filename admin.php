@@ -32,12 +32,8 @@
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-      <header>
-        <p class='glow' style='position:absolute;font-size:150px;text-align:center;z-index:1;'>
-          AXAXAXAAXAXAAXAXA <br>SANTANA MANA ES PUTO KARLOS</p>
-      </header>
   </head>
-  <body class='w3-spin'>
+  <body class='w3-animate-fade'>
     <!-- SIDE MENU -->
     <div class="Cpanel w3-blue " id='panel'>
       <div class="w3-white pannel_X">

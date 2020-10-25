@@ -1,22 +1,3 @@
-
-@font-face { font-family: Desc_font; src: url('../Fonts/daxrili_wvrili.ttf'); }
-@font-face { font-family: contact_font; src: url('../Fonts/dzalian_bold.ttf'); }
-@font-face { font-family: contact_placeholder; src: url('../Fonts/bold.ttf'); }
-@font-face { font-family: contact_head; src: url('../Fonts/dzalian_bold.ttf'); }
-@font-face { font-family: postert_button; src: url('../Fonts/dzalian_bold.ttf'); }
-@font-face { font-family: location_font; src: url('../Fonts/superman.ttf'); }
-@font-face { font-family: header_font; src: url('../Fonts/dzalian_bold.ttf'); }
-@font-face { font-family: footer_font; src: url('../Fonts/superman.ttf'); }
-/*
-  erti_zomis_gashlili_wierdo
-  daxrili_wvrili
-  bold
-  dzalian_bold
-  bold_politika
-  mkrtali_grdzeli
-  mkrtali_daxveuli
-  daxveuli
- */
 html{scroll-behavior: smooth;}
   body{
     margin:0;
