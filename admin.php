@@ -3,11 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-<<<<<<< HEAD
     <title></title>
       <link rel="stylesheet" href="style/admin.css">
       <link rel="stylesheet" href="style/admin/product.css">
-      <link rel="stylesheet" href="style/admin/category.css">
+      <link rel="stylesheet" href="style/admin/categ.css">
       <link rel="stylesheet" href="style/admin/modify.css">
       <link rel="stylesheet" href="style/admin/inbox.css">
       <link rel="stylesheet" href="style/admin/analytics.css">
@@ -183,41 +182,50 @@
 
     <!-- CATEGORY -->
     <div class="section">
-        <table class="w3-table-all w3-white w3-hoverable category_table">
-            <thead>
-                <th class=" w3-white">
-                  <input type="text" class="category_input w3-blue" name="" placeholder="ახალი კატეგორია">
-                  <button type="submit" name="button" id="category_add">+</button>
-                </th>
-                <th class="  w3-white">
-                  <select class="category_select w3-blue" name="">
-                    <option disabled selected >სექცია</option>
-                    <option value="ქალი">ქალი</option>
-                    <option value="კაცი">კაცი</option>
-                    <option value="ბავშვი">ბავშვი</option>
-                  </select>
-                  <button  id="trash" name="button">
-                    <i class="fa fa-trash" ></i>
-                  </button>
-                </th>
-                <th class="w3-white">
-                  <input type="text" class="search_category w3-blue" name="search_category " value=""  placeholder="ძიება...">
-                  <button type="submit" id='category-search-button' name="button">
-                    <i style="font-size:1.4vw" class="fa fa-search "></i>
-                  </button>
-                </th>
-              </thead>
-              <?php
-                for ($i=0; $i < 45; $i++) {
-                  echo "
-                    <tr>
-                      <td class='w3-center '><input type='checkbox' name='category_selection[]' value=''> შარვალი</td>
-                      <td class='w3-center'>სექცია</td>
-                      <td class='w3-center'> <i>80/124</i> </td>
-                    </tr>";
-                }
-              ?>
-          </table>
+      <div class="category-header">
+
+        <div class="add-category">
+          <input type="text" name="" placeholder="ახალი კატეგორია">
+          <button type="submit" class="w3-blue" name="button">+</button>
+        </div>
+
+        <div class="select-category">
+          <select name="">
+            <option disabled selected >სექცია</option>
+            <option value="ქალი">ქალი</option>
+            <option value="კაცი">კაცი</option>
+            <option value="ბავშვი">ბავშვი</option>
+          </select>
+          <button name="button" class="w3-blue">
+            <i class="fa fa-trash" ></i>
+          </button>
+        </div>
+
+        <div class="search-category">
+          <input type="text" name="search_category " value=""  placeholder="ძიება...">
+          <button type="submit" name="button" class="w3-blue">
+            <i style="font-size:1.4vw" class="fa fa-search "></i>
+          </button>
+        </div>
+
+      </div>
+      <div class="category-table">
+        <table class="w3-table-all w3-white w3-hoverable">
+          <?php
+            for ($i=0; $i < 13; $i++) {
+              echo "
+                <tr>
+                  <td class='w3-center group category-check'>
+                    <input type='checkbox' id='xd[".$i."]'>
+                    <label for='xd[".$i."]'>შარვალი</label>
+                  </td>
+                  <td class='w3-center section-check'>სექცია</td>
+                  <td class='w3-center number-check'> <i>80/124</i> </td>
+                </tr>";
+            }
+          ?>
+        </table>
+      </div>
     </div>
 
     <!-- CUSTOMIZE -->
@@ -547,7 +555,7 @@
     </div>
 
     <script>
-      slide(2);
+      slide(1);
       var panel_index = 0;
       function Toggle_panel(button){
         button.classList.toggle("change");
