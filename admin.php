@@ -253,13 +253,11 @@
             <input type="text" name="" value="" placeholder=" ტექსტი" id="banner_text">
             <button type="submit" name="button" class='w3-button w3-round w3-blue'>ცვლილება</button>
           </form>
-          <div class="Poster" id="poster">
-            <h1 class=''>cloth</h1>
-          </div>
+          <!-- CHASAMATEBELIA BANERI -->
         </div>
 
         <!-- catalog form -->
-        <div class="catalog_class" id="1" style="display:none;">
+        <div id="1" style="display:none;">
           <div class="Admin-Catalog">
             <div class="Admin-gallery js-flickity"
             data-flickity-options='{ "wrapAround": true ,"pageDots": false,"autoPlay": 1500 }'>
@@ -331,37 +329,55 @@
 
         <!-- description form -->
         <div class="description_class" id='3' style="display:none;">
-          <form action="index.php" class="decription_form" method="post">
-            <label class="switch">
-              <input type="checkbox" id="description_check" style="display:none;">
-              <span class="slider round"></span>
-            </label>
-            <div class='upload'>
+          <form action="index.php" method="post" class="dascription_form">
+
+            <div class="test1">
+              <img src="resource/index/desc2.jpg" alt="retail store">
+            </div>
+
+            <div class="test2">
+            <p>• სულხან კვერნაძის 33ა<br>
+            • საუკეთესო ხარისხის ტანისამოსი,<br>
+              ფეხსაცმელი  და აქსესუარები</p>
+            </div>
+            <div class="test3">
+
+                <textarea name="name" rows="8" cols="80" placeholder="Text here"></textarea>
               <input style='display:none;'id="upload-but" type="file">
                 <label for="upload-but">
                   <img src="resource/admin/upload.png">
                 </label>
-            </div>
-            <br>
-            <input class="description1 description_input" type="text" name="" value="" placeholder=" მარჯვენა-ტექსტი">
-            <input class="description2 description_input" type="text" name="" value="" placeholder=" მარცხენა-ტექსტი">
-            <br><br>
-            <button type="submit" name="button">შეცვლა</button>
-          </form>
-
-            <div class="Description_admin description1 descr_left">
-              <img src="resource/index/desc2.jpg" alt="retail store">
-                  <p>• სულხან კვერნაძის 33ა<br>
-                  • საუკეთესო ხარისხის ტანისამოსი,<br>
-                    ფეხსაცმელი  და აქსესუარები</p>
+                <button type="button" class="w3-button w3-blue"name="button">შენახვა</button>
             </div>
 
-            <div class="Description_admin description2 descr_right">
+            <div class="test4">
+              1
+            </div>
+
+            <div class="test5">
+              2
+            </div>
+            <div class="test6">
+              3
+            </div>
+            <!-- <div class="description_down">
               <img src="resource/index/desc1.jpg" alt="retail store">
                 <p>• ჩვენ ვართ საქართველოში <br>ოფიციალური
                  წარმომადგენლები<br> უცხოური ბრენდების
                  აირჩიე C</p>
-            </div>
+
+              <input style='display:none;'id="upload-but" type="file">
+                <label for="upload-but">
+                  <img src="resource/admin/upload.png">
+                </label>
+                <input type="text" name="" value="" placeholder="Text">
+            </div> -->
+
+          </form>
+
+
+
+
 
         </div>
 
@@ -555,7 +571,7 @@
     </div>
 
     <script>
-      slide(1);
+      slide(2);
       var panel_index = 0;
       function Toggle_panel(button){
         button.classList.toggle("change");

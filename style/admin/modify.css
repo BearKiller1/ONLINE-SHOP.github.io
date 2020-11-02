@@ -3,17 +3,8 @@
     width: 100%;
     background-color:white;
   }
-  .customize:hover{
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-      transition: 1s;
-      background-color: #eee;
-      color:#333;
-  }
   .customize{
     letter-spacing: 2px;
-    transition: 1s;
     width:20%;
     height:70%;
     font-size:1.7vw;
@@ -22,7 +13,6 @@
     background-color: #2196F3;
     color:white;
     border:0;
-    outline:0;
     border-radius: 4px;
   }
   /* banner css */
@@ -32,22 +22,17 @@
     }
 
     .banner_class input[type="text"]{
-      font-family:'banner_change_font';
       outline:0;
       color:#333;
       border:0;
       border-radius: 3px;
       padding-left: 1%;
     }
-    .banner_class button{
-      margin-top:-0.4%;
-    }
     #banner_photo{
       display: none;
     }
     .banner_class h2{
       font-family: 'banner_font';
-      z-index: 15;
       -webkit-font-smoothing: antialiased;
       letter-spacing: 1px;
       word-spacing:4px;
@@ -59,7 +44,6 @@
       width:10%;
       height: 13vh;
       margin:0% 0 3% 45%;
-
       display: block;
     }
     .banner_class label img{
@@ -67,32 +51,14 @@
       width:100%;
       height: 13vh;
     }
-    #poster{
-      border-radius: 4px;
-      width:98%;
-      height:60vh;
-      margin:2% 0 1% 1%;
-      background-size: 100% 100%;
-      -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-      -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-      box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    }
-    #poster h1{
-      font-family: 'Sofia';
-      position: relative;
-      left:3%;
-      color:white;
-      text-shadow: 4px 5px 0px rgba(0,0,0,0.53);
-    }
     #banner_text{
       width:30%;
       height:6vh;
       margin-left:30%;
     }
+
   /* catalog css */
-  .catalog_class {
-    }
-      .New-catalog{
+  .New-catalog{
         text-align: center;
         font-size:5vw;
         width:15%;
@@ -209,131 +175,90 @@
         width:100%;
         height:25vh;
       }
+
   /* location css */
   .location_class{
       margin:2% 0 0 0;
       text-align: center;
       width: 100%;
     }
-    .location_class input{
-      font-family:'location_input';
-    }
-    .location_class button{
-      border-radius:20px;
-      font-family:'location_button';
-    }
-    .location_iframe{
-      margin:5vh 0 0 0vw;
-    }
+    .location_class button{border-radius:20px;}
+    .location_iframe{margin:5vh 0 0 0vw;}
+
   /* description css */
-  .description_class{
-      height: 95vh;
+  .description_class{}
+    .dascription_form{
+      display: grid;
+      grid-template-columns: 40% 30% 30%;
+      grid-template-rows:2;
+      margin-left: 1%;
+      height: 90vh;
+      width: 98%;
+    }
+    .test1{
       width: 100%;
-    }
-    .Description_admin{
-      font-family: 'Desc_font';
-      width:100%;
-      height:40vh;
-      font-size: 1.7vw;
-      text-align: center;
-      margin: 7vh 0 0 0;
-    }
-    .descr_left p{
-      margin-top: 10vh;
-      width: 68%;
-      height: 20vh;
-      float: left;
-    }
-    .descr_left img{
-        width:30%;
-        height: 40vh;
-        float: left;
-        margin-left: 2%;
-    }
-    .descr_right{
-        display: none;
-    }
-    .descr_right p{
-      margin-top: 10vh;
-      width: 68%;
-      height: 20vh;
-      float: right;
-    }
-    .descr_right img{
       height: 40vh;
-      width: 30%;
-      float: right;
-      margin-right: 2%;
+      grid-column: 1;
+      grid-row: 1;
     }
-    .decription_form{
-      text-align: center;
-    }
-    .upload{
-      margin:7vh 0 0 44%;
-      height: 15vh;
-      width: 13%;
-    }
-    .upload img{
-      height: 15vh;
+    .test1 img{
       width: 100%;
-    }
-    .description_input{
-      font-family: 'customize';
-      position: absolute;
-      width:30%;
-      text-align: center;
-      left:45%;
-    }
-    .decription_form button{
-      font-family:'location_button';
-      width:10%;
-      background-color: #2196F3;
-      color:white;
-      font-size:1.5vw;
-      border:0;
-      outline:0;
-      border-radius: 3px;
-    }
-    .switch {
-      top:5vh;
-      position: relative;
-      display: inline-block;
-      width:6%;
-      height: 5vh;
-    }
-    .slider {
-      position: absolute;
-      cursor: pointer;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: #2196F3;
-      -webkit-transition: .4s;
-      transition: .4s;
-    }
-    .slider:before {
-      position: absolute;
-      content: "";
-      height: 4vh;
-      width: 2vw;
-      left: 0.3vw;
-      bottom: 0.3vw;
-      background-color: white;
-      -webkit-transition: .4s;
-      transition: .4s;
+      height: 40vh;
     }
 
-    input:checked + .slider:before {
-      -webkit-transform: translateX(4vw);
-      -ms-transform: translateX(4vw);
-      transform: translateX(2vw);
+    .test2{
+      width: 100%;
+      height: 40vh;
+      grid-column: 2;
+      grid-row: 1;
+      text-align: center;
+      justify-content: center;
     }
-    /* Rounded sliders */
-    .slider.round {
-      border-radius: 34px;
+    .test2 p{
+      margin:8vh 0 0 0;
+      align-items: center;
+      font-size: 1.5vw;
     }
-    .slider.round:before {
-      border-radius: 50%;
+    .test3{
+      width: 100%;
+      height: 40vh;
+      grid-column: 3;
+      grid-row: 1;
+      text-align: center;
+    }
+    .test3 textarea{
+      height:16vh;
+      width: 98%;
+      margin:4vh 0 0 1%;
+      resize: none;
+      outline: 0;
+    }
+    .test3 img{
+      height:10vh;
+    }
+    .test3 button{
+      border-radius: 25px;
+      margin-top: 2vh;
+    }
+    .test4{
+      background: blue;
+      width: 100%;
+      height: 40vh;
+      grid-column: 1;
+      grid-row: 2;
+    }
+    .test5{
+      background: green;
+      width: 100%;
+      height: 40vh;
+      grid-column: 2;
+      grid-row: 2;
+    }
+    .test6{
+      background: brown;
+      width: 100%;
+      height: 40vh;
+      grid-column: 3;
+      grid-row: 2;
     }
   #banner_form,#location_form,#description_form,#catalog_form{display: none;margin:3% 0 0 5%;}
