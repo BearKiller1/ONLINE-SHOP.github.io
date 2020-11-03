@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title></title>
       <link rel="stylesheet" href="style/admin.css">
-      <link rel="stylesheet" href="style/admin/product.css">
-      <link rel="stylesheet" href="style/admin/categ.css">
+      <link rel="stylesheet" href="style/admin/prod.css">
+      <link rel="stylesheet" href="style/admin/category.css">
       <link rel="stylesheet" href="style/admin/modify.css">
       <link rel="stylesheet" href="style/admin/inbox.css">
       <link rel="stylesheet" href="style/admin/analytics.css">
@@ -73,67 +73,63 @@
 
     <!-- PRODUCT -->
     <div class="section">
-      <div class="w3-container product_header w3-white">
-        <!-- search -->
-        <div class='Search'>
+      <div class="product-header">
+
+        <div class='Search'> <!-- SEARCH -->
           <form action="index" method="post">
             <input type="text" class='w3-blue' placeholder="ძიება">
             <i class="fa fa-search"></i>
           </form>
         </div>
 
-        <!-- add button -->
-        <button class="w3-button add_butt  w3-blue" onclick="toggleshow('create_post');">
+        <!-- CREATE BUTTON -->
+        <button id='create-button'>
           <i class='fas fa-plus'></i>
         </button>
 
-        <button class="w3-button add_butt  w3-blue" onclick="clear()" id='close_upload'>
-          <i style="" class="fa fa-trash"></i>
+        <!-- TRASH BUTTON -->
+        <button id='remove-button'>
+          <i class="fa fa-trash"></i>
         </button>
       </div>
+
+
         <!-- add posts -->
-      <div class="product_space " id='create_post'>
-            <form  class="w3-container add_post" id="upload" action="/action_page.php">
-              <input class=" w3-border" placeholder="სათაური" name="title" type="text">
-              <input class="w3-border price" placeholder="ფასი" name="price" type="number" min="1" max="1000">
-              <br><br>
-              <select class="section_select" name="სექცია">
-                <option value="">კაცი</option>
-                <option value="">ქალი</option>
-                <option value="">ბავშვი</option>
-                <option value="">უნისექსი</option>
-              </select>
-              <select class="currency" name="">
-                <option value="">USD</option>
-                <option value="">GEL</option>
-                <option value="">RUB</option>
-              </select>
-              <br><br>
-              <textarea type="text" name="description" placeholder="აღწერა" value=""></textarea>
-              <div class="select_category">
-                   <table class="w3-table-all w3-hoverable category_table w3-centered">
-                       <thead>
-                         <tr class="w3-light-grey">
-                           <th>კატალოგი</th>
-                         </tr>
-                       </thead>
-                         <?php
-                           for ($i=0; $i < 15; $i++) {
-                               echo "<tr>
-                                       <td><input type='radio' value='sharvali'>შარვალი</td>
-                                     </tr>";
-                           }
-                         ?>
-                     </table>
-                 </div>
-              <div class='upload_product'>
-                <input style='display:none;'id="upload-but" type="file">
-                  <label for="upload-but">
-                    <img src="resource/admin/upload.png">
-                  </label>
+      <div class="create-product">
+            <form action="admin.php" method="post">
+              <input placeholder="სათაური" name="title" type="text">
+              <input placeholder="ფასი" name="price" type="number" min="1" max="1000">
+
+              <div class="choose-category">
+                <p> <input type='radio' value='sharvali'>შარვალი </p>
+                <p> <input type='radio' value='sharvali'>შარვალი </p>
+                <p> <input type='radio' value='sharvali'>შარვალი </p>
+                <p> <input type='radio' value='sharvali'>შარვალი </p>
+                <p> <input type='radio' value='sharvali'>შარვალი </p>
+                <p> <input type='radio' value='sharvali'>შარვალი </p>
               </div>
-              <br>
-              <button class="w3-btn w3-blue" >დამატება</button>
+
+              <select id="section-select" name="section">
+                <option value="კაცი">კაცი</option>
+                <option value="ქალი">ქალი</option>
+                <option value="ბავშვი">ბავშვი</option>
+                <option value="უნისექსი">უნისექსი</option>
+              </select>
+
+              <select id="currency" name="currency">
+                <option value="USD">USD</option>
+                <option value="GEL">GEL</option>
+                <option value="RUB">RUB</option>
+              </select>
+
+              <textarea name="description" placeholder="აღწერა"></textarea>
+
+              <input id="upload-button" type="file">
+              <label for="upload-but">
+                <img src="resource/admin/upload.png">
+              </label>
+
+              <button class='w3-blue'>დამატება</button>
             </form>
       </div>
 
@@ -143,20 +139,20 @@
           <p class="selectall">ყველას არჩევა
             <input type="checkbox"  name="select-all" id="select-all" />
           </p>
+
           <select class="sect-filter w3-blue" name="">
             <option value="" selected disabled>სექცია</option>
             <option value="">ბავშვი</option>
             <option value="">ქალი</option>
             <option value="">კაცი</option>
           </select>
+
           <select class="category-filter w3-blue" name="">
             <option value="" selected disabled>კატეგორია</option>
-            <?php
-              for ($i=0; $i < 4; $i++) {
-                echo "<option value=''>ქუდი</option>";
-              }
-            ?>
+            <option value=''>ქუდი</option>
+            <option value=''>ქუდი</option>
           </select>
+
           <input type="number"  class="w3-blue" name="" min="0" placeholder="დან">
           <input type="number"  class="w3-blue" name="" min="0" placeholder="მდე">
         </form>
@@ -183,7 +179,6 @@
     <!-- CATEGORY -->
     <div class="section">
       <div class="category-header">
-
         <div class="add-category">
           <input type="text" name="" placeholder="ახალი კატეგორია">
           <button type="submit" class="w3-blue" name="button">+</button>
@@ -196,6 +191,7 @@
             <option value="კაცი">კაცი</option>
             <option value="ბავშვი">ბავშვი</option>
           </select>
+
           <button name="button" class="w3-blue">
             <i class="fa fa-trash" ></i>
           </button>
@@ -209,18 +205,19 @@
         </div>
 
       </div>
+
       <div class="category-table">
         <table class="w3-table-all w3-white w3-hoverable">
           <?php
-            for ($i=0; $i < 13; $i++) {
+            for ($i=0; $i < 55; $i++) {
               echo "
                 <tr>
-                  <td class='w3-center group category-check'>
+                  <td class='w3-center'>
                     <input type='checkbox' id='xd[".$i."]'>
                     <label for='xd[".$i."]'>შარვალი</label>
                   </td>
-                  <td class='w3-center section-check'>სექცია</td>
-                  <td class='w3-center number-check'> <i>80/124</i> </td>
+                  <td class='w3-center '>სექცია</td>
+                  <td class='w3-center '> <i>80/124</i> </td>
                 </tr>";
             }
           ?>
