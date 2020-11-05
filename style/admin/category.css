@@ -1,119 +1,71 @@
-.category-header{
-  height: 10vh;
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-auto-rows: 1;
-  grid-gap: 2%
-}
-
-/* ADD */
-.add-category{
-  margin-left:20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-column: 1;
-  grid-row:1;
+  .category-header{
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
   }
-  .add-category input{
-    padding-left: 10px;
-    border:none;
-    outline: 0;
-    height: 5vh;
-  }
-  .add-category button{
+  .category-header input,
+  .category-header button,
+  .category-header select{
+    border:0;
     outline:0;
-    border:none;
-    border-radius: 10%;
+    float:left;
+    width: 75%;
     height: 5vh;
-    width: 15%;
-    margin-left: 4%;
-  }
-
-/* SELECT */
-.select-category{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-column: 2;
-  grid-row:1;
-  }
-  .select-category select{
+    border-radius: 5px;
     padding-left: 10px;
-    height: 5vh;
-    width: 70%;
-    border:none;
-    outline: 0;
-  }
-  .select-category button{
-    outline:0;
-    border:none;
-    border-radius: 10%;
-    height: 5vh;
-    width: 15%;
-    margin-left: 4%;
   }
 
-/* SEARCH */
-.search-category{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-column: 3;
-  grid-row:1;
+  .category-header button{width:20%; margin-left: 5%;}
+  .create-category{grid-column: 1; width:80%;}
+  .select-category{grid-column: 2; width:80%;}
+  .search-category{grid-column: 3; width:80%;}
+
+  /* CATEGORY LIST */
+  .category-table{
+    position: relative;
+    overflow: scroll;
+    width:100%;
+    height:90vh;
+    text-align: right;
+    font-size:18px;
   }
-  .search-category input{
-    padding-left: 10px;
-    outline: 0;
-    border:none;
-    height: 5vh;
-  }
-  .search-category button{
-    outline:0;
-    border:none;
-    border-radius: 10%;
-    height: 5vh;
-    width: 15%;
-    margin-left: 4%;
+  .category-table td{width:33.3%;}
+  .category-table td > div{
+    width:100%;
+    text-align: center;
   }
 
-/* CHECKBOX */
-.category-table{
-  width:100%;
-  height:90vh;
-  position: relative;
-  overflow: scroll;
-}
-.category-table input[type="checkbox"] {
-  display: none;
-  }
+  /* CHECKBOX */
+  .category-table input[type="checkbox"] {display: none;}
   .category-table label {
     cursor: pointer;
     position: relative;
   }
   .category-table label::before {
-    content: "";
     background: url("../../resource/admin/checked.png");
+    transition: all 0.4s cubic-bezier(0.54, 0.01, 0, 1.49);
+    transform: scale(0) rotateZ(180deg);
     background-position: center;
     background-size: contain;
+    position: absolute;
     height: 20px;
     width: 20px;
-    position: absolute;
+    content: "";
     left: -40px;
     top: -4px;
-    transform: scale(0) rotateZ(180deg);
-    transition: all 0.4s cubic-bezier(0.54, 0.01, 0, 1.49);
   }
   .category-table input[type="checkbox"]:checked + label::before {
     transform: scale(1) rotateZ(0deg);
   }
   .category-table label::after {
-    content: "";
     border: 2px solid #2c65e6;
+    border-radius: 50%;
+    position: absolute;
     width: 24px;
     height: 24px;
-    position: absolute;
+    content: "";
     left: -42px;
     top: -6px;
-    border-radius: 50%;
   }

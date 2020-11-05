@@ -1,23 +1,22 @@
-.account-list::-webkit-scrollbar{display: none;}
+  .account-list::-webkit-scrollbar{display: none;}
   .account-list{
     font-family:'Desc_font';
-      position: relative;
-      float:left;
-      overflow: scroll;
-      height:92vh;
-      width: 25%;
-      text-align: center;
-      background-color: white;
+    position: relative;
+    float:left;
+    overflow: scroll;
+    height:92vh;
+    width: 25%;
+    text-align: center;
+    background-color: white;
     }
   .account-list-header{
-    font-family:'location_button';
-    display: table;
-    font-size:1.5vw;
+    top:0;
     width:100%;
     height: 4vh;
-    background: #eee;
+    display: table;
+    font-size:1.5vw;
     position: sticky;
-    top:0;
+    font-family:'location_button';
 
   }
   .account-list p{
@@ -44,13 +43,11 @@
     width:75%;
     height:100vh;
   }
-  .modify-account h3{
-    font-family: "menu_font";
-  }
+  .modify-account h3{font-family: "menu_font";}
   .modify-account input::placeholder{color:#333; }
   .modify-account input{
     font-family: "Desc_font";
-    color:#333333;
+    color:#333;
     background-color:white;
     display: block;
     border-radius: 5px;
@@ -61,4 +58,7 @@
     height:7vh;
     margin:3% 0 5% 32.5%;
   }
-  .modify-account button{font-size:1.5vw;letter-spacing: 3px;}
+  .modify-account button{
+    font-size:1.5vw;
+    letter-spacing: 3px;
+  }

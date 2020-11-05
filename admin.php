@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title></title>
+    <meta charset="utf-8">
+    <title>Admin</title>
       <link rel="stylesheet" href="style/admin.css">
       <link rel="stylesheet" href="style/admin/prod.css">
       <link rel="stylesheet" href="style/admin/category.css">
@@ -14,21 +14,16 @@
 
       <link rel="stylesheet" href="style/index.css">
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       <!-- FONTS -->
       <link rel="stylesheet" href="Fonts/TTfs/fonts.css">
 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <!-- CHARTS FOR ANALYTICS -->
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
       <!-- FLICKITY FOR CAROUSEL -->
       <script src='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js'>  </script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
-
-      <!-- CHARTS FOR ANALYTICS -->
-      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
-
-      <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
       <!-- ICONS -->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -38,11 +33,10 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   </head>
-  <body class='w3-animate-fade'>
+  <body>
     <!-- SIDE MENU -->
     <div class="Cpanel w3-blue " id='panel'>
       <div class="w3-white pannel_X">
-        <button id="logout"><i class="fa fa-sign-out"></i></button>
         <div id="panel_header">ადმინი</div>
         <div class="panel_butt w3-animate-opacity" id="panel_button" onclick="Toggle_panel(this);">
             <div class="bar1"></div>
@@ -58,7 +52,6 @@
           <a href="#" onclick="slide(3)">შეტყობინებები</a><br>
           <a href="#" onclick="slide(5)">სტატისტიკები</a><br>
           <a href="#" onclick="slide(6)">მომხმარებლები</a><br>
-          <!-- <a href="#" onclick="slide(7)">settings</a><br> -->
       </div>
       <div id='panel_icons'>
           <i onclick="slide(0)" class='fas fa-box-open' style='font-size:2vw'></i><br>
@@ -67,7 +60,6 @@
           <i onclick="slide(3)" class="material-icons" style='font-size:2.5vw' >mail</i><br>
           <i onclick="slide(5)" class="fa fa-pie-chart" style="font-size:2vw"></i><br>
           <i onclick="slide(6)" class='fas fa-user-circle' style='font-size:2vw'></i><br>
-          <!-- <i class="fa fa-gear" style="font-size:2.3vw;"></i> -->
       </div>
     </div>
 
@@ -77,7 +69,7 @@
 
         <div class='Search'> <!-- SEARCH -->
           <form action="index" method="post">
-            <input type="text" class='w3-blue' placeholder="ძიება">
+            <input type="text" placeholder="ძიება">
             <i class="fa fa-search"></i>
           </form>
         </div>
@@ -93,8 +85,6 @@
         </button>
       </div>
 
-
-        <!-- add posts -->
       <div class="create-product">
             <form action="admin.php" method="post">
               <input placeholder="სათაური" name="title" type="text">
@@ -133,45 +123,44 @@
             </form>
       </div>
 
-      <!-- gallery -->
-      <div class="product_space" id='gallery'>
-        <form class="prod-filter" action="index.html" method="post">
-          <p class="selectall">ყველას არჩევა
-            <input type="checkbox"  name="select-all" id="select-all" />
-          </p>
+      <div class="gallery">
+        <form action="index.html" method="post">
+          <p> ყველას არჩევა <input type="checkbox"  name=""></p>
 
-          <select class="sect-filter w3-blue" name="">
+          <select  name="">
             <option value="" selected disabled>სექცია</option>
             <option value="">ბავშვი</option>
             <option value="">ქალი</option>
             <option value="">კაცი</option>
           </select>
 
-          <select class="category-filter w3-blue" name="">
+          <select name="">
             <option value="" selected disabled>კატეგორია</option>
             <option value=''>ქუდი</option>
             <option value=''>ქუდი</option>
           </select>
 
-          <input type="number"  class="w3-blue" name="" min="0" placeholder="დან">
-          <input type="number"  class="w3-blue" name="" min="0" placeholder="მდე">
+          <input type="number" name="" min="0" max="9000" placeholder="დან">
+          <input type="number" name="" min="0" max="9000" placeholder="მდე">
         </form>
-        <div class="prod-list">
-          <?php
-            for ($i=0; $i < 15; $i++) {
-                echo "<div class='gallery_img w3-blue'><form>
-                  <input type='checkbox'>
-                    <i style='font-size:1.5vw' class='fa'>&#xf014;</i>
-                  </button>
-                  </form>
-                <img src='resource/product/d1.jpg'>
-                <div class='product_cost'>
-                  <p>120$</p>
-                </div>
-                        </div>";
-            }
-          ?>
-        </div>
+
+        <!-- product list -->
+        <?php
+          for ($i=0; $i < 15; $i++) {
+              echo "<div class='product-cell'>
+                      <form>
+                          <i class='fas fa-pencil-alt'></i>
+
+                          <input type='checkbox'>
+
+                          <i class='fa fa-remove'></i>
+                      </form>
+
+                      <img src='resource/product/hoodie.jpg'>
+                      <button> მეტი </button>
+                   </div>";
+          }
+        ?>
       </div>
 
     </div>
@@ -179,7 +168,7 @@
     <!-- CATEGORY -->
     <div class="section">
       <div class="category-header">
-        <div class="add-category">
+        <div class="create-category">
           <input type="text" name="" placeholder="ახალი კატეგორია">
           <button type="submit" class="w3-blue" name="button">+</button>
         </div>
@@ -216,8 +205,8 @@
                     <input type='checkbox' id='xd[".$i."]'>
                     <label for='xd[".$i."]'>შარვალი</label>
                   </td>
-                  <td class='w3-center '>სექცია</td>
-                  <td class='w3-center '> <i>80/124</i> </td>
+                  <td> <div> სექცია </div> </td>
+                  <td> <div> 80/124 </div> </td>
                 </tr>";
             }
           ?>
@@ -568,41 +557,20 @@
     </div>
 
     <script>
-      slide(2);
-      var panel_index = 0;
-      function Toggle_panel(button){
-        button.classList.toggle("change");
-        if(panel_index == 0){
-          $('#panel').css("width","5%");
-          $('#panel_words').hide();
-          $('#panel_button').css("margin","1vh 1vw 0 0");
-          $('#panel_icons').css("display","block");
-          $('#panel_header').css("display","none");
-          $('#logmeout').css("display","none");
-          $('.section').css("width","95vw");
-          $('.section').css("margin","0 0 0 5vw");
-          panel_index = 1;
-        }
-        else{
-          $('#panel').css("width","19%");
-          $('#panel_words').fadeIn(1300);
-          $('#panel_button').css("margin","2% 5% 0 0");
-          $('#panel_icons').css("display","none");
-          $('#panel_header').fadeIn(1300);
-          $('#logmeout').show(500);
-          $('.section').css("width","81vw");
-          $('.section').css("margin","0 0 0 19vw");
-          panel_index = 0;
-        }
-      }
+      slide(0);
 
+      // Product-create new product Toggle
+      $(document).ready(function() {
+        $('#create-button').click(function(){
+          $('.create-product').slideToggle("slow");
+        });
+      });
+
+      // CUSTMOIZE-modify navigation
       function toggleshow(x){
-        for (var i = 0; i < 5; i++) {
-          $("#"+i).hide();
-        }
-        window.dispatchEvent(new Event('resize')); //fixes flickity resize error
+        for (var i = 0; i < 5; i++) { $("#"+i).hide(); }
+        window.dispatchEvent(new Event('resize'));
         $('#'+x).slideToggle("slow");
-
       }
 
       function slide(n){
@@ -612,26 +580,9 @@
           }
           sections[n].style.display = "block";
         }
-
-      // description checkbox jquery
-      $(document).ready(function(){
-          $('input[type="checkbox"]').click(function(){
-                if($(this).prop("checked") == true){
-                    $(".description1").show();
-                    $(".description2").hide();
-                }
-                else if($(this).prop("checked") == false){
-                    $(".description1").hide();
-                    $(".description2").show();
-                }
-                });
-            });
-
-
-
-
     </script>
 
   </body>
   <script src="js/googleCharts.js"></script>
+  <script src="js/adminSlide.js"></script>
 </html>

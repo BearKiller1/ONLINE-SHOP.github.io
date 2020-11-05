@@ -1,110 +1,111 @@
-body{
-    margin:0;
-    user-select: none;
-    position: relative;
-  }
+    body{
+      margin:0;
+      padding:0;
+      user-select: none;
+      box-sizing: border-box;
+    }
 
-button{cursor:pointer;transition: 1s;outline:0;}
-/* SIDE MENU */
+    button{cursor:pointer;transition: 1s;outline:0;}
+    /* SIDE MENU */
     .Cpanel{
-      position: fixed;
-      width: 19%;
-      height: 100vh;
-      float:left;
-      transition: 1s;
-      -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-      -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    position: fixed;
+    width: 19%;
+    height: 100vh;
+    float:left;
+    transition: 1s;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
     }
     #panel_header{
-      text-align: center;
-      font-family: 'Desc_font';
+    text-align: center;
+    font-family: 'Desc_font';
     }
     .Cpanel:hover{
-      transition: 1s;
-      -webkit-box-shadow: 5px 0px 14px 0px rgba(0,0,0,0.75);
-      -moz-box-shadow: 5px 0px 14px 0px rgba(0,0,0,0.75);
-      box-shadow: 5px 0px 14px 0px rgba(0,0,0,0.75);
+    transition: 1s;
+    -webkit-box-shadow: 5px 0px 14px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 0px 14px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 0px 14px 0px rgba(0,0,0,0.75);
     }
     .pannel_X{
-      position: relative;
-      width: 100%;
-      height: 10vh;
-      font-size:3vw;
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    font-size:3vw;
     }
     .pannel_X button{
-      position: absolute;
-      color: #2196f3;
-      border:0;
-      left:1%;
-      height:100%;
-      background-color: white;
-      transform: rotate(180deg);
-      float:left;
+    position: absolute;
+    color: #2196f3;
+    border:0;
+    left:1%;
+    height:100%;
+    background-color: white;
+    transform: rotate(180deg);
+    float:left;
     }
     #panel_words{background-color: ;}
     #panel_words a{
-      line-height: 5;
-      font-size: 1.4vw;
+    line-height: 5;
+    font-size: 1.4vw;
     }
     #panel_icons {
-      display: none;
-      text-align: center;
+    display: none;
+    text-align: center;
     }
     #panel_icons i {
-      line-height: 3.3;
-      cursor: pointer;
-      transition: 1s;
-      }
+    line-height: 3.3;
+    cursor: pointer;
+    transition: 1s;
+    }
     #panel_icons i:hover{
-      color:#333333;
-      transition: 1s;
+    color:#333333;
+    transition: 1s;
     }
     .Cpanel a{
-      transition: 1s;
-      letter-spacing: 4px;
-      text-decoration: none;
-      line-height: 2.6;
-      font-size:2vw;
-      margin-left:12%;
+    transition: 1s;
+    letter-spacing: 4px;
+    text-decoration: none;
+    line-height: 2.6;
+    font-size:2vw;
+    margin-left:12%;
     }
     .panel_butt{
-        position: absolute;
-        top:0.5vh;
-        right:0;
-        width: 3vw;
-        height:6vh;
-        cursor: pointer;
-        z-index: 1;
-        margin:2% 5% 0 0;
-      }
-      .bar1, .bar2, .bar3 {
-        width: 3vw;
-        height: 1vh;
-        background-color: #333;
-        margin: 6px 0;
-        transition: 0.4s;
-      }
-      .change .bar1 {
-        -webkit-transform: rotate(0) ;
-        transform: rotate(0) ;
-      }
-      .change .bar2 {opacity: 1;}
-      .change .bar3 {
-        -webkit-transform: rotate(0) ;
-        transform: rotate(0) );
-      }
-      .bar2 {opacity: 0;}
-      .bar1 {
-        -webkit-transform: rotate(-45deg) translate(-9px, 9px);
-        transform: rotate(-45deg) translate(-9px, 9px);
-      }
-      .bar3 {
-        -webkit-transform: rotate(45deg) translate(-9px, -9px);
-        transform: rotate(45deg) translate(-9px, -9px);
-      }
+      position: absolute;
+      top:0.5vh;
+      right:0;
+      width: 3vw;
+      height:6vh;
+      cursor: pointer;
+      z-index: 1;
+      margin:2% 5% 0 0;
+    }
+    .bar1, .bar2, .bar3 {
+      width: 3vw;
+      height: 1vh;
+      background-color: #333;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+    .change .bar1 {
+      -webkit-transform: rotate(0) ;
+      transform: rotate(0) ;
+    }
+    .change .bar2 {opacity: 1;}
+    .change .bar3 {
+      -webkit-transform: rotate(0) ;
+      transform: rotate(0) );
+    }
+    .bar2 {opacity: 0;}
+    .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 9px);
+      transform: rotate(-45deg) translate(-9px, 9px);
+    }
+    .bar3 {
+      -webkit-transform: rotate(45deg) translate(-9px, -9px);
+      transform: rotate(45deg) translate(-9px, -9px);
+    }
 
-/* ALL SECTIONS */
+    /* ALL SECTIONS */
     .section{
       transition: 1s;
       float:left;
@@ -114,83 +115,3 @@ button{cursor:pointer;transition: 1s;outline:0;}
       height: 100vh;
       display: none;
     }
-
-/* PRODUCT */
-
-/* CUSTOMIZE */
-
-/* ANALYTICS */
-
-/* INBOX */
-
-/* accounts */
-
-/*  MOBILE  */
-@media only screen and (max-width: 700px) {
-/* PRODUCT */
-  .Search input{
-    margin: 2vh 0 0 15%;
-    height: 5vh;
-  }
-  .Search i{
-    position: absolute;
-    top: 4vh;
-  }
-  .gallery_img{
-    width: 25%;
-    height: 25vh;
-    margin:5vh 0 0 6.5%;
-  }
-  .gallery_img img{
-    height: 20vh;
-  }
-  .prod-filter{
-    font-size: 2vw;
-  }
-  .sect-filter{
-    width: 15%;
-  }
-  .category-filter{
-    width: 15%;
-  }
-  .selectall{
-    font-size: 2vw;
-  }
-  .add_post{
-    font-size: 2vw;
-  }
-  .add_post textarea{
-    font-size: 2vw;
-  }
-  .add_butt{
-    height: 5vh;
-    width: 5%;
-    margin:1.2vh 0 0 2%;
-  }
-  .add_butt i{
-    font-size: 3vw;
-    margin:0 0 0 -1vw;
-  }
-/* CATEOGRY */
-  .category_table input{
-    width: 60%;
-    font-size: 2vw;
-  }
-  .category_select{
-    font-size: 3vw;
-    width: 60%;
-  }
-  #category-search-button,#category_add,#trash{
-    width: 6vw;
-  }
-
-/* CUSTOMIZE */
-  .customize_header button{
-    font-size: 2vw;
-  }
-  .banner_class h2{
-    font-size: 5vw;
-  }
-  .banner_class input{
-  }
-}

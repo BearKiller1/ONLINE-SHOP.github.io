@@ -1,4 +1,16 @@
-/* PRODUCT HEADER  */
+    :root{
+      --blue:#2196F3;
+    }
+    input,button,textarea,select{
+      border-radius:3px;
+      outline:0;
+      border:0;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button{
+          -webkit-appearance: none; }
+
+    /* PRODUCT HEADER  */
     .product-header{
       width:100%;
       height:10vh;
@@ -8,15 +20,11 @@
       background-color: #fff;
     }
     .product-header button{
-      background-color: #2196F3;
-      border-radius:3px;
-      font-size: 1.6vw;
-      margin-left: 1%;
-      color:white;
-      height:7vh;
       width:4%;
-      outline:0;
-      border:0;
+      height:7vh;
+      color:white;
+      margin-left: 1%;
+      background-color:var(--blue);
     }
 
     /* PRODUCT SEARCH */
@@ -25,18 +33,7 @@
       color:white;
       border-radius:7px;
       font-family: 'Desc_font';
-      background-color: #2196F3;
-    }
-    .Search input::placeholder{color:white;}
-    .Search input{
-      border-radius: 7px;
-      text-align: center;
-      margin-left:10%;
-      width:80%;
-      height:7vh;
-      float:left;
-      outline: 0;
-      border: 0;
+      background-color:var(--blue);
     }
     .Search .fa{
       display: flex;
@@ -46,19 +43,26 @@
       height: 7vh;
       width:10%;
     }
+    .Search input{
+      background: transparent;
+      border-radius: 7px;
+      text-align: center;
+      margin-left:10%;
+      width:80%;
+      height:7vh;
+      float:left;
+    }
+    .Search input::placeholder{color:white;}
 
-/* PRODUCT ADD FORM */
+    /* PRODUCT CREATING FORM */
     .create-product{
-      margin:2% 0 0 15%;
+      padding:2%;
       width:70%;
       height: 60vh;
+      display: none;
       background: #fff;
-      padding:2%;
+      margin:2% 0 0 15%;
     }
-    .create-product input::-webkit-outer-spin-button,
-    .create-product input::-webkit-inner-spin-button{
-      -webkit-appearance: none; }
-
     .create-product input,
     .create-product select,
     .create-product textarea{
@@ -68,10 +72,8 @@
       float:left;
       width:35%;
       height: 5vh;
-      border:0;
-      outline:0;
     }
-    .create-product input[type="number"],#currency{
+    .create-product input[type="number"], #currency{
       width:10%;
       margin-left:1%;
     }
@@ -80,19 +82,16 @@
       height:20vh;
       resize:none;
     }
-
-    .choose-category p{
-      height: 5.5vh;
-      font-size:1.5vw;
-    }
     .choose-category{
       position: relative;
       overflow: scroll;
+      font-size:1.5vw;
       height:32.5vh;
       width:45%;
       float:right;
       background: #eee;
     }
+    .choose-category p{height: 5.5vh;}
 
     .create-product label{
       justify-content: center;
@@ -107,133 +106,59 @@
       cursor: pointer;
     }
     #upload-button{display: none;}
-
     .create-product button{
+      border-radius: 3px;
+      font-size:1.3vw;
       margin:3% auto;
       display: block;
-      outline:0;
-      border:0;
-      border-radius: 3px;
-      width:22%;
       height:6vh;
-      font-size:1.3vw;
+      width:22%;
     }
 
-/* FILTER FOR PRODUCT GALLERY */
-  .prod-filter option{
-      background-color: white;
-      color:#2196f3;
-    }
-    .prod-filter{
+    /* GALLERY PRODUCT FILTER */
+    .gallery{
       width:100%;
       text-align: center;
-    }
-    .selectall{
       font-family: 'Desc_font';
-      text-decoration: none;
       font-size:1.6vw;
+    }
+    .gallery select, .gallery input,
+    .gallery input::placeholder{
+      background-color:var(--blue);
+      border-radius: 4px;
       text-align: center;
-      color:black;
-    }
-    .sect-filter{
-      border-radius: 4px;
-      width:7%;
-      height:5vh;
-      border:0;
-      outline:0;
-    }
-    .category-filter{
-      width:10%;
-      height:5vh;
-      border-radius: 4px;
-      border:0;
-      outline:0;
-    }
-    .prod-filter input[type="number"]::placeholder{
+      font-size:1.4vw;
       color:white;
-    }
-    .prod-filter input[type="number"]{
-      border:0;
-      outline:0;
-      width:7%;
       height:5vh;
-      text-align: center;
-      border-radius: 4px;
     }
 
-/* GALLERY IMG AT PRODUCT */
-  .prod-list{
-      margin:2% 0 0 1%;
-      width:99%;
-      height:69vh;
-      background-color: #EFEFEF;
-      position: relative;
-      overflow: scroll;
-    }
-    .gallery_img:hover{
-      transition: 1s;
-      -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-      -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-      box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    }
-    .gallery_img{
-      text-align: center;
-      cursor: pointer;
-      height: 50vh;
-      width: 20%;
-      background-color: #D4DEDC;
-      margin: 2% 0 2% 4%;
-      float: left;
-      transition: 1s;
+    /* GALLERY PRODUCT LIST */
+    .product-cell{
+      float:left;
+      width:20%;
+      margin:5% 0 0 4%;
+      border-radius:5px;
+      background-color:var(--blue);
       -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
       -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
       box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
     }
-    .gallery_img button{
-      height: 5vh;
-    }
-    .gallery_img input{
-      margin:4% 0 0 0;
-    }
-    .gallery_img img{
-      height: 40vh;
+    .product-cell form,
+    .product-cell button{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
       width: 100%;
+      height: 7vh;
+      color:white;
+      background: var(--blue);
     }
-    .product_cost{
-      height: 5vh;
-      width: 100%;
-      visibility: visible;
-      text-align: center;
-      opacity:1;
-      transition: visibility 0.5s, opacity 0.5s linear;
-      background-color: #2196F3;
+    .product-cell i{
+      transition: all 1s;
+      font-size:1.4vw;
+      cursor: pointer;
     }
-    .product_cost p{
-      font-family: 'Desc_font';
-      font-size:1.5vw;
-      display: inline-block;
-      margin-top:1%;
-    }
-    .trash_button{
-      background-color: #B8C8C6;
-      float: right;
-    }
-    .pencil_button{
-      background-color: #B8C8C6;
-      float: left;
-      transition: 1s;
-    }
-    .pencil{
-      font-size: 1.5vw;
-      padding: 5px;
-    }
-    .product-header{
+    .product-cell img{
       width:100%;
-      height: 10vh;
+      height:30vh;
     }
-    .logout{
-      top:1.4vh;
-      right:2vw;
-      position: absolute;
-    }
-    #gallery{background-color: #eee;}
