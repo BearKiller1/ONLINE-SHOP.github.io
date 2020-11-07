@@ -1,14 +1,16 @@
 .customize_header{
-    height: 10vh;
     width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
     background-color:white;
+    justify-content:space-around;
   }
   .customize{
     letter-spacing: 2px;
     width:20%;
     height:70%;
     font-size:1.7vw;
-    margin:1% 0 0 4%;
     float: left;
     background-color: #2196F3;
     color:white;
@@ -188,76 +190,54 @@
   /* description css */
   .description_class{}
     .dascription_form{
-      display: grid;
-      grid-template-columns: 40% 30% 30%;
-      grid-template-rows:2;
-      margin-left: 1%;
-      height: 90vh;
       width: 98%;
+      height: 90vh;
+      display: grid;
+      margin-left: 1%;
+      grid-template-rows:2;
+      grid-template-columns: 40% 30% 30%;
     }
-    .test1{
+    .test1,.test2,.test3,.test4,.test5,.test6{
       width: 100%;
       height: 40vh;
-      grid-column: 1;
-      grid-row: 1;
-    }
-    .test1 img{
-      width: 100%;
-      height: 40vh;
-    }
-
-    .test2{
-      width: 100%;
-      height: 40vh;
-      grid-column: 2;
-      grid-row: 1;
       text-align: center;
       justify-content: center;
     }
+
+    .test1 img{ width: 100%; height: 40vh; }
+    .test1 { grid-column:1; grid-row:1; }
+    .test2 { grid-column:2; grid-row:1; }
     .test2 p{
       margin:8vh 0 0 0;
       align-items: center;
       font-size: 1.5vw;
     }
-    .test3{
-      width: 100%;
-      height: 40vh;
-      grid-column: 3;
-      grid-row: 1;
-      text-align: center;
-    }
+
+    .test3{ grid-column:3; grid-row:1; }
     .test3 textarea{
-      height:16vh;
       width: 98%;
-      margin:4vh 0 0 1%;
-      resize: none;
       outline: 0;
+      height:16vh;
+      resize: none;
+      margin:4vh 0 0 1%;
     }
-    .test3 img{
-      height:10vh;
-    }
+    .test3 img{height:10vh;}
     .test3 button{
       border-radius: 25px;
       margin-top: 2vh;
     }
     .test4{
       background: blue;
-      width: 100%;
-      height: 40vh;
       grid-column: 1;
       grid-row: 2;
     }
     .test5{
       background: green;
-      width: 100%;
-      height: 40vh;
       grid-column: 2;
       grid-row: 2;
     }
     .test6{
       background: brown;
-      width: 100%;
-      height: 40vh;
       grid-column: 3;
       grid-row: 2;
     }

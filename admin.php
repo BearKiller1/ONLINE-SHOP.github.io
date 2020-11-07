@@ -7,7 +7,7 @@
       <link rel="stylesheet" href="style/admin.css">
       <link rel="stylesheet" href="style/admin/prod.css">
       <link rel="stylesheet" href="style/admin/category.css">
-      <link rel="stylesheet" href="style/admin/modify.css">
+      <link rel="stylesheet" href="style/admin/mm.css">
       <link rel="stylesheet" href="style/admin/inbox.css">
       <link rel="stylesheet" href="style/admin/analytics.css">
       <link rel="stylesheet" href="style/admin/users.css">
@@ -230,11 +230,11 @@
         <!-- Banner form -->
         <div class="banner_class" id="0" style="display:block;">
           <form action="index.html" method="post">
-            <input type="file" name="f" placeholder=" ფოტო" id="banner_photo">
             <h2>აირჩიე ახალი ბანერი</h2>
             <label for="banner_photo">
               <img src="resource/admin/upload.png" alt="upload">
             </label>
+            <input type="file" placeholder=" ფოტო" id="banner_photo">
 
             <input type="text" name="" value="" placeholder=" ტექსტი" id="banner_text">
             <button type="submit" name="button" class='w3-button w3-round w3-blue'>ცვლილება</button>
