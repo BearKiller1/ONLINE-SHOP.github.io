@@ -4,8 +4,19 @@
       user-select: none;
       box-sizing: border-box;
     }
+    :root{
+      --blue:#2196F3;
+    }
+    input,button,textarea,select{
+      border-radius:3px;
+      outline:0;
+      border:0;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button{
+          -webkit-appearance: none; }
 
-    button{cursor:pointer;transition: 1s;outline:0;}
+    button{cursor:pointer;transition: 1s;}
     /* SIDE MENU */
     .Cpanel{
     position: fixed;

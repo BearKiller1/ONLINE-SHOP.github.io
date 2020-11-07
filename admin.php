@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Admin</title>
       <link rel="stylesheet" href="style/admin.css">
-      <link rel="stylesheet" href="style/admin/prod.css">
+      <link rel="stylesheet" href="style/admin/pro.css">
       <link rel="stylesheet" href="style/admin/category.css">
       <link rel="stylesheet" href="style/admin/mm.css">
       <link rel="stylesheet" href="style/admin/inbox.css">
@@ -91,12 +91,18 @@
               <input placeholder="ფასი" name="price" type="number" min="1" max="1000">
 
               <div class="choose-category">
-                <p> <input type='radio' value='sharvali'>შარვალი </p>
-                <p> <input type='radio' value='sharvali'>შარვალი </p>
-                <p> <input type='radio' value='sharvali'>შარვალი </p>
-                <p> <input type='radio' value='sharvali'>შარვალი </p>
-                <p> <input type='radio' value='sharvali'>შარვალი </p>
-                <p> <input type='radio' value='sharvali'>შარვალი </p>
+                <div> <input type='radio' value='sharvali'>შარვალი </div>
+                <div> <input type='radio' value='sharvali'>შარვალი </div>
+                <div> <input type='radio' value='sharvali'>შარვალი </div>
+                <div> <input type='radio' value='sharvali'>შარვალი </div>
+                <div> <input type='radio' value='sharvali'>შარვალი </div>
+                <div> <input type='radio' value='sharvali'>შარვალი </div>
+                <div> <input type='radio' value='sharvali'>შარვალი </div>
+                <div> <input type='radio' value='sharvali'>შარვალი </div>
+                <div> <input type='radio' value='sharvali'>შარვალი </div>
+                <div> <input type='radio' value='sharvali'>შარვალი </div>
+                <div> <input type='radio' value='sharvali'>შარვალი </div>
+                <div> <input type='radio' value='sharvali'>შარვალი </div>
               </div>
 
               <select id="section-select" name="section">

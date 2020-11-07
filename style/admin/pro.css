@@ -1,15 +1,3 @@
-    :root{
-      --blue:#2196F3;
-    }
-    input,button,textarea,select{
-      border-radius:3px;
-      outline:0;
-      border:0;
-    }
-    input::-webkit-outer-spin-button,
-    input::-webkit-inner-spin-button{
-          -webkit-appearance: none; }
-
     /* PRODUCT HEADER  */
     .product-header{
       width:100%;
@@ -36,21 +24,20 @@
       background-color:var(--blue);
     }
     .Search .fa{
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-      font-size: 2vw;
-      height: 7vh;
       width:10%;
+      height: 7vh;
+      font-size: 2vw;
+      display: flex;
+      cursor: pointer;
+      align-items: center;
     }
     .Search input{
-      background: transparent;
-      border-radius: 7px;
-      text-align: center;
-      margin-left:10%;
       width:80%;
       height:7vh;
       float:left;
+      margin-left:10%;
+      text-align: center;
+      background: transparent;
     }
     .Search input::placeholder{color:white;}
 
@@ -58,7 +45,7 @@
     .create-product{
       padding:2%;
       width:70%;
-      height: 60vh;
+      height: 83vh;
       display: none;
       background: #fff;
       margin:2% 0 0 15%;
@@ -66,70 +53,84 @@
     .create-product input,
     .create-product select,
     .create-product textarea{
-      background: #eee;
-      margin-bottom:1%;
-      padding-left:2%;
-      float:left;
       width:35%;
       height: 5vh;
+      float:left;
+      padding-left:2%;
+      margin-bottom:2%;
+      background: #eee;
     }
     .create-product input[type="number"], #currency{
       width:10%;
-      margin-left:1%;
+      margin-left:4%;
     }
     .create-product textarea{
-      width:46%;
+      width:49%;
       height:20vh;
       resize:none;
     }
+
     .choose-category{
-      position: relative;
-      overflow: scroll;
-      font-size:1.5vw;
-      height:32.5vh;
-      width:45%;
       float:right;
+      width:49%;
+      height:34.5vh;
+      font-size:1.5vw;
       background: #eee;
+      overflow: scroll;
+      position: relative;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
     }
-    .choose-category p{height: 5.5vh;}
+    .choose-category > div{
+      width:50%;
+      height:7vh;
+      display: flex;
+      justify-content: space-around;
+    }
+    .choose-category input{width:10%;}
 
     .create-product label{
-      justify-content: center;
-      align-items: center;
-      display: flex;
+      background: #eee;
       width:100%;
-      height:10vh;
+      height:30vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     .create-product img{
-      width:10%;
-      height: 100%;
+      width:20%;
+      height: 60%;
       cursor: pointer;
     }
     #upload-button{display: none;}
+
     .create-product button{
-      border-radius: 3px;
-      font-size:1.3vw;
-      margin:3% auto;
-      display: block;
+      width:100%;
       height:6vh;
-      width:22%;
+      display: block;
+      margin:3% auto;
+      font-size:1.3vw;
+      border-radius: 3px;
     }
 
     /* GALLERY PRODUCT FILTER */
     .gallery{
       width:100%;
+      height:230vh;
+      font-size:1.6vw;
+      background: #eee;
       text-align: center;
       font-family: 'Desc_font';
-      font-size:1.6vw;
     }
     .gallery select, .gallery input,
-    .gallery input::placeholder{
-      background-color:var(--blue);
+    .gallery input::placeholder {
+      height:5vh;
+      color:white;
+      font-size:1.4vw;
       border-radius: 4px;
       text-align: center;
-      font-size:1.4vw;
-      color:white;
-      height:5vh;
+      background-color:var(--blue);
     }
 
     /* GALLERY PRODUCT LIST */
@@ -138,6 +139,7 @@
       width:20%;
       margin:5% 0 0 4%;
       border-radius:5px;
+      font-size:1.4vw;
       background-color:var(--blue);
       -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
       -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
@@ -153,12 +155,8 @@
       color:white;
       background: var(--blue);
     }
-    .product-cell i{
-      transition: all 1s;
-      font-size:1.4vw;
-      cursor: pointer;
-    }
     .product-cell img{
       width:100%;
       height:30vh;
     }
+    .product-cell i{ cursor: pointer; }
