@@ -583,7 +583,6 @@
     </script>
 
   </body>
-  <!-- bbb dachi comment -->
   <script src="js/googleCharts.js"></script>
   <script src="js/adminSlide.js"></script>
 </html>
