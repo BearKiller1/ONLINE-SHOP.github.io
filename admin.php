@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <!-- jojakakj -->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="utf-8">
     <title>Admin</title>
@@ -587,4 +586,3 @@
   <script src="js/googleCharts.js"></script>
   <script src="js/adminSlide.js"></script>
 </html>
-<!-- idididid yleas asdas -->
