@@ -7,7 +7,7 @@
       <link rel="stylesheet" href="style/admin.css">
       <link rel="stylesheet" href="style/admin/pro.css">
       <link rel="stylesheet" href="style/admin/category.css">
-      <link rel="stylesheet" href="style/admin/mm.css">
+      <link rel="stylesheet" href="style/admin/modify.css">
       <link rel="stylesheet" href="style/admin/inbox.css">
       <link rel="stylesheet" href="style/admin/analytics.css">
       <link rel="stylesheet" href="style/admin/users.css">
@@ -230,11 +230,10 @@
         <button class="customize" type="submit" name="button" onclick="toggleshow('2')">ლოკაცია</button>
 
         <button class="customize" type="submit" name="button" onclick="toggleshow('3')">აღწერა</button>
-
       </div>
 
         <!-- Banner form -->
-        <div class="banner_class" id="0" style="display:block;">
+        <div class="banner_class" id="0">
           <form action="index.html" method="post">
             <h2>აირჩიე ახალი ბანერი</h2>
             <label for="banner_photo">
@@ -299,7 +298,7 @@
         </div>
 
         <!-- location form -->
-        <div class="location_class" id='2' style="display:none;">
+        <div class="location_class" id='2'>
 
           <form action="index.html" method="post">
             <input type="text" name="" value="" placeholder="HTML მისამართი">
@@ -320,17 +319,50 @@
         </div>
 
         <!-- description form -->
-        <div class="description_class" id='3' style="display:none;">
+        <div id='3' style="display:none;">
           <form action="index.php" method="post" class="dascription_form">
 
-            <div class="test1">
-              <img src="resource/index/desc2.jpg" alt="retail store">
+            <div class="description">
+
+              <div class="right description-image ">
+                <input style='display:none;'id="upload-but" type="file">
+                <label for="upload-but">
+                  <img src="resource/admin/upload.png">
+                </label>
+              </div>
+
+              <div>
+                <textarea name="name" rows="8" cols="80" value="" placeholder="• სულხან კვერნაძის 33ა• საუკეთესო ხარისხის ტანისამოსი, ფეხსაცმელი  და აქსესუარები"></textarea><br>
+                <button type="button" class="w3-button w3-blue"name="button">შენახვა</button>
+              </div>
+
             </div>
 
+            <div class="description">
+
+              <div>
+                <textarea name="name" rows="8" cols="80" value="" placeholder="• სულხან კვერნაძის 33ა• საუკეთესო ხარისხის ტანისამოსი, ფეხსაცმელი  და აქსესუარები"></textarea><br>
+                <button type="button" class="w3-button w3-blue"name="button">შენახვა</button>
+              </div>
+
+              <div class="left description-image ">
+                <input style='display:none;'id="upload-but" type="file">
+                <label for="upload-but">
+                  <img src="resource/admin/upload.png">
+                </label>
+              </div>
+            </div>
+
+
+
+
+            <!-- <div class="test1">
+            </div>
+
+
+
             <div class="test2">
-            <p>• სულხან კვერნაძის 33ა<br>
-            • საუკეთესო ხარისხის ტანისამოსი,<br>
-              ფეხსაცმელი  და აქსესუარები</p>
+
             </div>
             <div class="test3">
 
@@ -340,18 +372,9 @@
                   <img src="resource/admin/upload.png">
                 </label>
                 <button type="button" class="w3-button w3-blue"name="button">შენახვა</button>
-            </div>
+            </div> -->
 
-            <div class="test4">
-              1
-            </div>
 
-            <div class="test5">
-              2
-            </div>
-            <div class="test6">
-              3
-            </div>
             <!-- <div class="description_down">
               <img src="resource/index/desc1.jpg" alt="retail store">
                 <p>• ჩვენ ვართ საქართველოში <br>ოფიციალური
@@ -563,7 +586,7 @@
     </div>
 
     <script>
-      slide(0);
+      slide(2);
 
       // Product-create new product Toggle
       $(document).ready(function() {
