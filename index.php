@@ -41,7 +41,7 @@
 
     <!-- MAIN -->
     <i id ="mtavari"></i>
-    <div class="Poster" id="poster">
+    <div class="Poster">
       <h1 class='poster-text'>𝒸𝓁𝑜𝓉𝒽</h1>
       <button type="submit" name="button" id="poster_but" >შეძენა</button>
       <form class="Search" action="index.html" method="post">

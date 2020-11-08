@@ -23,44 +23,28 @@
       width:100%;
       height: 90vh;
       display: block;
-    }
-
-    .banner_class input[type="text"]{
-      outline:0;
-      color:#333;
-      border:0;
-      border-radius: 3px;
-      padding-left: 1%;
-    }
-    #banner_photo{
-      display: none;
-    }
-    .banner_class h2{
-      font-family: 'banner_font';
-      -webkit-font-smoothing: antialiased;
-      letter-spacing: 1px;
       word-spacing:4px;
-      color:#2196F3;
-      margin:1% 0 2% 0;
+      letter-spacing: 1px;
       text-align: center;
     }
+    .banner_class h2{ color:#2196F3; }
+
+    .banner_class label img{ width:100%; }
     .banner_class label{
       width:10%;
       height: 13vh;
-      margin:0% 0 3% 45%;
       display: block;
-    }
-    .banner_class label img{
       cursor: pointer;
-      width:100%;
-      height: 13vh;
+      margin:0% 0 3% 45%;
     }
-    #banner_text{
+    .banner_class input{
       width:30%;
       height:6vh;
-      margin-left:30%;
     }
-
+    .banner_class > .Poster{
+      margin:2%;
+      width: 96%
+    }
   /* catalog css */
   .New-catalog{
         text-align: center;
@@ -231,7 +215,6 @@
     cursor: pointer;
     transition:all 0.5s;
   }
-
 
   .description > div textarea{
     padding:5%;
