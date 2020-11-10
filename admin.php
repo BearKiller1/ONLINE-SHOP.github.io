@@ -4,15 +4,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="utf-8">
     <title>Admin</title>
-      <link rel="stylesheet" href="style/admin.css">
+      <link rel="stylesheet" href="style/admen.css">
       <link rel="stylesheet" href="style/admin/pro.css">
       <link rel="stylesheet" href="style/admin/category.css">
-      <link rel="stylesheet" href="style/admin/mm.css">
+      <link rel="stylesheet" href="style/admin/modify.css">
       <link rel="stylesheet" href="style/admin/inbox.css">
       <link rel="stylesheet" href="style/admin/analytics.css">
       <link rel="stylesheet" href="style/admin/users.css">
 
-      <link rel="stylesheet" href="style/index.css">
 
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       <!-- FONTS -->
@@ -46,20 +45,20 @@
       </div>
 
       <div id='panel_words'>
-          <a href="#" onclick="slide(0)">პროდუქტი</a><br>
-          <a href="#" onclick="slide(1)">კატეგორია</a><br>
-          <a href="#" onclick="slide(2)">მოდიფიცირება</a><br>
-          <a href="#" onclick="slide(3)">შეტყობინებები</a><br>
-          <a href="#" onclick="slide(5)">სტატისტიკები</a><br>
-          <a href="#" onclick="slide(6)">მომხმარებლები</a><br>
+          <a href="#" onclick="slide('section', 0)">პროდუქტი</a><br>
+          <a href="#" onclick="slide('section', 1)">კატეგორია</a><br>
+          <a href="#" onclick="slide('section', 2)">მოდიფიცირება</a><br>
+          <a href="#" onclick="slide('section', 3)">შეტყობინებები</a><br>
+          <a href="#" onclick="slide('section', 5)">სტატისტიკები</a><br>
+          <a href="#" onclick="slide('section', 6)">მომხმარებლები</a><br>
       </div>
       <div id='panel_icons'>
-          <i onclick="slide(0)" class='fas fa-box-open' style='font-size:2vw'></i><br>
-          <i onclick="slide(1)" class='fas fa-layer-group' style='font-size:2vw'></i><br>
-          <i onclick="slide(2)" class='fas fa-sliders-h' style='font-size:2vw'></i><br>
-          <i onclick="slide(3)" class="material-icons" style='font-size:2.5vw' >mail</i><br>
-          <i onclick="slide(5)" class="fa fa-pie-chart" style="font-size:2vw"></i><br>
-          <i onclick="slide(6)" class='fas fa-user-circle' style='font-size:2vw'></i><br>
+          <i onclick="slide('section', 0)" class='fas fa-box-open' style='font-size:2vw'></i><br>
+          <i onclick="slide('section', 1)" class='fas fa-layer-group' style='font-size:2vw'></i><br>
+          <i onclick="slide('section', 2)" class='fas fa-sliders-h' style='font-size:2vw'></i><br>
+          <i onclick="slide('section', 3)" class="material-icons" style='font-size:2.5vw' >mail</i><br>
+          <i onclick="slide('section', 5)" class="fa fa-pie-chart" style="font-size:2vw"></i><br>
+          <i onclick="slide('section', 6)" class='fas fa-user-circle' style='font-size:2vw'></i><br>
       </div>
     </div>
 
@@ -220,182 +219,159 @@
       </div>
     </div>
 
-    <!-- CUSTOMIZE -->
+    <!-- MODIFY -->
     <div class="section">
-      <div class="customize_header">
-        <button class="customize" type="submit" name="button" onclick="toggleshow('0')">ბანერი</button>
+      <div class="customize-header">
+        <button type="submit" name="button" onclick="slide('modify', 0);">ბანერი</button>
 
-        <button class="customize"type="submit" name="button" onclick="toggleshow('1')">კატალოგი</button>
+        <button type="submit" name="button" onclick="slide('modify', 1);">კატალოგი</button>
 
-        <button class="customize" type="submit" name="button" onclick="toggleshow('2')">ლოკაცია</button>
+        <button type="submit" name="button" onclick="slide('modify', 2);">ლოკაცია</button>
 
-        <button class="customize" type="submit" name="button" onclick="toggleshow('3')">აღწერა</button>
+        <button type="submit" name="button" onclick="slide('modify', 3);">აღწერა</button>
       </div>
 
-        <!-- Banner form -->
-          <form action="index.html" method="post" class="banner_class" id="0">
-            <h2>აირჩიე ახალი ბანერი</h2>
-            <label for="banner_photo">
-              <img src="resource/admin/upload.png" alt="upload">
-            </label>
-            <input type="file" placeholder=" ფოტო" id="banner_photo" style="display:none;">
+      <!-- Banner form -->
+      <form class="modify" action="index.html" method="post">
+        <h2>აირჩიე ახალი ბანერი</h2>
 
-            <input type="text" name="" value="" placeholder=" ტექსტი">
-            <button type="submit" name="button" class='w3-button w3-round w3-blue'>ცვლილება</button>
-            <div class="Poster">
+        <input type="text"  placeholder="ტექსტი"> <br>
+        <button type="submit" name="button">ცვლილება</button> <br>
 
-            </div>
-          </form>
-          <!-- CHASAMATEBELIA BANERI -->
+        <div class="poster">
+          <input type="file" placeholder="ფოტო" id="banner-edit">
+          <label for="banner-edit">
+            <img src="resource/admin/upload.png">
+          </label>
+        </div>
+      </form>
 
-        <!-- catalog form -->
-        <div id="1" style="display:none;">
-          <div class="Admin-Catalog">
-            <div class="Admin-gallery js-flickity"
-            data-flickity-options='{ "wrapAround": true ,"pageDots": false,"autoPlay": 1500 }'>
-              <?php
-                for ($i=0; $i < 12; $i++) {
-                echo "<div class='Admin-gallery-cell'>
-                         <img src='resource/admin/shouse.jpg'>
-                      </div>";
-                }
-              ?>
-            </div>
-          </div>
-          <div class="w3-blue New-catalog">
-            <button type="submit" name="button" onclick="addToCatalog()">+</button>
-          </div>
-
-          <div class='dark-bg'></div>
-          <div class="prodGallery">
-            <div class="prodGallery-sticky">
-              <button class="w3-button w3-blue" onclick="toggleshow('create_post');" id='add_prod_butt'>
-                <i class='fas fa-plus'></i>
-              </button>
-              <input type="text" name='' placeholder="ძიება">
-              <button class="w3-button w3-blue" id='close_products' onclick="addToCatalog()">
-                <i class='fas fa-times'></i>
-              </button>
-              <!-- <button class="w3-button" id='close_products' >X</button> -->
-            </div>
+      <!-- catalog form -->
+      <div class="modify">
+        <br>
+        <!-- carousel 1 -->
+        <div class="carousel">
+          <div class="Admin-gallery js-flickity"
+            data-flickity-options='{"wrapAround": true ,"pageDots": false}'>
             <?php
-              for ($i=1; $i < 18; $i++) {
-              echo "
-                <div class='prodGallery-cell' >
-                  <input type='checkbox' name=''>
-                  <img src='resource/admin/shoppingcart.png'>
-                  <h4>Red Dress</h4>
-                  <p>$124.99</p>
-                </div>";
+              for ($i=0; $i < 12; $i++) {
+              echo "<div class='Admin-gallery-cell'>
+                       <img src='resource/admin/shouse.jpg'>
+                    </div>";
               }
             ?>
           </div>
-          <script>
-            function addToCatalog(){
-              $(".dark-bg").toggle();
-              $(".prodGallery").toggle();
-            }
-          </script>
+
+          <div class="New-cell"> + </div>
         </div>
-
-        <!-- location form -->
-        <div class="location_class" id='2'>
-
-          <form action="index.html" method="post">
-            <input type="text" name="" value="" placeholder="HTML მისამართი">
-            <br>
-            <br>
-            <input type="text" name="" value="" placeholder="მისამართი">
-            <br><br>
-            <button type="submit" class="w3-button w3-blue" name="button">შეცვლა</button>
-          </form>
-
-          <div class="location_iframe">
-            <li>სულხან კვერნაძის 33ა</li>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d2978.3381357595163!2d44.78043026493833!3d41.71322183369588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e3!4m3!3m2!1d41.7130128!2d44.7826051!4m5!1s0x40440cd4dd1ef98d%3A0xbefb5bef42f2ce69!2z4YOS4YOb4YOY4YOg4YOX4YOQIOGDm-GDneGDlOGDk-GDkOGDnOGDmCwg4YOX4YOR4YOY4YOa4YOY4YOh4YOY!3m2!1d41.713245099999995!2d44.7826587!5e0!3m2!1ska!2sge!4v1598810784490!5m2!1ska!2sge"
-              width="100%" height="500vh" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
-            </iframe>
+        <br>
+        <!-- carousel 2 -->
+        <div class="carousel">
+          <div class="Admin-gallery js-flickity"
+            data-flickity-options='{"wrapAround": true ,"pageDots": false}'>
+            <?php
+              for ($i=0; $i < 12; $i++) {
+              echo "<div class='Admin-gallery-cell'>
+                       <img src='resource/admin/shouse.jpg'>
+                    </div>";
+              }
+            ?>
           </div>
 
+          <div class="New-cell"> + </div>
         </div>
 
-        <!-- description form -->
-        <div id='3' style="display:none;">
-          <form action="index.php" method="post" class="dascription_form">
+        <div class='dark-bg'></div>
+        <div class="prodGallery">
 
-            <div class="description">
+          <div class="prodGallery-header">
+            <button> <i class='fas fa-plus'></i> </button>
 
-              <div class="right description-image ">
-                <input style='display:none;'id="upload-but" type="file">
-                <label for="upload-but">
-                  <img src="resource/admin/upload.png">
-                </label>
-              </div>
+            <input  type="text" name='' placeholder="ძიება">
 
-              <div>
-                <textarea name="name" rows="8" cols="80" value="" placeholder="• სულხან კვერნაძის 33ა• საუკეთესო ხარისხის ტანისამოსი, ფეხსაცმელი  და აქსესუარები"></textarea><br>
-                <button type="button" class="w3-button w3-blue"name="button">შენახვა</button>
-              </div>
+            <button onclick="addToCatalog();"> X </button>
+          </div>
 
-            </div>
+          <div class="gallery">
+            <form action="index.html" method="post">
+              <select  name="">
+                <option value="" selected disabled>სექცია</option>
+                <option value="">ბავშვი</option>
+                <option value="">ქალი</option>
+                <option value="">კაცი</option>
+              </select>
 
-            <div class="description">
+              <select name="">
+                <option value="" selected disabled>კატეგორია</option>
+                <option value=''>ქუდი</option>
+                <option value=''>ქუდი</option>
+              </select>
+            </form>
 
-              <div>
-                <textarea name="name" rows="8" cols="80" value="" placeholder="• სულხან კვერნაძის 33ა• საუკეთესო ხარისხის ტანისამოსი, ფეხსაცმელი  და აქსესუარები"></textarea><br>
-                <button type="button" class="w3-button w3-blue"name="button">შენახვა</button>
-              </div>
-
-              <div class="left description-image ">
-                <input style='display:none;'id="upload-but" type="file">
-                <label for="upload-but">
-                  <img src="resource/admin/upload.png">
-                </label>
-              </div>
-            </div>
-
-
-
-
-            <!-- <div class="test1">
-            </div>
-
-
-
-            <div class="test2">
-
-            </div>
-            <div class="test3">
-
-                <textarea name="name" rows="8" cols="80" placeholder="Text here"></textarea>
-              <input style='display:none;'id="upload-but" type="file">
-                <label for="upload-but">
-                  <img src="resource/admin/upload.png">
-                </label>
-                <button type="button" class="w3-button w3-blue"name="button">შენახვა</button>
-            </div> -->
-
-
-            <!-- <div class="description_down">
-              <img src="resource/index/desc1.jpg" alt="retail store">
-                <p>• ჩვენ ვართ საქართველოში <br>ოფიციალური
-                 წარმომადგენლები<br> უცხოური ბრენდების
-                 აირჩიე C</p>
-
-              <input style='display:none;'id="upload-but" type="file">
-                <label for="upload-but">
-                  <img src="resource/admin/upload.png">
-                </label>
-                <input type="text" name="" value="" placeholder="Text">
-            </div> -->
-
-          </form>
-
-
-
-
-
+            <!-- product list -->
+            <?php
+              for ($i=0; $i < 15; $i++) {
+                  echo "<div class='product-cell'>
+                          <form> <input type='checkbox'> </form>
+                          <img src='resource/product/hoodie.jpg'>
+                          <button> დამატება </button>
+                       </div>";
+              }
+            ?>
+          </div>
         </div>
+
+      </div>
+
+      <!-- location form -->
+      <div class="modify">
+        <form action="index.html" method="post">
+          <input type="text" name="" placeholder="HTML მისამართი"> <br>
+          <input type="text" name="" placeholder="მისამართი"> <br>
+          <button type="submit" name="button"> შეცვლა </button>
+        </form>
+
+        <li>სულხან კვერნაძის 33ა</li> <br>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d2978.3381357595163!2d44.78043026493833!3d41.71322183369588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e3!4m3!3m2!1d41.7130128!2d44.7826051!4m5!1s0x40440cd4dd1ef98d%3A0xbefb5bef42f2ce69!2z4YOS4YOb4YOY4YOg4YOX4YOQIOGDm-GDneGDlOGDk-GDkOGDnOGDmCwg4YOX4YOR4YOY4YOa4YOY4YOh4YOY!3m2!1d41.713245099999995!2d44.7826587!5e0!3m2!1ska!2sge!4v1598810784490!5m2!1ska!2sge"
+          frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0">
+        </iframe>
+      </div>
+
+      <!-- description form -->
+      <div class="modify">
+        <form action="index.php" method="post">
+
+          <div class="description">
+            <div class="right description-image ">
+              <input id="desc-upload-button" type="file">
+              <label for="desc-upload-button">
+                <img src="resource/admin/upload.png">
+              </label>
+            </div>
+
+            <div>
+              <textarea name="name" rows="8" cols="80" value="" placeholder="• სულხან კვერნაძის 33ა• საუკეთესო ხარისხის ტანისამოსი, ფეხსაცმელი  და აქსესუარები"></textarea><br>
+              <button type="button" class="w3-button w3-blue"name="button">შენახვა</button>
+            </div>
+          </div>
+
+          <div class="description">
+            <div>
+              <textarea name="name" rows="8" cols="80" value="" placeholder="• სულხან კვერნაძის 33ა• საუკეთესო ხარისხის ტანისამოსი, ფეხსაცმელი  და აქსესუარები"></textarea><br>
+              <button type="button" class="w3-button w3-blue"name="button">შენახვა</button>
+            </div>
+
+            <div class="left description-image ">
+              <input id="desc-upload-butt" type="file">
+              <label for="desc-upload-butt">
+                <img src="resource/admin/upload.png">
+              </label>
+            </div>
+          </div>
+
+        </form>
+      </div>
 
     </div>
 
@@ -587,28 +563,34 @@
     </div>
 
     <script>
-      slide(2);
+      // Pre-Activators
+      slide('section', 0);
+      slide('modify', 0);
+      // flickity bug fix
 
-      // Product-create new product Toggle
+
+
+
       $(document).ready(function() {
         $('#create-button').click(function(){
           $('.create-product').slideToggle("slow");
         });
+        $('.New-cell').click(function(){addToCatalog();});
       });
 
-      // CUSTMOIZE-modify navigation
-      function toggleshow(x){
-        for (var i = 0; i < 5; i++) { $("#"+i).hide(); }
-        window.dispatchEvent(new Event('resize'));
-        $('#'+x).slideToggle("slow");
+
+      function addToCatalog(){
+        $('.dark-bg').toggle();
+        $('.prodGallery').toggle();
       }
 
-      function slide(n){
-          var sections = document.getElementsByClassName("section");
-          for (var i = 0; i < sections.length; i++) {
-            sections[i].style.display = "none";
+      function slide(element, n){
+          var Elements = document.getElementsByClassName(element);
+          for (var i = 0; i < Elements.length; i++) {
+            Elements[i].style.display = "none";
           }
-          sections[n].style.display = "block";
+          Elements[n].style.display = "block";
+          window.dispatchEvent(new Event('resize'));
         }
     </script>
 
