@@ -1,16 +1,7 @@
-<<<<<<< HEAD
-img chaviwerot - dachi - DONE
-=======
+#DACHI
+1.inbox
+2.users
 
-  admini gavanawilot - ucha
-
-img chaviwerot - dachi
->>>>>>> fcbe62fac8fa7775c09d7ab2e546d3d2df014962
-
-src url chavasworot - dachi
-  indexshi - DONE
-  productshi - DONE
-  login - DONE
-  adminshi - DONE
-  
-fontebi davamatot - dachi
+#UCHA
+1.statistics
+2.admin

@@ -7,7 +7,7 @@
       <link rel="stylesheet" href="style/admen.css">
       <link rel="stylesheet" href="style/admin/pro.css">
       <link rel="stylesheet" href="style/admin/category.css">
-      <link rel="stylesheet" href="style/admin/modify.css">
+      <link rel="stylesheet" href="style/admin/mod.css">
       <link rel="stylesheet" href="style/admin/inbox.css">
       <link rel="stylesheet" href="style/admin/analytics.css">
       <link rel="stylesheet" href="style/admin/users.css">
