@@ -1,0 +1,95 @@
+  .analytic-diagram,
+  .circle-diagram,
+  .month-diagram{
+    width:50%;
+    float:left;
+    padding:2% 2% 0 2%;
+  }
+
+  .month-diagram{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height:90vh;
+    float:right;
+  }
+  .circle-diagram{ height:30vh; }
+
+  .analytic-diagram div{
+    width:100%;
+    color:#fff;
+    font-size:1.2vw;
+    list-style: none;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .analytic-diagram .data{
+    display: block;
+    overflow: scroll;
+    height:40vh;
+  }
+  .analytic-diagram table{width:100%;}
+  .analytic-diagram td{
+    width:25%;
+    text-align: center;
+    border:1px solid #fff;
+    background-color:#333;
+    color:white;
+  }
+
+  #piechart_3d,
+  .month{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+  }
+  .month{
+    width:100%;
+    height: 8%;
+    float:left;
+    color:white;
+    margin-top:0.4%;
+    font-size: 1.6vw;
+    border:1px solid white;
+  }
+  .text{
+   width:35%;
+   padding-left: 8%;
+  }
+  .fill{
+    width:65%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+  }
+  .percent{
+    height:80%;
+    text-align: center;
+    background-color: var(--blue);
+  }
+  #piechart_3d{
+    width:100%;
+    height:35vh;
+  }
+
+  .month,
+  .analytic-diagram > div,
+  #piechart_3d{
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+  }
+
+  .analytic-diagram td:hover,.month:hover{
+    color:#333;
+    cursor: pointer;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+    transition: all 1s ease-in-out;
+  }

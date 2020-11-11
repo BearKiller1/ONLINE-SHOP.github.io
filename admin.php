@@ -4,12 +4,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="utf-8">
     <title>Admin</title>
-      <link rel="stylesheet" href="style/adminn.css">
+      <link rel="stylesheet" href="style/default.css">
+
+      <link rel="stylesheet" href="style/admin.css">
       <link rel="stylesheet" href="style/admin/pro.css">
       <link rel="stylesheet" href="style/admin/category.css">
-      <link rel="stylesheet" href="style/admin/mod.css">
+      <link rel="stylesheet" href="style/admin/modify.css">
       <link rel="stylesheet" href="style/admin/inbox.css">
-      <link rel="stylesheet" href="style/admin/analytics.css">
+      <link rel="stylesheet" href="style/admin/statistics.css">
       <link rel="stylesheet" href="style/admin/users.css">
 
 
@@ -37,7 +39,7 @@
     <div class="Cpanel">
       <div id="Panel-head">
         <h1>Admin</h1>
-        <div id="panelToggler" onclick="panelToggle(this);">
+        <div class="panelToggler">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
@@ -49,8 +51,8 @@
           <a href="#" onclick="slide('section', 1)">კატეგორია</a>
           <a href="#" onclick="slide('section', 2)">მოდიფიცირება</a>
           <a href="#" onclick="slide('section', 3)">შეტყობინებები</a>
-          <a href="#" onclick="slide('section', 5)">სტატისტიკები</a>
-          <a href="#" onclick="slide('section', 6)">მომხმარებლები</a>
+          <a href="#" onclick="slide('section', 4)">სტატისტიკები</a>
+          <a href="#" onclick="slide('section', 5)">მომხმარებლები</a>
       </div>
 
       <div id='Panel-icons'>
@@ -58,8 +60,8 @@
           <i class='fas fa-layer-group' onclick="slide('section', 1)"></i>
           <i class='fas fa-sliders-h'   onclick="slide('section', 2)"></i>
           <i class='fas fa-envelope'    onclick="slide('section', 3)"></i>
-          <i class="fa fa-pie-chart"    onclick="slide('section', 5)"></i>
-          <i class='fas fa-user-circle' onclick="slide('section', 6)"></i>
+          <i class="fa fa-pie-chart"    onclick="slide('section', 4)"></i>
+          <i class='fas fa-user-circle' onclick="slide('section', 5)"></i>
       </div>
     </div>
 
@@ -263,7 +265,7 @@
             ?>
           </div>
 
-          <div class="New-cell"> + </div>
+          <div class="New-cell addToCatalog"> + </div>
         </div>
         <br>
         <!-- carousel 2 -->
@@ -279,7 +281,7 @@
             ?>
           </div>
 
-          <div class="New-cell"> + </div>
+          <div class="New-cell addToCatalog"> + </div>
         </div>
 
         <div class='dark-bg'></div>
@@ -290,7 +292,7 @@
 
             <input  type="text" name='' placeholder="ძიება">
 
-            <button onclick="addToCatalog();"> X </button>
+            <button class="addToCatalog"> X </button>
           </div>
 
           <div class="gallery">
@@ -418,33 +420,22 @@
       </form>
     </div>
 
-    <!-- ADS -->
-    <div class="section">
-        e
-    </div>
-
     <!-- ANALYTICS -->
     <div class="section">
-      <div class="analytic_table" >
-
-        <div class="analytic_table_header" >
-          <table class="w3-table-all  w3-hoverable ">
-                    <thead>
-                      <tr class="category_header " style='background-color:#333;color:white;'>
-                        <th>კატეგორია</th>
-                        <th>თვეში საშ</th>
-                        <th>წელში საშ</th>
-                        <th>დღიური საშ</th>
-                      </tr>
-                    </thead>
-          </table>
+      <div class="analytic-diagram" >
+        <div>
+          <p>კატეგორია</p>
+          <p>თვეში საშ</p>
+          <p>წელში საშ</p>
+          <p>დღიური საშ</p>
         </div>
-        <div class="analytic_table_rows" >
-          <table class="w3-table-all w3-hoverable " >
+
+        <div class="data">
+          <table>
             <?php
               for ($i=0; $i < 15 ; $i++) {
-                echo "<tr style='background-color:#333;color:white;'>
-                        <td>qudi</td>
+                echo "<tr>
+                        <td>qudi ".$i."</td>
                         <td>200</td>
                         <td>1600</td>
                         <td>50</td>
@@ -456,7 +447,7 @@
 
       </div>
 
-      <div class="analytic_diagram">
+      <div class="month-diagram">
         <div class="month">
           <div class='text' >იანვარი</div>
           <div class="fill">
@@ -531,13 +522,9 @@
         </div>
       </div>
 
-      <div class="analytic_total">
+      <div class="circle-diagram">
           <div id="piechart_3d"></div>
       </div>
-
-
-
-
     </div>
 
     <!-- ACCOUNTS -->
@@ -567,23 +554,18 @@
       // Pre-Activators
       slide('section', 0);
       slide('modify', 0);
-      // flickity bug fix
-
-
-
 
       $(document).ready(function() {
+        // CREATE NEW PRODUCT
         $('#create-button').click(function(){
           $('.create-product').slideToggle("slow");
         });
-        $('.New-cell').click(function(){addToCatalog();});
+        // ADD TO CATALOG NEW PRODUCT
+        $('.addToCatalog').click(function(){
+          $('.dark-bg').toggle();
+          $('.prodGallery').toggle();
+        });
       });
-
-
-      function addToCatalog(){
-        $('.dark-bg').toggle();
-        $('.prodGallery').toggle();
-      }
 
       function slide(element, n){
           var Elements = document.getElementsByClassName(element);
