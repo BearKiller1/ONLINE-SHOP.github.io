@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="utf-8">
     <title>Admin</title>
-      <link rel="stylesheet" href="style/admen.css">
+      <link rel="stylesheet" href="style/adminn.css">
       <link rel="stylesheet" href="style/admin/pro.css">
       <link rel="stylesheet" href="style/admin/category.css">
       <link rel="stylesheet" href="style/admin/mod.css">
@@ -34,31 +34,32 @@
   </head>
   <body>
     <!-- SIDE MENU -->
-    <div class="Cpanel w3-blue " id='panel'>
-      <div class="w3-white pannel_X">
-        <div id="panel_header">ადმინი</div>
-        <div class="panel_butt w3-animate-opacity" id="panel_button" onclick="Toggle_panel(this);">
+    <div class="Cpanel">
+      <div id="Panel-head">
+        <h1>Admin</h1>
+        <div id="panelToggler" onclick="panelToggle(this);">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
         </div>
       </div>
 
-      <div id='panel_words'>
-          <a href="#" onclick="slide('section', 0)">პროდუქტი</a><br>
-          <a href="#" onclick="slide('section', 1)">კატეგორია</a><br>
-          <a href="#" onclick="slide('section', 2)">მოდიფიცირება</a><br>
-          <a href="#" onclick="slide('section', 3)">შეტყობინებები</a><br>
-          <a href="#" onclick="slide('section', 5)">სტატისტიკები</a><br>
-          <a href="#" onclick="slide('section', 6)">მომხმარებლები</a><br>
+      <div id='Panel-words'>
+          <a href="#" onclick="slide('section', 0)">პროდუქტი</a>
+          <a href="#" onclick="slide('section', 1)">კატეგორია</a>
+          <a href="#" onclick="slide('section', 2)">მოდიფიცირება</a>
+          <a href="#" onclick="slide('section', 3)">შეტყობინებები</a>
+          <a href="#" onclick="slide('section', 5)">სტატისტიკები</a>
+          <a href="#" onclick="slide('section', 6)">მომხმარებლები</a>
       </div>
-      <div id='panel_icons'>
-          <i onclick="slide('section', 0)" class='fas fa-box-open' style='font-size:2vw'></i><br>
-          <i onclick="slide('section', 1)" class='fas fa-layer-group' style='font-size:2vw'></i><br>
-          <i onclick="slide('section', 2)" class='fas fa-sliders-h' style='font-size:2vw'></i><br>
-          <i onclick="slide('section', 3)" class="material-icons" style='font-size:2.5vw' >mail</i><br>
-          <i onclick="slide('section', 5)" class="fa fa-pie-chart" style="font-size:2vw"></i><br>
-          <i onclick="slide('section', 6)" class='fas fa-user-circle' style='font-size:2vw'></i><br>
+
+      <div id='Panel-icons'>
+          <i class='fas fa-box-open'    onclick="slide('section', 0)"></i>
+          <i class='fas fa-layer-group' onclick="slide('section', 1)"></i>
+          <i class='fas fa-sliders-h'   onclick="slide('section', 2)"></i>
+          <i class='fas fa-envelope'    onclick="slide('section', 3)"></i>
+          <i class="fa fa-pie-chart"    onclick="slide('section', 5)"></i>
+          <i class='fas fa-user-circle' onclick="slide('section', 6)"></i>
       </div>
     </div>
 
@@ -596,5 +597,5 @@
 
   </body>
   <script src="js/googleCharts.js"></script>
-  <script src="js/adminSlide.js"></script>
+  <script src="js/adminPanelToggle.js"></script>
 </html>
