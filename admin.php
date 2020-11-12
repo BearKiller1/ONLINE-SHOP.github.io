@@ -10,7 +10,7 @@
       <link rel="stylesheet" href="style/admin/pro.css">
       <link rel="stylesheet" href="style/admin/category.css">
       <link rel="stylesheet" href="style/admin/modify.css">
-      <link rel="stylesheet" href="style/admin/inbox.css">
+      <link rel="stylesheet" href="style/admin/box.css">
       <link rel="stylesheet" href="style/admin/statistics.css">
       <link rel="stylesheet" href="style/admin/users.css">
 
@@ -380,31 +380,26 @@
 
     <!-- INBOX -->
     <div class="section">
-      <div class="chat_list">
+      <div class="chat-list">
         <?php
           for ($i=0; $i < 22; $i++) {
-            echo "  <div class='inbox'>
-                      <p> elon musk </p>
-                      <h6 class='time'>9/10/2020</h6>
-                    </div> ";
+            echo "<div class='inbox'>
+                    <p> elon musk </p>
+                    <p> 11/12/2020 </p>
+                  </div> ";
             }
         ?>
       </div>
-
+      <div class="inbox-header">Elon Tusk</div>
       <div class="chat">
-        <div class="w3-container inbox-header">ilon task</div>
         <?php
-          for ($i=0; $i < 22; $i++) {
-            echo "  <div class='message_arrive'>
-                      <div class='message_arrive_text w3-blue'>
-                          <p>გამარჯობა ტესტ ტესტ</p>
-                      </div>
+          for ($i=0; $i < 2; $i++) {
+            echo "  <div class='message-arrive'>
+                          <p>გამარჯობა ტესტ ტესტ arive</p>
                     </div>
                     <br>
-                    <div class='message_sent'>
-                      <div class='message_send_text  w3-white'>
-                        <p>გამარჯობა ტესტ ტესტ</p>
-                      </div>
+                    <div class='message-sent'>
+                        <p>გამარჯობა ტესტ ტესტ sent</p>
                     </div>
                     <br>";
             }
@@ -412,11 +407,8 @@
       </div>
 
       <form class="inbox_new_message" action="admin.php" method="post">
-        <div class="sent_meesage_input">
           <textarea name="name" rows="8" cols="80"placeholder=" წერილი"></textarea>
-          <button type="button" name="button" class="w3-button w3-blue send_button">გაგზავნა</button>
-        </div>
-
+          <button type="button" name="button" class="w3-button w3-blue send-button">გაგზავნა</button>
       </form>
     </div>
 

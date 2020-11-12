@@ -1,0 +1,78 @@
+.inbox-header{
+  text-align: center;
+  color: white;
+  font-size: 2vw;
+  color: white;
+  height: 10vh;
+  width: 75%;
+  background:#595959;
+}
+.chat-list,
+.chat{
+  position: relative;
+  overflow: scroll;
+  float:right;
+}
+.chat-list{
+  text-align: center;
+  width:25%;
+  height: 100vh;
+  border-left:1px solid #525659;
+}
+.inbox{
+  float: left;
+  height: 12vh;
+  width: 100%;
+  font-size: 1.2vw;
+  cursor: pointer;
+  border-bottom: 1px solid #2a3034;
+}
+.inbox:hover{
+  transition:all 1s;
+  background-color: #2196f3;
+  -webkit-box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.75);
+
+}
+.chat{
+  text-align:  center;
+  height: 70vh;
+  width: 75%;
+  background-color:#eee;
+}
+
+.inbox_new_message{
+  background-color: rgb(88, 87, 93);
+  width: 75%;
+  margin-top:70vh;
+  height: 20vh;
+}
+
+.inbox_new_message textarea{
+  background-color: rgb(88, 87, 93);
+  padding: 2% 3%;
+  color:white;
+  word-wrap: break-word;
+  height: inherit;
+  width: 80%;
+  resize: none;
+}
+.message-arrive,
+.message-sent{
+  height: 10vh;
+  width: 30%;
+  background: #2196f4;
+  border-radius: 5px;
+}
+.message-sent {
+  float: right;
+  background: white;
+}
+
+.send-button{
+  float:right;
+  height: 6vh;
+  width:15%;
+  margin:5% 3% 0 0;
+}
