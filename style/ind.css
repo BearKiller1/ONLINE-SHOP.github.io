@@ -1,0 +1,267 @@
+  /* NAVBAR */
+  .Header {
+    top:0;
+    z-index: 1;
+    width: 100vw;
+    height: 10vh;
+    color:#353B48;
+    background: #eee;
+    font-size: 1.3vw;
+    position: sticky;
+    position: -webkit-sticky;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Header img {
+    left:5vw;
+    width: 4%;
+    height: 60%;
+    cursor: pointer;
+    position: absolute;
+    border-radius:100%;
+  }
+  .Header > span {
+    width:60%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .night-mode {
+    right:10vw;
+    width:5%;
+    font-size:2.5vw;
+    cursor: pointer;
+    position: absolute;
+  }
+  .line {
+    right:10vw;
+    height: 80%;
+    width:0.01vw;
+    background:#333;
+    position: absolute;
+  }
+  .language {
+    right:5vw;
+    font-size:1.6vw;
+    position: absolute;
+  }
+  .language > div {display: none;}
+
+  /* HOME */
+  .Poster{
+    width:100vw;
+    height:75vh;
+    opacity: 0.9;
+    font-size:1.4vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: all 1s ease-in-out;
+    background-image: url('../resource/index/poster.jpg');
+    background-size: 100vw 75vh;
+    background-repeat: no-repeat;
+  }
+
+  .Poster h1{
+    color:white;
+    font-size:8vw;
+    text-shadow: 4px 5px 0px rgba(0,0,0,0.53);
+  }
+  .Poster button{
+    width:8%;
+    height: 7vh;
+    color:#464646;
+    border-radius:20px;
+    background-color:#eee;
+    font-family:'bold_geo';
+
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+  }
+  .Poster button:hover {background-color: #DBD8D6;}
+
+  .Search {
+    z-index: -1;
+    width: 30vw;
+    height: 7vh;
+    opacity:0.9;
+    padding:0 1%;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition:all 2s ease-in-out;
+    font-family: 'mkrtali_daxrili';
+  }
+  .Search i{
+    z-index: 1;
+    color:black;
+    font-size:1.7vw;
+    cursor: pointer;
+    margin-left:auto;
+  }
+  .Search input{
+    width:80%;
+    position: absolute;
+    text-align: center;
+    background: transparent;
+  }
+  .search:hover{
+    -webkit-box-shadow: 0px 0px 9px 9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 9px 9px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 9px 9px rgba(0,0,0,0.75);
+  }
+
+  /* CAROUSEL */
+  .gallery{
+    width:100%;
+    height:35vh;
+  }
+  .gallery-cell{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 35vh;
+    color:white;
+    font-size:10vw;
+    counter-increment: gallery-cell;
+  }
+  .gallery-cell img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* LOCATION */
+  .Location{
+    padding:3%;
+    height:90vh;
+    color:black;
+    font-size: 1.7vw;
+    font-family: 'bold_politika';
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .Location iframe{
+    width:80vw;
+    height: 80vh;
+  }
+
+  /* CONTACT */
+  .Contact{
+    transition: all 0.5s ease-in-out;
+    background: url("../resource/index/contact.png") no-repeat;
+    background-size: 100vw 100vh;
+    width:100vw;
+    height:100vh;
+    padding:10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .Contact form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+    width:35%;
+    height: 76vh;
+    padding:3% 0;
+    background-color: #eee;
+    color:#444444;
+    font-size: 1.7vw;
+    letter-spacing: 3px;
+    font-family:'bold_geo';
+    transition:all 1s ease-in-out;
+    text-shadow: 3px 2px 0px rgba(0,0,0,0.2);
+
+    -webkit-box-shadow: 9px 6px 9px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 6px 9px 2px rgba(0,0,0,0.75);
+    box-shadow: 9px 6px 9px 2px rgba(0,0,0,0.75);
+  }
+  .Contact form:hover{
+    -webkit-box-shadow: 6px 4px 10px 11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 4px 10px 11px rgba(0,0,0,0.75);
+    box-shadow: 6px 4px 10px 11px rgba(0,0,0,0.75);
+  }
+
+  .Contact input,.Contact textarea{
+    width:60%;
+    padding:3%;
+    font-size:1vw;
+    font-family: 'mkrtali_grdzeli';
+    border:0.5px solid #C6C0C0;
+  }
+  .Contact textarea{
+    height:20vh;
+    resize: none;
+  }
+  .Contact button{
+    width:40%;
+    color:white;
+    font-size: 1.6vw;
+    letter-spacing: 4px;
+    background-color: #343334;
+    font-family:'mkrtali_daxveuli';
+  }
+
+  /* ABOUT */
+  .Description{
+    padding:12% 5%;
+    width:100%;
+    height:40vh;
+    font-size: 1.7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .Description img{
+    width:30%;
+    height:inherit;
+  }
+  .Description > div{
+    width:70%;
+    height: 20vh;
+    text-align: center;
+    font-family:'daxrili_wvrili';
+  }
+
+  .Footer{
+    width:100vw;
+    height:32vh;
+    color:#F3F3F3;
+    padding:2%;
+    background-color: #1C1C1E;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size:1.1vw;
+  }
+  .info{
+    width:33%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .soc-media{
+    width:33%;
+    font-size: 3vw;
+    text-align: center;
+  }
+  .copy-right{
+    font-size: 1vw;
+    margin-left:auto;
+  }
+  .Footer i{
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }

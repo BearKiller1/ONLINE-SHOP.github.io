@@ -4,12 +4,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="utf-8">
     <title>Admin</title>
+      <link rel="stylesheet" href="style/nightMode.css">
       <link rel="stylesheet" href="style/default.css">
-
       <link rel="stylesheet" href="style/admin.css">
       <link rel="stylesheet" href="style/admin/pro.css">
       <link rel="stylesheet" href="style/admin/category.css">
-      <link rel="stylesheet" href="style/admin/modify.css">
+      <link rel="stylesheet" href="style/admin/mo.css">
       <link rel="stylesheet" href="style/admin/box.css">
       <link rel="stylesheet" href="style/admin/statistics.css">
       <link rel="stylesheet" href="style/admin/users.css">
@@ -18,20 +18,19 @@
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       <!-- FONTS -->
       <link rel="stylesheet" href="Fonts/TTfs/fonts.css">
-
+      <!-- JQUERY -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <!-- CHARTS FOR ANALYTICS -->
       <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
       <!-- FLICKITY FOR CAROUSEL -->
       <script src='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js'>  </script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
-
       <!-- ICONS -->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
       <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   </head>
   <body>
@@ -254,11 +253,11 @@
         <br>
         <!-- carousel 1 -->
         <div class="carousel">
-          <div class="Admin-gallery js-flickity"
+          <div class="gallery js-flickity"
             data-flickity-options='{"wrapAround": true ,"pageDots": false}'>
             <?php
               for ($i=0; $i < 12; $i++) {
-              echo "<div class='Admin-gallery-cell'>
+              echo "<div class='gallery-cell'>
                        <img src='resource/admin/shouse.jpg'>
                     </div>";
               }
@@ -267,14 +266,15 @@
 
           <div class="New-cell addToCatalog"> + </div>
         </div>
+
         <br>
         <!-- carousel 2 -->
         <div class="carousel">
-          <div class="Admin-gallery js-flickity"
+          <div class="gallery js-flickity"
             data-flickity-options='{"wrapAround": true ,"pageDots": false}'>
             <?php
               for ($i=0; $i < 12; $i++) {
-              echo "<div class='Admin-gallery-cell'>
+              echo "<div class='gallery-cell'>
                        <img src='resource/admin/shouse.jpg'>
                     </div>";
               }

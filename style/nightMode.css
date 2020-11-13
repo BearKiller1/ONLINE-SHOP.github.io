@@ -1,0 +1,17 @@
+.night,   .white input, .white button, .white textarea{
+  transition: 1s;
+  background-color:#333;
+  color:white;
+}
+.white{
+  background-color:#eee;
+  color:#333;
+  transition: 1s;
+}
+.white input::placeholder, .white textarea::placeholder, .white .Search a, .white-moon, .night-lang, .white .line{color:white;}
+.white-contact{background-image:url('../resource/index/white-contact.jpg');}
+.night-lang{
+  border-radius: 8px;
+  background-color: #eee;
+  color:#333;
+}

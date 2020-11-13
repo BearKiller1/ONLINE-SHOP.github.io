@@ -1,5 +1,6 @@
 :root{
   --blue:#2196F3;
+  --lightBlack:#353B48;
 }
 html{ scroll-behavior: smooth; }
 body{
@@ -59,3 +60,24 @@ button:hover{
 ::-webkit-scrollbar-thumb:window-inactive {
 background: rgba(255,0,0,0.4);
 }
+
+.glow {
+    font-size: 80px;
+    color: #eee;
+    text-align: center;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073,
+                                  0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;}
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6,
+                                  0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;}
+  }
+
+  .fb:hover{color:#0469DE;}
+  .inst:hover{color:#FE5224;}
+  .twitter:hover{color:#1C9BEA;}
