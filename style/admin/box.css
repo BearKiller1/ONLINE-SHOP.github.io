@@ -1,78 +1,105 @@
 .inbox-header{
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 75%;
+  max-width: 80%;
+  height: 10vh;
   color: white;
   font-size: 2vw;
-  color: white;
-  height: 10vh;
-  width: 75%;
   background:#595959;
 }
+
 .chat-list,
 .chat{
   position: relative;
   overflow: scroll;
-  float:right;
 }
+
+.chat{
+  padding:2%;
+  width: 75%;
+  height: 70vh;
+  background-color:#eee;
+}
+.message-from,
+.message-to{
+  width:40%;
+  height: auto;
+  color:#fff;
+  padding:0.1% 2%;
+  border-radius:10px;
+  word-wrap:break-word;
+  background-color:var(--blue);
+}
+.message-to {
+  background: #fff;
+  margin-left: auto;
+  color:#333;
+}
+.chat i{
+  padding:1%;
+  color:#737373;
+  font-size:0.9vw;
+}
+.chat .left { float:left; }
+.chat .right{ float:right;}
+
+.new-message{
+  min-width: 75%;
+  max-width: 80%;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  background-color:#525659;
+}
+.new-message textarea{
+  width: 75%;
+  color:white;
+  resize: none;
+  padding: 2% 3%;
+  height: inherit;
+  word-wrap: break-word;
+  background: transparent;
+}
+
+
 .chat-list{
-  text-align: center;
-  width:25%;
+  position: absolute;
+  top:0vw;
+  right:0vw;
+  width:20%;
   height: 100vh;
-  border-left:1px solid #525659;
+  color:white;
+  border-left: 1px solid var(--blue);
 }
-.inbox{
-  float: left;
-  height: 12vh;
+.chat-list > .header{
+  top:0;
+  right:0;
+  width:inherit;
+  position: fixed;
+  border-radius: 0;
+  background: #fff;
+  color:#333;
+}
+.messages{
+  border-radius: 6px;
+  background-color: var(--blue);
+  transition:all 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
   width: 100%;
   font-size: 1.2vw;
   cursor: pointer;
-  border-bottom: 1px solid #2a3034;
+  border-bottom: 1px solid #fff;
 }
-.inbox:hover{
-  transition:all 1s;
-  background-color: #2196f3;
+.messages:hover{
+  background-color: #fff;
+  color:#333;
   -webkit-box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.75);
 
-}
-.chat{
-  text-align:  center;
-  height: 70vh;
-  width: 75%;
-  background-color:#eee;
-}
-
-.inbox_new_message{
-  background-color: rgb(88, 87, 93);
-  width: 75%;
-  margin-top:70vh;
-  height: 20vh;
-}
-
-.inbox_new_message textarea{
-  background-color: rgb(88, 87, 93);
-  padding: 2% 3%;
-  color:white;
-  word-wrap: break-word;
-  height: inherit;
-  width: 80%;
-  resize: none;
-}
-.message-arrive,
-.message-sent{
-  height: 10vh;
-  width: 30%;
-  background: #2196f4;
-  border-radius: 5px;
-}
-.message-sent {
-  float: right;
-  background: white;
-}
-
-.send-button{
-  float:right;
-  height: 6vh;
-  width:15%;
-  margin:5% 3% 0 0;
 }

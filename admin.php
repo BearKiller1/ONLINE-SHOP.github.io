@@ -380,36 +380,42 @@
 
     <!-- INBOX -->
     <div class="section">
+      <div class="inbox-header"> Elon Tusk </div>
+
+      <div class="chat">
+        <?php
+          for ($i=0; $i < 5; $i++) {
+            echo "  <div class='message-from'>
+                          <p>გამარჯობა ტესტ asdasdasdasdasdasdasdasdasdasdasdasdasdტესტ arive</p>
+                    </div>
+                    <i class='left'>11.13.2020 <br> 11:00 </i>
+
+                    <br>
+
+                    <div class='message-to'>
+                        <p>გამარჯობა ტესტ ტესტ sent</p>
+                    </div>
+                    <i class='right'>11.13.2020 <br> 12:00 </i> ";
+            }
+        ?>
+      </div>
+
+      <form class="new-message" action="admin.php" method="post">
+          <textarea name="name" rows="8" cols="80" placeholder=" წერილი"></textarea>
+          <button type="button" name="button">გაგზავნა</button>
+      </form>
+
       <div class="chat-list">
+        <div class='messages header'>Inbox</div>
         <?php
           for ($i=0; $i < 22; $i++) {
-            echo "<div class='inbox'>
+            echo "<div class='messages'>
                     <p> elon musk </p>
                     <p> 11/12/2020 </p>
                   </div> ";
             }
         ?>
       </div>
-      <div class="inbox-header">Elon Tusk</div>
-      <div class="chat">
-        <?php
-          for ($i=0; $i < 2; $i++) {
-            echo "  <div class='message-arrive'>
-                          <p>გამარჯობა ტესტ ტესტ arive</p>
-                    </div>
-                    <br>
-                    <div class='message-sent'>
-                        <p>გამარჯობა ტესტ ტესტ sent</p>
-                    </div>
-                    <br>";
-            }
-        ?>
-      </div>
-
-      <form class="inbox_new_message" action="admin.php" method="post">
-          <textarea name="name" rows="8" cols="80"placeholder=" წერილი"></textarea>
-          <button type="button" name="button" class="w3-button w3-blue send-button">გაგზავნა</button>
-      </form>
     </div>
 
     <!-- ANALYTICS -->
@@ -544,7 +550,7 @@
 
     <script>
       // Pre-Activators
-      slide('section', 0);
+      slide('section', 3);
       slide('modify', 0);
 
       $(document).ready(function() {
