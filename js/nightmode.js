@@ -1,5 +1,5 @@
 function indexNightMode(){
-  $('#body').toggleClass('night');
+  $('body').toggleClass('night');
   $('#logo').attr('src', function(index,attr) {
     return attr=='resource/index/black-logo.jpg' ?
     'resource/index/white-logo.jpg':'resource/index/black-logo.jpg';
@@ -12,7 +12,7 @@ function indexNightMode(){
   $('#moon').toggleClass('white-moon');
 
   $('.poster-text').toggleClass('glow');
-  $('.Poster').toggleClass("white");
+  $('#Poster').toggleClass("white");
   $('.Catalog').toggleClass("night");
   $('.Location').toggleClass("night");
 

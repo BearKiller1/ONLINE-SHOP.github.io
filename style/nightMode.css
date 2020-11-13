@@ -15,3 +15,13 @@
   background-color: #eee;
   color:#333;
 }
+.white-bg{
+  background: #fff;
+  color:#333;
+}
+.night-menu{background-color:#5B5B5B;color:#333;}
+.night-menu select{background-color:#eee;}
+.night-product{
+  background-color: #4A4A4B;
+  color:#333;
+}

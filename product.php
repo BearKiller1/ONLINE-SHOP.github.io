@@ -14,29 +14,35 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="style/product.css">
-    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/ind.css">
+    <link rel="stylesheet" href="style/defaulta.css">
   </head>
   <body>
-    <div class="Header night-text">
-      <img src="resource/index/black-logo.jpg" alt="Logo" id='logo'>
-      <a href="index.php#mtavari"> მთავარი </a>
-      <a href="product.php"> პროდუქტი </a>
-      <a href="index.php#lokacia"> ლოკაცია </a>
-      <a href="index.php#kontaqti"> კონტაქტი </a>
-      <a href="index.php#shesaxeb"> შესახებ </a>
+    <div class="Header">
+      <img src="resource/index/black-logo.jpg" id='logo'>
 
-      <div class="dark-button" id="mode">
-        <i class='fas fa-moon night-mode ' id="moon"  onclick="productNightMode()"></i>
+      <span>
+        <a href="index.php#Poster"> მთავარი </a>
+        <a href="product.php"> პროდუქტი </a>
+        <a href="index.php#Location"> ლოკაცია </a>
+        <a href="index.php#Contact"> კონტაქტი </a>
+        <a href="index.php#About"> შესახებ </a>
+      </span>
+
+      <div class="night-mode" id="mode">
+        <i class='fas fa-moon' id="moon"  onclick="indexNightMode()"></i>
       </div>
 
       <div class="line"></div>
-      <div class="lang">
+
+      <div class="language">
         <a href='#'> KA </a>
-        <div class="more-lang">
+        <div>
           <a href="#"> EN </a>
           <a href="#"> RU </a>
         </div>
       </div>
+
     </div>
 
     <div id="side_menu">
@@ -159,7 +165,7 @@
       function addToCart(id){alert(id);}//add item to cart by id
       function buy(id){alert(id);}//pass to php id
     </script>
-    <script src="js/nightmode.js"></script>
-    <script src="js/langDropDown.js"></script>
   </body>
+  <script src="js/nightmode.js"></script>
+  <script src="js/langDropDown.js"></script>
 </html>
