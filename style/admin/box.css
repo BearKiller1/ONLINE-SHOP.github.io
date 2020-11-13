@@ -46,9 +46,10 @@
 .chat .right{ float:right;}
 
 .new-message{
+  height: 20vh;
   min-width: 75%;
   max-width: 80%;
-  height: 20vh;
+  padding-right:3%;
   display: flex;
   align-items: center;
   background-color:#525659;
